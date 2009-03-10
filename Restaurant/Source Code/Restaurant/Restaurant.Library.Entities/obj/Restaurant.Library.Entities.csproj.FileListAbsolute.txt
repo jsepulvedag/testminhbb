@@ -1,0 +1,10 @@
+D:\Working\StarSoft Project\Restaurant\Restaurant.Library.Entities\bin\Debug\Restaurant.Library.Entities.dll
+D:\Working\StarSoft Project\Restaurant\Restaurant.Library.Entities\bin\Debug\Restaurant.Library.Entities.pdb
+D:\Working\StarSoft Project\Restaurant\Restaurant.Library.Entities\obj\Debug\ResolveAssemblyReference.cache
+D:\Working\StarSoft Project\Restaurant\Restaurant.Library.Entities\obj\Debug\Restaurant.Library.Entities.dll
+D:\Working\StarSoft Project\Restaurant\Restaurant.Library.Entities\obj\Debug\Restaurant.Library.Entities.pdb
+D:\Working\StarSoft Project\RestaurantBeta\Restaurant\Restaurant.Library.Entities\bin\Debug\Restaurant.Library.Entities.dll
+D:\Working\StarSoft Project\RestaurantBeta\Restaurant\Restaurant.Library.Entities\bin\Debug\Restaurant.Library.Entities.pdb
+D:\Working\StarSoft Project\RestaurantBeta\Restaurant\Restaurant.Library.Entities\obj\Debug\ResolveAssemblyReference.cache
+D:\Working\StarSoft Project\RestaurantBeta\Restaurant\Restaurant.Library.Entities\obj\Debug\Restaurant.Library.Entities.dll
+D:\Working\StarSoft Project\RestaurantBeta\Restaurant\Restaurant.Library.Entities\obj\Debug\Restaurant.Library.Entities.pdb
