@@ -1,0 +1,107 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{EF23AD2F-EB76-4A04-B764-694D4D053AF9}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Restaurant.Library.DAL</RootNamespace>
+    <AssemblyName>Restaurant.Library.DAL</AssemblyName>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AccountLoginDAL.cs" />
+    <Compile Include="ActiveServiceDAL.cs" />
+    <Compile Include="AdminDAL.cs" />
+    <Compile Include="AtmosphereDAL.cs" />
+    <Compile Include="AttireDAL.cs" />
+    <Compile Include="BusinessTimeDAL.cs" />
+    <Compile Include="CityDAL.cs" />
+    <Compile Include="CountryDAL.cs" />
+    <Compile Include="CuisineDAL.cs" />
+    <Compile Include="FavouriteRestaurantDAL.cs" />
+    <Compile Include="GiftCertificateImageDAL.cs" />
+    <Compile Include="GiftCertificatesDAL.cs" />
+    <Compile Include="GiftCertificateTypeDAL.cs" />
+    <Compile Include="IncomeTransactionDAL.cs" />
+    <Compile Include="MenuAddonDAL.cs" />
+    <Compile Include="MenuAddonGroupDAL.cs" />
+    <Compile Include="MenuCategoryDAL.cs" />
+    <Compile Include="MenuItemDAL.cs" />
+    <Compile Include="MusicDAL.cs" />
+    <Compile Include="NeighbourhoodDAL.cs" />
+    <Compile Include="OrderItemAddOnDAL.cs" />
+    <Compile Include="OrderItemDAL.cs" />
+    <Compile Include="ParameterDAL.cs" />
+    <Compile Include="PhotoDAL.cs" />
+    <Compile Include="MemberDAL.cs" />
+    <Compile Include="PackageDAL.cs" />
+    <Compile Include="PackageDetailDAL.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReservationDAL.cs" />
+    <Compile Include="RestaurantAllowServiceDAL.cs" />
+    <Compile Include="RestaurantAtmosphereListDAL.cs" />
+    <Compile Include="RestaurantAttireListDAL.cs" />
+    <Compile Include="RestaurantBusinessAccountDAL.cs" />
+    <Compile Include="RestaurantCuisineListDAL.cs" />
+    <Compile Include="RestaurantDAL.cs" />
+    <Compile Include="RestaurantDeliveryParamDAL.cs" />
+    <Compile Include="RestaurantGiftCertificateParameterDAL.cs" />
+    <Compile Include="RestaurantGoodForListDAL.cs" />
+    <Compile Include="RestaurantMusicListDAL.cs" />
+    <Compile Include="RestaurantNeighbourhoodListDAL.cs" />
+    <Compile Include="RestaurantPackageDetailDAL.cs" />
+    <Compile Include="RestaurantSpecialListDAL.cs" />
+    <Compile Include="ReviewDAL.cs" />
+    <Compile Include="SpecialDAL.cs" />
+    <Compile Include="StateDAL.cs" />
+    <Compile Include="GoodForDAL.cs" />
+    <Compile Include="TransactionDAL.cs" />
+    <Compile Include="VideoDAL.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Restaurant.Library.Entities\Restaurant.Library.Entities.csproj">
+      <Project>{8DABA69A-6EFD-49C6-8D26-DE56AFF9C4B6}</Project>
+      <Name>Restaurant.Library.Entities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Restaurant.Library.Utilities\Restaurant.Library.Utilities.csproj">
+      <Project>{B68AA85F-3C13-4413-BE11-43225FA92F49}</Project>
+      <Name>Restaurant.Library.Utilities</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
