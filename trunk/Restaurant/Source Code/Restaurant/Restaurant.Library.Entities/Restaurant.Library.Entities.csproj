@@ -1,0 +1,110 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{8DABA69A-6EFD-49C6-8D26-DE56AFF9C4B6}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Restaurant.Library.Entities</RootNamespace>
+    <AssemblyName>Restaurant.Library.Entities</AssemblyName>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AccountLoginInfo.cs" />
+    <Compile Include="AccountPaymentInfo.cs" />
+    <Compile Include="ActiveServiceInfo.cs" />
+    <Compile Include="AdminBusinessAccountInfo.cs" />
+    <Compile Include="AdminInfo.cs" />
+    <Compile Include="Atmosphere.cs" />
+    <Compile Include="AtmosphereInfo.cs" />
+    <Compile Include="AttireInfo.cs" />
+    <Compile Include="BusinessTimeInfo.cs" />
+    <Compile Include="CityInfo.cs" />
+    <Compile Include="CountryInfo.cs" />
+    <Compile Include="CuisineInfo.cs" />
+    <Compile Include="FavouriteRestaurantInfo.cs" />
+    <Compile Include="GiftCertificateImageInfo.cs" />
+    <Compile Include="GiftCertificateInfo.cs" />
+    <Compile Include="GiftCertificateTypeInfo.cs" />
+    <Compile Include="GoodForInfo.cs" />
+    <Compile Include="IncomeTransactionInfo.cs" />
+    <Compile Include="OrderInfo.cs" />
+    <Compile Include="OrderItemAddonInfo.cs" />
+    <Compile Include="OrderItemInfo.cs" />
+    <Compile Include="MemberInfo.cs" />
+    <Compile Include="MenuAddonGroupInfo.cs" />
+    <Compile Include="MenuAddonInfo.cs" />
+    <Compile Include="MenuCategoryInfo.cs" />
+    <Compile Include="MenuItemInfo.cs" />
+    <Compile Include="MusicInfo.cs" />
+    <Compile Include="NeighbourhoodInfo.cs" />
+    <Compile Include="PackageDetailInfo.cs" />
+    <Compile Include="PackageInfo.cs" />
+    <Compile Include="Parameters.cs" />
+    <Compile Include="ParameterInfo.cs" />
+    <Compile Include="PhotoInfo.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReservationInfo.cs" />
+    <Compile Include="RestaurantAllowServiceInfo.cs" />
+    <Compile Include="RestaurantBusinessAccountInfo.cs" />
+    <Compile Include="RestaurantDeliveryParamInfo.cs" />
+    <Compile Include="RestaurantGiftCertificateParameterInfo.cs" />
+    <Compile Include="RestaurantGoodForList.cs" />
+    <Compile Include="RestaurantAtmosphereInfo.cs" />
+    <Compile Include="RestaurantAtmosphereList.cs" />
+    <Compile Include="RestaurantAttireInfo.cs" />
+    <Compile Include="RestaurantAttireList.cs" />
+    <Compile Include="RestaurantCuisineInfo.cs" />
+    <Compile Include="RestaurantCuisineList.cs" />
+    <Compile Include="RestaurantInfo.cs" />
+    <Compile Include="RestaurantGoodForInfo.cs" />
+    <Compile Include="RestaurantMusicInfo.cs" />
+    <Compile Include="RestaurantMusicList.cs" />
+    <Compile Include="RestaurantNeighbourhoodInfo.cs" />
+    <Compile Include="RestaurantNeighbourhoodList.cs" />
+    <Compile Include="RestaurantPackageDetailInfo.cs" />
+    <Compile Include="RestaurantSpecialInfo.cs" />
+    <Compile Include="RestaurantSpecialList.cs" />
+    <Compile Include="ReviewInfo.cs" />
+    <Compile Include="SpecialInfo.cs" />
+    <Compile Include="StateInfo.cs" />
+    <Compile Include="TransactionInfo.cs" />
+    <Compile Include="TypeInfo.cs" />
+    <Compile Include="VideoInfo.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
