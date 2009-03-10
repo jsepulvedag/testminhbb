@@ -1,0 +1,55 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Administrator.master.cs" Inherits="Restaurant.Presentation.Administrator.Administrator"  %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head id="Head1" runat="server">
+    <title>Administrator</title>
+    <style type="text/css">
+           #divMain 
+           {
+           	width:100%;
+           }
+           #MasterHeader 
+           {
+           	float: left;
+           	width:100%;
+           	background-color:#333333;  
+           }          
+           #MasterContent
+           {
+           	float:left;
+           	width:100%;
+           	background-color:white;    	
+           }
+           
+           #MasterFooter
+           {
+            float:left;
+           	width:100%;
+           	background-color:#333333;  
+           }
+    </style>
+    <link href="../Style/admin.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <form id="frmAdministrator" runat="server">
+    <div>
+        <div id="divMain">
+            <div id="MasterHeader">
+                <asp:ContentPlaceHolder ID="cphHeader" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+            <div id="MasterContent">
+                <asp:ContentPlaceHolder ID="cphContent" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+            <div id="MasterFooter">
+                <asp:ContentPlaceHolder ID="cphFooter" runat="server">      
+                </asp:ContentPlaceHolder>
+            </div>
+        </div>
+    </div>
+    </form>
+</body>
+</html>
