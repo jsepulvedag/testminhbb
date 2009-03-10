@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<PageConfig>
+	<Page key="Administrator" value="#" title="Administrator" visible="true">
+		<Page key="Profile" value="~/Administrator/Profile/Profile.ascx" title="My profile" visible="true"/>
+		<Page key="ChangePassword" value="~/Administrator/Profile/ChangePassword.ascx" title="Change Password" visible ="true" />
+		<Page key="MailServer" value="~/Administrator/ParamterManagement/SettingMailServer.ascx" title="Setting Mail Server" visible="true" />
+		<Page key="BusinessAccountPaypal" value="~/Administrator/ParamterManagement/SettingAccountPaypal.ascx" title="Setting Account Paypal" visible="true" />
+	</Page>
+	<Page key="Restaurants" value="#" title="Restaurants" visible="true">
+		<Page key="ReviewManagement" value="~/Administrator/Review/ReviewManagement.ascx" title="Review" visible="true" />
+		<Page key="ListGiftPurchase" value="~/Administrator/GiftCertificates/ListGiftPurchased.ascx" title="List gift certificate" visible="true" />
+		<Page key="RestaurantManagement" value="~/Administrator/RestaurantManagement/ListRestaurant/ListRestaurant.ascx" title="Restaurant" visible="true" />
+		<Page key="AddRestaurant" value="~/Administrator/RestaurantManagement/ListRestaurant/AddRestaurant.ascx" title="Add Restaurant" visible="true" />
+		<Page key="CreateMember" value="~/Administrator/RestaurantManagement/ListRestaurant/CreateRestaurant.ascx" title="Create Member" visible="false" />
+	</Page>
+	<Page key="Members" value="#" title="Members" visible="true">
+		<Page key="UserManagement" value="#" title="User Management" visible="false" />
+		<Page key="AddMember" value="~/Administrator/MemberManagement/AddMember.ascx" title ="Add Member" visible="true"/>
+		<Page key="ListMember" value="~/Administrator/MemberManagement/ListMember.ascx" title ="List Member" visible="true"/>
+
+	</Page>
+	<Page key="Packages" value="#" title="Package Management" visible="true">
+		<Page key="PakagesManagement" value="~/Administrator/RestaurantPackage/CreatePackage.ascx" title ="Package Info" visible="true"/>
+		<Page key="SubplanManagement" value="~/Administrator/RestaurantPackage/CreatePakageDetail.ascx" title="Subscription Plan" visible="true" />
+		<Page key="ChoosePackage" value="~/Administrator/RestaurantPackage/ChoosePackage.ascx" title="Choose Package" visible="false" />
+	</Page>
+	<Page key="GiftCertificates" value="#" title="Gift Certificates" visible="true">
+		<Page key="GiftType" value="~/Administrator/GiftCertificates/DefineGiftType.ascx" title="Define Gift" visible="true" />
+		<Page key="GiftDesign" value="~/Administrator/GiftCertificates/DefineGiftDesign.ascx" title="Define Gift Design" visible="true" />
+		<Page key="GiftCommission" value="~/Administrator/GiftCertificates/DefineGiftCommision.ascx" title="Define Gift Commission" visible="true" />
+	</Page>
+	<Page key="Reservation" value="#" title="Reservation" visible="true">
+    <Page key="ReservationGift" value="~/Administrator/Reservation/Reservation.ascx" title ="Reservation" visile="true" />
+		<Page key="ReservationCommission" value="~/Administrator/Reservation/ReservationCommission.ascx" title ="Reservation Commission" visile="true" />
+	</Page>
+	<Page key="Delivery" value="#" title="Delivery" visible="true">
+		<Page key="DeliveryCommission" value="#" title="Delivery Commission" visible="true" />
+	</Page>
+	<Page key="SystemParameters" value="#" title="System Parameters" visible="true">
+		<Page key="Country" value="~/Administrator/ParamterManagement/Country.ascx" title="Country" visible="true" />
+		<Page key="State" value="~/Administrator/ParamterManagement/State.ascx" title="State" visible="true" />
+		<Page key="City" value="~/Administrator/ParamterManagement/City.ascx" title="City" visible="true" />
+		<Page key="Attire" value="~/Administrator/ParamterManagement/Attire.ascx" title="Attire" visible="true" />
+		<Page key="Cuisine" value="~/Administrator/ParamterManagement/Cuisine.ascx" title="Cuisine" visible="true" />
+		<Page key="Neighbourhood" value="~/Administrator/ParamterManagement/Neighbourhood.ascx" title="Neighbourhood" visible="true" />
+		<Page key="Special" value="~/Administrator/ParamterManagement/Special.ascx" title="Special" visible="true" />		
+	</Page>
+	<Page key="Logout" value="~/Administrator/Usercontrols/Logout.ascx" title="Logout" visible="true">
+	</Page>
+</PageConfig>

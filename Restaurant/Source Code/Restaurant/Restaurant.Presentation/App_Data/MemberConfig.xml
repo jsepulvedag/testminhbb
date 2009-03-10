@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<PageConfig>
+	<Page Key="Profile" Value="~/Management/Member/Profile/ProfileManagement.ascx"/>
+	<Page Key="ChangePassword" Value="~/Management/Member/Profile/ChangePassword.ascx" />
+	<Page Key="welcome" Value="~/Management/Member/UserControls/Welcome.ascx"/>
+	<Page Key="MemberReview" Value="~/Management/Member/Review/MemberListReview.ascx"/>
+	<Page key="MyGift" Value="~/Management/Member/GiftCertificates/MyGift.ascx" />
+	<Page Key="PrintGift" Value="~/Management/Member/GiftCertificates/PrintGift.ascx" />
+	<Page Key="MyReservation" Value="~/Management/Member/Reservation/MyReservation.ascx"/>
+	<Page Key="MemberRestaurant" Value="~/Management/Restaurant/ListRestaurant/ListRestaurant.ascx"/>
+	<Page Key="TransactionHistory" Value="~/Management/Member/Transaction/HistoryTransaction.ascx" />
+	<Page Key="UnderContruction" Value="~/Management/UserControls/UnderContruction.ascx"/>
+  <Page Key="FavouriteRestaurant" Value="~/Management/Member/FavouriteRestaurant/YourFavouriteRestaurant.ascx"/>
+</PageConfig>
