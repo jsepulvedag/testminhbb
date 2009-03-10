@@ -1,0 +1,194 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B68AA85F-3C13-4413-BE11-43225FA92F49}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Restaurant.Library.Utilities</RootNamespace>
+    <AssemblyName>Restaurant.Library.Utilities</AssemblyName>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="JW-FLV-Player-Control, Version=1.0.3144.30702, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="log4net, Version=1.2.10.0, Culture=neutral, PublicKeyToken=1b44e1d426115821" />
+    <Reference Include="Media-Player-ASP.NET-Control, Version=1.0.3141.38822, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="paypal_base, Version=4.4.55.0, Culture=neutral, PublicKeyToken=b37401294aaf5617" />
+    <Reference Include="PdfSharp, Version=1.2.1269.0, Culture=neutral, PublicKeyToken=f94615aa0424f9eb, processorArchitecture=MSIL" />
+    <Reference Include="RadComboBox.Net2, Version=2.6.0.0, Culture=neutral, PublicKeyToken=175e9829b585f1f6, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Net, Version=3.5.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AppEnv.cs" />
+    <Compile Include="CaptChaImage\GenerateCaptCha.cs" />
+    <Compile Include="ColorPicker\HexaConverter.cs" />
+    <Compile Include="ColorPicker\ColorPicker.cs" />
+    <Compile Include="ConvertHelper.cs" />
+    <Compile Include="DataBinder\Utility.cs" />
+    <Compile Include="Encrypt\Component.cs" />
+    <Compile Include="Encrypt\MD5.cs" />
+    <Compile Include="ExportFile\PDF\Image\Base.cs" />
+    <Compile Include="ExportFile\PDF\Image\Image.cs" />
+    <Compile Include="GenerateThumbnailImage\Generator.cs" />
+    <Compile Include="InterFaxAPI\FaxOnlineSender.cs" />
+    <Compile Include="InterFaxAPI\FaxOnlineAccountInfo.cs" />
+    <Compile Include="InterFaxAPI\FaxOnlinePackageInfo.cs" />
+    <Compile Include="MailSMTP\Mail.cs" />
+    <Compile Include="MailSMTP\SMTP.cs" />
+    <Compile Include="MessageBox.cs" />
+    <Compile Include="PayPalAPI\BusinessAccountInfo.cs" />
+    <Compile Include="PayPalAPI\Constants.cs" />
+    <Compile Include="PayPalAPI\PaymentPaypal.cs" />
+    <Compile Include="PayPalAPI\PaypalAPI.cs" />
+    <Compile Include="PayPalAPI\SetProfile.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="UrlUtilities.cs" />
+    <Compile Include="Validator\DataField.cs" />
+    <Compile Include="Web References\net.interfax.ws\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ColorPicker\CustomControls.dll" />
+    <Content Include="ExportFile\DLL\PdfSharp.dll" />
+    <Content Include="PayPalAPI\LibraryDLL\log4net.dll" />
+    <Content Include="PayPalAPI\LibraryDLL\paypal_base.dll" />
+    <Content Include="PayPalAPI\LibraryDLL\System.Web.Extensions.Design.dll" />
+    <Content Include="PayPalAPI\LibraryDLL\System.Web.Extensions.dll" />
+    <Content Include="RadControls\DictionaryConfiguration.NET2.dll" />
+    <Content Include="RadControls\RadAjax.Net2.dll" />
+    <Content Include="RadControls\RadCalendar.Net2.dll" />
+    <Content Include="RadControls\RadChart.Net2.dll" />
+    <Content Include="RadControls\RadComboBox.Net2.dll" />
+    <Content Include="RadControls\RadDock.Net2.dll" />
+    <Content Include="RadControls\RadEditor.Net2.dll" />
+    <Content Include="RadControls\RadGrid.Net2.dll" />
+    <Content Include="RadControls\RadInput.Net2.dll" />
+    <Content Include="RadControls\RadMenu.Net2.dll" />
+    <Content Include="RadControls\RadPanelbar.Net2.dll" />
+    <Content Include="RadControls\RadRotator.Net2.dll" />
+    <Content Include="RadControls\RadSpell.NET2.dll" />
+    <Content Include="RadControls\RadSplitter.Net2.dll" />
+    <Content Include="RadControls\RadTabStrip.Net2.dll" />
+    <Content Include="RadControls\RadToolbar.Net2.dll" />
+    <Content Include="RadControls\RadTreeView.Net2.dll" />
+    <Content Include="RadControls\RadUpload.Net2.dll" />
+    <Content Include="RadControls\RadWindow.Net2.dll" />
+    <Content Include="RadControls\SessionDataSource.dll" />
+    <Content Include="RadControls\System.Web.Extensions.dll" />
+    <Content Include="RadControls\Telerik.QuickStart.dll" />
+    <Content Include="VideoStreaming\ASPNetAudio.NET2.AJAX.dll" />
+    <Content Include="VideoStreaming\ASPNetFlash.NET2.AJAX.dll" />
+    <Content Include="VideoStreaming\ASPNetFlashVideo.NET2.AJAX.dll" />
+    <Content Include="VideoStreaming\ASPNetMediaGUI.NET2.dll" />
+    <Content Include="VideoStreaming\ASPNetToolTip.NET2.dll" />
+    <Content Include="VideoStreaming\ASPNetVideo.NET2.AJAX.dll" />
+    <Content Include="VideoStreaming\README.txt" />
+    <Content Include="VideoStreaming\System.Web.Extensions.dll" />
+    <Content Include="Video\JW-FLV-Player-Control.dll" />
+    <Content Include="Video\Media-Player-ASP.NET-Control.dll" />
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\net.interfax.ws\dfs.disco" />
+    <None Include="Web References\net.interfax.ws\dfs.wsdl" />
+    <None Include="Web References\net.interfax.ws\FaxItem.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\net.interfax.ws\FaxItemEx.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\net.interfax.ws\FaxQueryResult.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\net.interfax.ws\ListPPResult.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\net.interfax.ws\PPCardResult.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\net.interfax.ws\PPCardTransactions.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\net.interfax.ws\PPCardTrasnactionsByteArray.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\net.interfax.ws\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferenceUrl Include="http://ws.interfax.net/dfs.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\net.interfax.ws\</RelPath>
+      <UpdateFromURL>http://ws.interfax.net/dfs.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>Restaurant_Library_Utilities_net_interfax_ws_InterFax</CachedSettingsPropName>
+    </WebReferenceUrl>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Restaurant.Library.Entities\Restaurant.Library.Entities.csproj">
+      <Project>{8DABA69A-6EFD-49C6-8D26-DE56AFF9C4B6}</Project>
+      <Name>Restaurant.Library.Entities</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="BarCode\" />
+    <Folder Include="ExportFile\Excel\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
