@@ -1,0 +1,30 @@
+SCC = This is a Source Code Control file.
+
+[RDW.sln]
+SCC_Aux_Path = srv-2:8877:VSS
+SCC_Project_Name = $/RDW/RDW
+
+[RDW.Library.Common.csproj]
+SCC_Aux_Path = srv-2:8877:VSS
+SCC_Project_Name = $/RDW/Library/Common
+
+[RDW.RAS.csproj]
+SCC_Aux_Path = srv-2:8877:VSS
+SCC_Project_Name = $/RDW/RAS
+
+[RDW.Library.Services.csproj]
+SCC_Aux_Path = srv-2:8877:VSS
+SCC_Project_Name = $/RDW/RDW.Library.Services
+
+[RDW.Modules.Delivery.csproj]
+SCC_Aux_Path = srv-2:8877:VSS
+SCC_Project_Name = $/RDW/RDW.Modules.Delivery
+
+[RDW.Services.csproj]
+SCC_Aux_Path = srv-2:8877:VSS
+SCC_Project_Name = $/RDW/RDW.Services.PayPalServices
+
+[RDW.Website.csproj]
+SCC_Aux_Path = srv-2:8877:VSS
+SCC_Project_Name = $/RDW/Website
+
