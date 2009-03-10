@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<PageConfig>
+  <Page Key="Delivery" Value="~/Delivery/UserControls/Common/Home.ascx" />
+  <Page Key="ChooseCity" Value="~/Delivery/UserControls/Common/ChooseCity.ascx" />
+  <Page Key="Filter" Value="~/Delivery/UserControls/Restaurant/Filter.ascx" />
+  <Page Key="DeliverySearch" Value="~/Delivery/UserControls/Restaurant/DeliverySearch.ascx" />
+  <Page Key="RestaurantDetail" Value="~/Delivery/UserControls/Restaurant/RestaurantDetail .ascx" />
+  <Page Key="Login" Value="~/Delivery/UserControls/Restaurant/Login.ascx" />
+  <Page Key="Logout" Value="~/Delivery/UserControls/Restaurant/Logout.ascx" />
+  <Page Key="Restaurant" Value="~/Delivery/UserControls/Restaurant/Restaurant.ascx" />
+  <Page Key="MenuItem" Value="~/Delivery/UserControls/Restaurant/MenuItem.ascx" />
+  <Page Key="AddOn" Value="~/Delivery/UserControls/Restaurant/AddOn.ascx" />
+
+  <Page Key="Register" Value="~/Delivery/UserControls/Restaurant/Registration/Register.ascx" />
+  <Page Key="Successfull" Value="~/Delivery/UserControls/Restaurant/Registration/Successfull.ascx" />
+    
+    
+</PageConfig>

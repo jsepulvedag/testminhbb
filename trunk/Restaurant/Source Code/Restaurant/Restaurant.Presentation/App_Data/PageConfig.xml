@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<PageConfig>
+	<Page Key="Home" Value ="~/Home/UserControls/Home.ascx"/>
+	<Page Key="Login" Value ="~/Home/UserControls/Login.ascx"/>
+	<Page Key="Logout" Value="~/Home/UserControls/Logout.ascx" />
+
+	<Page Key="TermOfUse" Value="~/Home/Member/Registration/TermOfUse.ascx"/>
+	<Page Key="MemberRegistration" Value="~/Home/Member/Registration/Register.ascx"/>
+	<Page Key="MemberRegistrationSuccessfull" Value="~/Home/Member/Registration/Successfull.ascx"/>
+	<Page Key="MemberRegistrationActivateAccount" Value="~/Home/Member/Registration/ActiveAccount.ascx"/>
+	<Page Key="MemberRegistrationActivateAccountByActivate" Value="~/Home/Member/Registration/ActiveAccountByActivate.ascx"/>
+	<Page Key="MemberCreateReview" Value="~/Home/Member/Review/CreateReview.ascx" />
+	<Page Key="MemberEditReview" Value="~/Home/Member/Review/EditReview.ascx" />
+	<Page Key="MemberReceiveReview" Value="~/Home/Member/Review/ReceiveURL.ascx" />	
+	<Page Key="ListPhoto" Value="~/Home/Member/Photo/ListPhoto.ascx" />
+	<Page Key="PhotoDetail" Value="~/Home/Member/Photo/PhotoDetail.ascx" />
+
+  <Page Key="Video" Value="~/Home/Member/Video/Video.ascx" />
+
+	<Page Key="RecommendFriend" Value="~/Home/Restaurant/RecommendToFriend/SendRecommend.ascx" />
+	<Page Key="ContactRestaurant" Value="~/Home/Restaurant/ContactRestaurant/SendContact.ascx" />
+	<Page Key="ListReview" Value="~/Home/Restaurant/Review/ListReview.ascx" />
+	<Page Key="ReviewDetail" Value="~/Home/Restaurant/Review/ReviewDetail.ascx" />
+	<Page Key="LoginForPurchase" Value="~/Home/Restaurant/UserControls/LoginForPurchase.ascx" />
+	<Page Key="RestaurantChoosePackage" Value="~/Home/Restaurant/Registration/RegistrationForRestaurant/ChoosePackage.ascx" />
+	<Page Key="RestaurantInformation" Value="~/Home/Restaurant/Registration/RegistrationForRestaurant/RestaurantInformation.ascx" />
+	<Page Key="RestaurantPurchasePackage" Value="~/Home/Restaurant/Registration/RegistrationForRestaurant/Purchase.ascx" />
+	<Page Key="RestaurantContact" Value="~/Home/Restaurant/Registration/RegistrationForRestaurant/RestaurantContact.ascx" />
+	<Page Key="ThankyouForRegistry" Value="~/Home/Restaurant/Registration/RegistrationForRestaurant/ThankYouForRegistration.ascx" />
+	<Page Key="InstanceGift" Value="~/Home/Restaurant/GiftCertificates/InstanceGift.ascx" />
+	<Page Key="PurchaseGift" Value="~/Home/Restaurant/GiftCertificates/PurchaseGift.ascx" />
+	<Page Key="ThankyouForUseGift" Value="~/Home/Restaurant/GiftCertificates/ThankYouForUseMyGiftService.ascx" />
+	<Page Key="ListRestaurant" Value="~/Home/Restaurant/ListRestaurant/ListRestaurant.ascx" />
+	<Page Key="RestaurantDetail" Value="~/Home/Restaurant/RestaurantDetail/RestaurantDetail.ascx" />
+	<Page Key="InstanceReservation" Value="~/Home/Restaurant/OnlineReservation/InstanceReservation.ascx" />
+	<Page Key="ProcessReservation" Value="~/Home/Restaurant/OnlineReservation/ProcessReservation.ascx" />
+	<Page Key="ThankyouForUseReservation" Value="~/Home/Restaurant/OnlineReservation/ThankYouForReservation.ascx" />
+	<Page Key="PrintGift" Value="~/Management/Member/GiftCertificates/PrintGift.ascx" />
+
+	<Page Key="Menu" Value="~/Home/Restaurant/Menu/Menu.ascx" />
+	<Page Key="MenuItem" Value="~/Home/Restaurant/Menu/MenuItem.ascx" />
+
+  <Page Key="Invite" Value="~/Home/Restaurant/Invite.ascx" />
+  <Page Key="LinkToUs" Value="~/Home/Restaurant/LinkToUs.ascx" />
+</PageConfig>

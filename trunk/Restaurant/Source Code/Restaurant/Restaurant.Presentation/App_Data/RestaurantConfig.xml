@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<PageConfig>
+	<Page Key="CreateReview" Value="~/Management/Restaurant/Review/CreateReview.ascx" />
+	<Page Key="EditReview" Value="~/Management/Restaurant/Review/EditReview.ascx" />
+	<Page Key="ReviewManagement" Value="~/Management/Restaurant/Review/ReviewManagement.ascx" />
+	<Page Key="RestaurantProfile" Value="~/Management/Restaurant/Profile/ProfileManagement.ascx" />
+	<Page Key="MemberReview" Value="~/Management/Member/Review/MemberListReview.ascx"/>
+  
+	<Page Key="PhotoManagement" Value="~/Management/Restaurant/Photo/PhotoManagement.ascx" />
+	<Page Key="EditPhoto" Value="~/Management/Restaurant/Photo/EditPhoto.ascx" />
+	<Page Key="AddPhoto" Value="~/Management/Restaurant/Photo/AddPhoto.ascx" />
+
+  <Page Key="VideoManagement" Value="~/Management/Restaurant/Video/VideoManagement.ascx" />
+
+	<Page Key="MyGift" Value="~/Management/Member/GiftCertificates/MyGift.ascx" />
+	<Page Key="GiftParameter" Value="~/Management/Restaurant/GiftCertificates/GiftParameter.ascx" />
+	<Page Key="GiftPurchaseManagement" Value="~/Management/Restaurant/GiftCertificates/GiftPurchaseManagement.ascx" />
+	<Page Key="Profile" Value="~/Management/Member/Profile/ProfileManagement.ascx"/>
+	<Page Key="ChangePassword" Value="~/Management/Member/Profile/ChangePassword.ascx" />
+
+	<Page Key="MyReservation" Value="~/Management/Member/Reservation/MyReservation.ascx"/>
+	<Page Key="ReservationManagement" Value="~/Management/Restaurant/Reservation/ReservationManagement.ascx" />
+	<Page Key="SettingService" Value="~/Management/Restaurant/Profile/SettingService.ascx" />
+	
+	<Page Key="MenuItem" Value="~/Management/Restaurant/Menu/MenuItem.ascx"/>
+	<Page Key="MenuCategory" Value="~/Management/Restaurant/Menu/MenuCategory.ascx"/>
+	<Page Key="Addon" Value="~/Management/Restaurant/Menu/Addon.ascx"/>
+	<Page Key="AddMenuCategory" Value="~/Management/Restaurant/Menu/AddMenuCategory.ascx"/>
+	<Page Key="Renew" Value="~/Management/Restaurant/Renew/Renew.ascx" />
+	<Page Key="ChoosePackage" Value="~/Management/Restaurant/Renew/ChoosePackage.ascx" />
+	<Page Key="PurchasePackage" Value="~/Management/Restaurant/Renew/PurchasePackage.ascx" />
+	<Page Key="ThankForRenew" Value="/Management/Restaurant/Renew/ThankForRenew.ascx" />
+	<Page Key="YourRestaurant" Value="~/Management/Restaurant/Renew/YourRestaurant.ascx" />
+
+	<Page Key="OrderParam" Value="~/Management/Restaurant/Order/OrderParameter.ascx" />
+	<Page Key="BusinessAccount" Value="~/Management/Restaurant/Profile/BussinessAccountPaypal.ascx" />
+	<Page Key="TransactionHistory" Value="~/Management/Member/Transaction/HistoryTransaction.ascx" />
+	<Page Key="FavouriteRestaurant" Value="~/Management/Member/FavouriteRestaurant/YourFavouriteRestaurant.ascx"/>
+	<Page Key="BlockRestaurant" Value="~/Management/Restaurant/UserControls/BlockRestaurant.ascx" />
+	<Page Key="UnderContruction" Value="~/Management/UserControls/UnderContruction.ascx"/>
+</PageConfig>
