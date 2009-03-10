@@ -1,0 +1,8 @@
+﻿ERROR: Unable to parse project file Restaurant.Presentation.csproj.
+
+=========================COMMENTS=================
+Project Restaurant.Presentation.csproj has been converted successfully at March 05 2009, 13:11:54.
+ERROR: Unable to parse project file Restaurant.Presentation.csproj.
+
+=========================COMMENTS=================
+Project Restaurant.Presentation.csproj has been converted successfully at March 05 2009, 13:22:54.
