@@ -1,0 +1,1556 @@
+﻿/* CSS Document */
+Body
+{
+	background: #F0F0EE;
+	font-size: 10pt;
+	font-style: normal;
+	font-family: Times New Roman,HelveticaNeueLT Std, Arial;
+}
+
+.Title
+{
+	width: 100%;
+	background-color: #D12222;
+	color: white;
+	font-size: 14px;
+	padding: 5px;
+	font-weight: bold;
+	border-top: solid 1px black;
+	border-bottom: solid 1px black;
+}
+
+.MainTitle
+{
+	width: 100%;
+	text-align: center;
+	background-color: #F8F9C1;
+	height: 50px;
+	font-weight: bold;
+	font-size: 16pt;
+}
+#divMain
+{
+	width: 900px;
+	margin: auto;
+}
+
+
+
+.cityList
+{
+	background: transparent url(../../Media/Delivery/trans-white2.png) repeat scroll 0 0;
+	border: 0 none;
+	margin: 0 auto;
+	overflow: hidden;
+	padding: 10px;
+	width: 540px;
+}
+
+
+
+
+
+.colorA
+{
+	font-size: 17px;
+	color: #00cc00;
+	text-decoration: underline;
+}
+.footer
+{
+	width: 100%;
+	height: 50px;
+	margin: 0 auto; /*text-align:left;*/
+	text-align: center !important;
+}
+#footer ul
+{
+	margin: 0 auto;
+	list-style: none;
+	line-height: normal;
+	padding-left: 0px;
+	text-align: center;
+}
+#footer li
+{
+	font-size: 13px;
+	float: inherit;
+	display: inline;
+	border-left: 1px solid black;
+	padding: 0 6px;
+	line-height: 1em;
+}
+
+#footer li.init
+{
+	border-left: 0;
+	padding: 0 6px 0 0;
+}
+#header_delivery
+{
+	width: 869px;
+	margin: 0 auto;
+}
+.header_delivery
+{
+	width: 869px;
+	float: left;
+}
+
+.delivery_logo
+{
+	width: 291px;
+	float: left;
+}
+.delivery_right
+{
+	width: 578px;
+	height: 114px;
+	float: right;
+}
+.delivery_link a:link
+{
+	text-decoration: none;
+	color: #666666;
+}
+.delivery_link a:visited
+{
+	text-decoration: none;
+	color: #666666;
+}
+.delivery_link a:hover
+{
+	text-decoration: none;
+	color: #333333;
+}
+.delivery_link
+{
+	text-align: right;
+	color: #000000;
+	padding-right: 5px;
+	font-size: 11px;
+	padding-bottom: 20px;
+	vertical-align: bottom;
+}
+.delivery_order
+{
+	text-align: right;
+	padding-right: 5px;
+	vertical-align: bottom;
+}
+.delivery_header_left
+{
+	width: 10px;
+	height: 36px;
+	background-image: url(../../Media/Delivery/search_r1_c2.jpg);
+	background-repeat: no-repeat;
+	float: left;
+}
+.delivery_header_right
+{
+	width: 14px;
+	height: 36px;
+	background-image: url(../../Media/Delivery/search_r1_c5.jpg);
+	background-repeat: no-repeat;
+	float: right;
+}
+.delivery_header_center
+{
+	width: 845px;
+	background-image: url(../../Media/Delivery/search_r1_c3.jpg);
+	background-repeat: repeat-x;
+	float: left;
+	height: 36px;
+}
+.delivery_checkOut
+{
+	margin-top: 8px;
+	text-align: right;
+	color: #333333;
+}
+/*Center*/
+/* CSS Document */
+#page_delivery_center
+{
+	width: 869px;
+	margin: 0 auto;
+}
+.page_delivery_center
+{
+	width: 869px;
+	float: left;
+}
+.page_delivery_header
+{
+	width: 849px;
+	height: 46px;
+	background-image: url(../../Media/Delivery/headerCenter.jpg);
+	background-repeat: no-repeat;
+	float: left;
+	padding-top: 20px;
+	padding-left: 10px;
+	padding-right: 10px;
+	font-size: 20px;
+}
+.page_delivery_content
+{
+	width: 869px;
+	float: left;
+}
+.page_delivery_bg
+{
+	width: 869px;
+	background-image: url(../../Media/Delivery/centerDelivery.png);
+	background-repeat: repeat-y;
+	padding-left: 10px;
+	padding-right: 10px;
+	float: left;
+}
+.page_delivery_footer
+{
+	width: 869px;
+	height: 12px;
+	background-image: url(../../Media/Delivery/footerDelivery.png);
+	float: left;
+	background-repeat: no-repeat;
+}
+.hr
+{
+	width: 869px;
+	float: left;
+	text-align: center;
+}
+/*Footer*/
+#page_delivery_footer
+{
+	margin: 4em auto;
+	width: 50em;
+	text-align: center;
+}
+#page_delivery_footer ul
+{
+	list-style-type: none;
+	margin: 0 0 .3em 0;
+	font-size: 12px;
+}
+#page_delivery_footer ul li
+{
+	display: inline;
+}
+
+#page_delivery_footer ul.legal
+{
+	margin-top: .7em;
+	font-size: .9em;
+}
+#page_delivery_footer a:link
+{
+	text-decoration: none;
+	color: #666666;
+}
+#page_delivery_footer a:visited
+{
+	text-decoration: none;
+	color: #666666;
+}
+#page_delivery_footer a:hover
+{
+	text-decoration: none;
+	color: #333333;
+}
+
+
+
+.tableS
+{
+	width: 849px;
+	float: left;
+	margin-top: 10px;
+}
+.searchS
+{
+	width: 849px;
+	color: #FFFFFF;
+	float: left;
+	padding-bottom: 4px;
+}
+.labelSearch
+{
+	width: 400px;
+	color: Black;
+	float: left;
+	text-align: right;
+	margin-top: 4px;
+	font-size: 18px;
+}
+.controlSearch
+{
+	width: 430px;
+	float: right;
+}
+
+
+/*Delivery*/
+.pageResultByCuisineMainTable
+{
+	width: 640px;
+	height: 43px;
+	float: left;
+}
+.pageResultByCuisineMainName
+{
+	width: 208px;
+	height: 33px;
+	float: left;
+	text-align: left;
+	padding-left: 10px;
+	color: #9aa5bd;
+	font-weight: bold;
+	font-size: 12px;
+}
+.pageResultByCuisineMainNameTitle
+{
+	width: 208px;
+	height: 33px;
+	float: left;
+	text-align: left;
+	padding-left: 10px;
+	padding-top: 10px;
+	color: #9aa5bd;
+	font-weight: bold;
+	font-size: 12px;
+}
+.pageResultByCuisineMainNeighborhood
+{
+	width: 100px;
+	height: 33px;
+	float: left;
+	padding-top: 10px;
+	font-weight: bold;
+	font-size: 12px;
+	color: #b59aa1;
+	text-align: left;
+}
+.pageResultByCuisineMainNeighborhoodContent
+{
+	width: 100px;
+	height: 33px;
+	float: left;
+	padding-top: 10px;
+	font-size: 11px;
+	text-align: left;
+}
+.pageResultByCuisineMainScore
+{
+	width: 50px;
+	height: 33px;
+	float: left;
+	font-weight: bold;
+	font-size: 12px;
+	color: Black;
+	text-align: left;
+}
+.pageResultByCuisineMainScoreTitle
+{
+	width: 50px;
+	height: 33px;
+	float: left;
+	font-weight: bold;
+	font-size: 12px;
+	color: Black;
+	text-align: left;
+	padding-top: 10px;
+}
+.pageResultByCuisineMainScoreNumber
+{
+	width: 50px;
+	height: 33px;
+	float: left;
+	font-weight: bold;
+	font-size: 18px;
+	text-align: left;
+}
+.pageResultByCuisineMainPrice
+{
+	width: 50px;
+	height: 33px;
+	float: left;
+	padding-top: 10px;
+	font-weight: bold;
+	text-align: left;
+	font-size: 12px;
+	color: Black;
+}
+.pageResultByCuisineMainPriceContent
+{
+	width: 50px;
+	height: 33px;
+	float: left;
+	font-weight: bold;
+	text-align: left;
+	font-size: 12px;
+	color: #b59aa1;
+}
+.pageResultByCuisineMainAddress
+{
+	width: 619px;
+	height: auto;
+	float: left;
+	padding-left: 10px;
+}
+.address1
+{
+	width: 200px;
+	height: 25px;
+	padding-left: 10px;
+}
+.hr
+{
+	width: 630px;
+	height: auto;
+	float: left;
+}
+.red_square
+{
+	height: 45px;
+	width: 45px;
+	color: #FFFFFF;
+	font-weight: bold;
+	background-color: #A8100F;
+	padding: 3px;
+}
+.address a:link
+{
+	text-decoration: none;
+	color: Gray;
+}
+.address a:visited
+{
+	text-decoration: none;
+	color: Maroon;
+}
+.address a:hover
+{
+	text-decoration: none;
+	color: #333333;
+}
+.address
+{
+	width: 218px;
+	float: left;
+}
+/*Menu*/
+
+#menuMainRestaurant
+{
+	width: 640px;
+	height: auto;
+	margin: 0 auto;
+}
+
+#menuMainRestaurant .menuMainRestaurantTitle
+{
+	width: 640px;
+	height: 98px;
+}
+#menuMainRestaurant .menuMainRestaurantTitle_left
+{
+	width: 79px;
+	height: 88px;
+	padding-top: 10px;
+	float: left;
+}
+#menuMainRestaurant .menuMainRestaurantTitle_right
+{
+	width: 79px;
+	height: 73px;
+	padding-top: 25px;
+	float: left;
+	font-size: 24px;
+	font-weight: bold;
+}
+#menuMainRestaurant .menuMainRestaurantTitle_print
+{
+	height: 73px;
+	width: 150px;
+	float: right;
+	padding-top: 25px;
+}
+#menuMainRestaurant .menuMainRestaurantTitle_printPDF
+{
+	height: 30px;
+	width: 75px;
+	float: left;
+}
+.menuMainRestaurantContent
+{
+	width: 600px;
+	height: auto;
+}
+.menuLeftContent
+{
+	width: 360px;
+	height: auto;
+	text-align: center;
+	font-size: 18px;
+	font-weight: bold;
+	vertical-align: bottom;
+}
+.menuRightContent
+{
+	width: 240px;
+	height: auto;
+	text-align: center;
+}
+.menuDescription
+{
+	width: 355px;
+	height: auto;
+	padding-left: 5px;
+	text-align: center;
+}
+.menuItemDescription
+{
+	width: 355px;
+	height: auto;
+	padding-left: 5px;
+	text-align: left;
+}
+.menuPrice
+{
+	text-align: center;
+	width: 48px;
+}
+.menuItemContent
+{
+	width: 355px;
+	font-size: 14px;
+	font-weight: bold;
+	padding-left: 5px;
+	text-align: left;
+}
+.menuOrder a:link
+{
+	text-decoration: none;
+	color: Green;
+}
+.menuOrder a:visited
+{
+	text-decoration: none;
+	color: Green;
+}
+.menuOrder a:hover
+{
+	text-decoration: none;
+	color: Maroon;
+}
+.menuOrder
+{
+	text-align: center;
+	width: 48px;
+}
+/*Right Menu*/
+#pageRight
+{
+	width: 191px;
+	height: auto;
+	background-color: #333333;
+	float: right;
+}
+#pageRight .page_right_button
+{
+	width: 173px;
+	height: 31px;
+}
+#pageRight .page_right_main_link
+{
+	width: 191px;
+	height: 175px;
+	padding-top: 25px;
+	text-align: left;
+}
+#pageRight .page_right_link
+{
+	width: 184px;
+	height: 25px;
+	float: left;
+	padding-left: 7px;
+	text-align: left;
+}
+#pageRight .page_right_hr
+{
+	width: 176px;
+	height: 13px;
+	float: left;
+	padding-left: 15px;
+	text-align: left;
+}
+#pageRight .page_right_ads1
+{
+	width: 176px;
+	height: 212px;
+	margin: auto;
+	padding-left: 15px;
+	padding-top: 30px;
+}
+#pageRight .page_right_ads2
+{
+	width: 191px;
+	height: 500px;
+	float: left;
+	text-align: center;
+}
+#pageRight .page_right_main_cb
+{
+	width: 191px;
+	height: 207px;
+	margin: auto;
+	text-align: left;
+}
+#pageRight .page_right_main_cb_box
+{
+	width: 161px;
+	height: auto;
+	margin: 0 auto;
+	padding-top: 27px;
+	text-align: left;
+}
+#pageRight .page_right_main_cb_box1
+{
+	width: 161px;
+	height: 25px;
+	float: left;
+	text-align: center;
+	color: #FFFFFF;
+	text-transform: uppercase;
+	padding-left: 30px; /*add by Hong*/
+}
+#pageRight .page_right_main_cb_box2
+{
+	width: 161px;
+	height: 30px;
+	float: left;
+	text-align: left;
+	color: #FFFFFF;
+	text-align: left;
+	padding-left: 20px;
+}
+
+#pageRight .page_right_main_cb_box3
+{
+	width: 161px;
+	height: 30px;
+	text-align: right;
+	margin-bottom: 15px;
+	float: left;
+}
+/*Delivery Browse Restaurant*/
+/* CSS Document */
+
+#delivery_homeSearch
+{
+	width: 869px;
+	margin: 0 auto;
+}
+.delivery_homeSearch
+{
+	width: 869px;
+}
+.homeSearch_left
+{
+	width: 214px;
+	float: left;
+}
+.homeSearch_right
+{
+	width: 650px;
+	float: right;
+}
+.homeDeliveryHeader
+{
+	width: 837px;
+	background-image: url(../../Media/Delivery/admincenter.gif);
+	background-repeat: repeat-x;
+	height: 46px;
+	padding-top: 20px;
+	padding-left: 5px;
+	padding-right: 5px;
+	text-align: center;
+	font-weight: bold;
+}
+.homeDeliveryLeft
+{
+	background-image: url(../../Media/Delivery/adminleft.gif);
+	background-repeat: no-repeat;
+	height: 46px;
+}
+.homeSearch_right_header /*, .homeSearch_right_header_sponsor*/
+{
+	width: 640px;
+	background-image: url(../../Media/Delivery/header_delivery.png);
+	background-repeat: no-repeat;
+	height: 46px;
+	padding-top: 20px;
+	padding-left: 5px;
+	float: left;
+	padding-right: 5px;
+	text-align: center;
+	font-weight: bold;
+}
+.homeSearch_right_header_sponsor
+{
+	background-image: url(../../Media/Delivery/header_delivery_sponsor.png);
+	width: 640px;
+	background-repeat: no-repeat;
+	height: 46px;
+	padding-top: 10px;
+	padding-left: 5px;
+	float: right;
+	padding-right: 5px;
+	font-weight: bold;
+}
+
+.homeDelivery
+{
+	width: 869px;
+	background-image: url(../../Media/Delivery/centerDeliveryHomeSearch.png);
+	background-repeat: repeat-y;
+	padding-left: 10px;
+	padding-right: 10px;
+	float: left;
+}
+.homeSearch_right_center, .homeSearch_right_center_sponsor
+{
+	width: 630px;
+	background-image: url(../../Media/Delivery/centerDeliveryHomeSearch.png);
+	background-repeat: repeat-y;
+	padding-left: 10px;
+	padding-right: 10px;
+	float: left;
+}
+.homeSearch_right_center_sponsor
+{
+	background-image: url(../../Media/Delivery/centerDeliveryHomeSearch_sponsor.png);
+}
+.homeSearch_right_footer, .homeSearch_right_footer_sponsor
+{
+	width: 650px;
+	height: 14px;
+	background-image: url(../../Media/Delivery/footerDeliveryHomeSearch.png);
+	background-repeat: no-repeat;
+	float: left;
+}
+.homeSearch_right_footer_sponsor
+{
+	background-image: url(../../Media/Delivery/footerDeliveryHomeSearch.png);
+}
+.homeSearch_left_header
+{
+	width: 210px;
+	background-image: url(../../Media/Delivery/searchHeader.png);
+	height: 46px;
+	background-repeat: no-repeat;
+	padding-top: 20px;
+	padding-left: 2px;
+	float: left;
+	text-align: center;
+	font-weight: bold;
+	padding-right: 2px;
+}
+.homeSearch_left_center
+{
+	width: 210px;
+	background-image: url(../../Media/Delivery/searchCenter.png);
+	background-repeat: repeat-y;
+	padding-left: 2px;
+	padding-right: 2px;
+	float: left;
+}
+.homeSearch_left_footer
+{
+	width: 214px;
+	background-image: url(../../Media/Delivery/searchFooter.png);
+	height: 14px;
+	background-repeat: no-repeat;
+	float: left;
+}
+.homeSearch_left_Cuisine
+{
+	/*background-color:#EBEBEB; color:#666666;*/
+	width: 200px;
+	background-color: #EBEBEB; /*#c8c8c8;*/
+	color: #333333;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+.homeSearch_left_Item
+{
+	width: 204px;
+	color: #3399FF;
+	padding-left: 15px;
+	padding-right: 5px;
+	font-size: 11px;
+}
+.SelectCuisine
+{
+	visibility: visible;
+}
+
+
+a
+{
+	color: #336699;
+	text-decoration: none;
+	outline: none;
+}
+
+a:hover
+{
+	text-decoration: underline;
+}
+
+a span.extra
+{
+	display: -moz-inline-block;
+	display: -moz-inline-box;
+	display: inline-block;
+	width: 9px;
+	height: 1em;
+	vertical-align: middle;
+}
+.cuisine_cell
+{
+	width: 100px;
+	float: left;
+	text-align: left;
+}
+.perpage
+{
+	width: 140px;
+	height: 25px;
+	float: right;
+	padding-right: 30px;
+}
+/*Left Menu*/
+#menu_page
+{
+	width: 193px;
+}
+.menu_page
+{
+	width: 193px;
+	float: left;
+}
+.menu_page_blast
+{
+	width: 183px;
+	height: 29px;
+	background-image: url(../../Media/Delivery/menuLeftHeader.png);
+	color: #ffca2c;
+	font-size: 24px;
+	font-weight: bold;
+	padding-top: 10px;
+	padding-left: 10px;
+	float: left;
+}
+
+.menu_page_content a:link
+{
+	text-decoration: none;
+	color: #336699;
+}
+.menu_page_content a:visited
+{
+	text-decoration: none;
+	color: RED;
+}
+.menu_page_content a:hover
+{
+	text-decoration: none;
+	color: RED;
+}
+.menu_page_content
+{
+	width: 191px; /*padding-left:10px;*/
+	background-image: url(../../Media/Delivery/centerMenu.jpg);
+	float: left;
+	padding-left: 1px;
+	padding-right: 1px;
+	font-size: 15px;
+	font-weight: bold;
+}
+.menu_left_css
+{
+	width: 183px;
+	float: left;
+}
+
+.menu_left_page_footer
+{
+	width: 193px;
+	float: left;
+	background-image: url(../../Media/Delivery/menuLeftFooter.png);
+	height: 12px;
+}
+
+
+/*Menu Center*/
+/*#menu_page_center
+{
+	width:393px;
+	margin:0 auto;
+}
+.menu_page_center
+{
+	width:383px;
+	float:left;
+	
+}
+.menu_page_header
+{
+	width:383px;
+	height:29px;
+	background-image:url(../../Media/Delivery/menuHeader.jpg);
+	background-repeat:no-repeat;
+	float:left;
+	padding-top:10px;
+	padding-left:10px;
+	color:#FF0000;
+	font-size:24px;
+	font-weight:bold;
+}
+.menu_page_center_content
+{
+	width:383px;
+	float:left;
+	background-image:url(../../Media/Delivery/menucenter1.jpg);
+	background-repeat:repeat-y;
+	padding-left:10px;
+}
+*/
+/* CSS Document */
+#page_delivery_menu
+{
+	width: 393px;
+	margin: 0 auto;
+}
+.page_delivery_menu
+{
+	width: 393px;
+	float: left;
+}
+.page_delivery_center_header
+{
+	width: 383px;
+	float: left;
+	padding-left: 10px;
+	padding-top: 10px;
+	background-image: url(../../Media/Delivery/menuCenterHeader.png);
+	background-repeat: no-repeat;
+	color: #996600;
+	font-size: 20px;
+	font-weight: bold;
+}
+.page_delivery_center_center
+{
+	width: 378px;
+	float: left;
+	background-image: url(../../Media/Delivery/menuCenter.png);
+	background-repeat: repeat-y;
+	padding-left: 10px;
+	padding-right: 5px;
+}
+.page_delivery_center_footer
+{
+	width: 393px;
+	height: 11px;
+	background-image: url(../../Media/Delivery/menuCenterFooter.png);
+	float: left;
+	background-repeat: no-repeat;
+}
+.page_delivery_menu_name
+{
+	width: 300px;
+	float: left;
+}
+.menuItemPrice
+{
+	width: 68px;
+	float: right;
+	text-align: right;
+	font-weight: bold;
+	padding-right: 5px;
+}
+.page_delivery_menu_Image
+{
+	width: 70px;
+	float: right;
+	padding-right: 5px;
+}
+/* CSS Document */
+
+#menu_page_center
+{
+	width: 393px;
+	margin: 0 auto;
+}
+.menu_page_center
+{
+	width: 383px;
+	float: left;
+}
+.menu_page_header
+{
+	width: 383px;
+	height: 29px;
+	background-image: url(../../Media/Delivery/menuCenterHeader.png);
+	background-repeat: no-repeat;
+	float: left;
+	padding-top: 10px;
+	padding-left: 10px;
+	color: #ffca2c;
+	font-size: 24px;
+	font-weight: bold;
+}
+.menu_page_center_content
+{
+	width: 383px;
+	float: left;
+	background-image: url(../../Media/Delivery/menuCenter.png);
+	background-repeat: repeat-y;
+	padding-left: 10px;
+}
+.menu_content
+{
+	width: 391px;
+	float: left;
+	background-image: url(../../Media/Delivery/menuCenter.png);
+	background-repeat: repeat-y;
+	padding-left: 2px;
+}
+.menu_delivery_content
+{
+	width: 393px;
+	float: left;
+}
+.menuText
+{
+	width: 300px;
+	float: left;
+}
+.menu_page_footer
+{
+	width: 393px;
+	height: 12px;
+	background-image: url(../../Media/Delivery/menuCenterFooter.png);
+	background-repeat: no-repeat;
+	float: left;
+}
+.menuName
+{
+	width: 300px;
+	float: left;
+	color: #393b09;
+	font-size: 16px;
+	font-weight: bold;
+}
+.menuImage
+{
+	width: 82px;
+	float: right;
+	padding-right: 5px;
+}
+.menuItemName
+{
+	width: 300px;
+	float: left;
+	color: #6e6442;
+}
+.menuItemPrice
+{
+	width: 78px;
+	float: right;
+	text-align: right;
+	font-weight: bold;
+	padding-right: 5px;
+}
+.menu_Description
+{
+	width: 280px;
+	padding-left: 10px;
+	padding-right: 10px;
+	float: left;
+}
+.menuItem_Description
+{
+	width: 363px;
+	color: #000000;
+	padding-left: 5px;
+}
+/*Delivery Menu*/
+#page_menu_delivery
+{
+	width: 869px;
+	margin: 0 auto;
+}
+.page_menu_delivery
+{
+	width: 869px;
+	float: left;
+}
+.page_delivery_menuLeft
+{
+	width: 193px;
+	float: left;
+	padding-right: 5px;
+}
+.page_delivery_menuCenter
+{
+	width: 393px;
+	padding-right: 5px;
+	float: left;
+}
+.page_delivey_menu_info
+{
+	width: 393px;
+	float: left;
+}
+.page_delivery_menuRight
+{
+	width: 273px;
+	float: right;
+}
+/*Delivery Card*/
+#page_order
+{
+	width: 273px;
+	float: left;
+}
+.page_order
+{
+	width: 273px;
+	float: left;
+}
+.order_header
+{
+	width: 253px;
+	height: 13px;
+	background-image: url(../../Media/Delivery/Order_header.jpg);
+	background-repeat: no-repeat;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+.order_center
+{
+	width: 253px;
+	background-image: url(../../Media/Delivery/Order_center.jpg);
+	background-repeat: repeat-y;
+	float: left;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+.order_footer
+{
+	width: 273px;
+	height: 10px;
+	background-image: url(../../Media/Delivery/Order_footer.jpg);
+	background-repeat: no-repeat;
+	float: left;
+}
+.my_order_blast
+{
+	width: 253px;
+	font-size: 18px;
+	font-weight: bold;
+}
+.my_order_text
+{
+	width: 253px;
+	float: left;
+}
+.my_order_text_left
+{
+	width: 253px;
+	float: left;
+}
+.my_order_quantity
+{
+	width: 58px;
+	float: left;
+	text-align: center;
+}
+.my_order_items
+{
+	width: 138px;
+	float: left;
+}
+
+.my_order_price
+{
+	width: 50px;
+	float: right;
+	text-align: left;
+}
+.my_order_digit
+{
+	width: 58px;
+	float: left;
+	text-align: center;
+}
+.my_order_items_text
+{
+	width: 138px;
+	float: left;
+	color: #0066CC;
+	font-size: 14px;
+	font-weight: bold;
+}
+.my_order_dots
+{
+	width: 138px;
+	float: left;
+}
+.my_order_remove
+{
+	width: 58px;
+	float: left;
+	text-align: center;
+	color: #0066CC;
+	font-size: 11px;
+}
+.my_order_total
+{
+	width: 195px;
+	float: left;
+	text-align: right;
+}
+.my_order_totals
+{
+	width: 195px;
+	float: left;
+	text-align: right;
+	font-size: 14px;
+	font-weight: bold;
+}
+.order_left_text
+{
+	width: 130px;
+	float: left;
+}
+.order_left_button
+{
+	width: 120px;
+	float: right;
+}
+
+/*
+Add to Card*/
+/* CSS Document */
+#delivery_card
+{
+	width: 393px;
+	margin: 0 auto;
+}
+.delivery_card
+{
+	width: 393px;
+	float: left;
+}
+.delivery_card_header
+{
+	width: 383px;
+	height: 28px;
+	background-image: url(../../Media/Delivery/menuHeader.png);
+	float: left;
+	background-repeat: no-repeat;
+	padding-top: 10px;
+	padding-left: 10px;
+	color: #ffca2c;
+	font-size: 20px;
+	font-weight: bold;
+}
+.delivery_card_center
+{
+	width: 373px;
+	padding-left: 10px;
+	padding-right: 10px;
+	float: left;
+	background-image: url(../../Media/Delivery/menucenter1.png);
+	background-repeat: repeat-y;
+}
+.delivery_card_footer
+{
+	width: 393px;
+	height: 11px;
+	background-image: url(../../Media/Delivery/menuFooter.png);
+	background-repeat: no-repeat;
+	float: left;
+}
+.delivery_card_MenuName
+{
+	color: #393b09;
+	font-size: 16px;
+	font-weight: bold;
+}
+.delivery_card_Description
+{
+	width: 368px;
+	float: left;
+	padding-left: 5px;
+	margin-bottom: 10px;
+}
+.delivery_card_relate
+{
+	width: 373px;
+	color: #000000;
+	font-size: 15px;
+	font-weight: bold;
+	float: left;
+}
+.delivery_card_relateItem
+{
+	width: 373px;
+	color: #000000;
+	float: left;
+}
+.delivery_card_quantity
+{
+	width: 150px;
+	float: left;
+}
+.delivery_card_AddCard
+{
+	width: 150px;
+	float: right;
+	text-align: right;
+}
+/*Registration delivery*/
+#page_delivery_registration
+{
+	width: 869px;
+	margin: 0 auto;
+}
+
+.page_delivery_registration
+{
+	width: 869px;
+	float: left;
+}
+.page_delivery_registration_left
+{
+	width: 590px;
+	float: left;
+}
+.page_delivery_registration_right
+{
+	width: 273px;
+	float: right;
+}
+
+
+#page_Registration_member
+{
+	width: 869px;
+}
+.page_Registration_member
+{
+	width: 869px;
+	float: left;
+}
+.page_Registration_member_header
+{
+	width: 859px;
+	height: 28px;
+	float: left;
+	background-image: url(../../Media/Delivery/DeliveryRegistration.png);
+	background-repeat: no-repeat;
+	padding-left: 10px;
+	padding-top: 10px;
+	color: #996600;
+	font-size: 20px;
+	font-weight: bold;
+}
+.page_Registration_member_center
+{
+	width: 864px;
+	float: left;
+	padding-left: 5px;
+	background-image: url(../../Media/Delivery/DelyveriRegistrationCenter.png);
+	background-repeat: repeat-y;
+}
+.page_Registration_member_footer
+{
+	width: 869px;
+	height: 11px;
+	float: left;
+	background-image: url(../../Media/Delivery/DeliveryRegistrationFooter.png);
+	background-repeat: no-repeat;
+}
+/* Billing*/
+
+#page_billing
+{
+	width: 585px;
+	margin: 0 auto;
+}
+.page_billing
+{
+	width: 585px;
+	float: left;
+}
+.page_billing_header
+{
+	width: 565px;
+	height: 46px;
+	float: left;
+	background-image: url(../../Media/Delivery/headerBilling.jpg);
+	background-repeat: no-repeat;
+	text-align: left;
+	padding-left: 10px;
+	font-size: 24px;
+	font-weight: bold;
+	padding-top: 20px;
+	padding-right: 10px;
+}
+.page_billing_center
+{
+	width: 575px;
+	float: left;
+	background-image: url(../../Media/Delivery/centerBilling.png);
+	background-repeat: repeat-y;
+	padding-left: 10px;
+}
+.page_billing_footer
+{
+	width: 585px;
+	height: 14px;
+	float: left;
+	background-image: url(../../Media/Delivery/footerBilling.png);
+	background-repeat: no-repeat;
+}
+.billing_center
+{
+	width: 575px;
+	float: left;
+}
+.billing_radio
+{
+	width: 565px;
+	float: left;
+	padding-left: 10px;
+}
+.billing_LogInInfo
+{
+	width: 545px;
+	padding-left: 20px;
+	float: left;
+	padding-bottom: 3px;
+}
+.billing_userName
+{
+	width: 130px;
+	float: left;
+	text-align: left;
+}
+.billing_password
+{
+	width: 200px;
+	float: left;
+	text-align: left;
+}
+.billing_blast
+{
+	width: 575px;
+	font-size: 20px;
+	font-weight: bold;
+	float: left;
+}
+.billing_dropdowlist
+{
+	width: 130px;
+	float: left;
+}
+/*DeliveryRestaurantInfo*/
+#RestaurantInfo_page
+{
+	width: 393px;
+	margin: 0 auto;
+}
+.RestaurantInfo_page
+{
+	width: 393px;
+	float: left;
+}
+.RestaurantInfo_page_header
+{
+	width: 373px;
+	height: 46px;
+	background-image: url(../../Media/Delivery/headerRestaurantInfo.jpg);
+	background-repeat: no-repeat;
+	float: left;
+	padding-left: 10px;
+	padding-top: 20px;
+	font-size: 24px;
+	font-weight: bold;
+	padding-right: 10px;
+}
+.RestaurantInfo_page_center
+{
+	width: 378px;
+	float: left;
+	background-image: url(../../Media/Delivery/centerRestaurantInfo.png);
+	background-repeat: repeat-y;
+	padding-left: 10px;
+	padding-right: 5px;
+}
+.Restaurant_page_content
+{
+	width: 378px;
+	float: left;
+}
+.Restaurant_page_image
+{
+	width: 100px;
+	height: 80px;
+	float: left;
+}
+.Restaurant_info_deitail
+{
+	width: 273px;
+	float: left;
+	padding-left: 5px;
+}
+.RestaurantInfo_page_footer
+{
+	width: 393px;
+	float: left;
+	background-image: url(../../Media/Delivery/footerRestaurantInfo.png);
+	background-repeat: no-repeat;
+	height: 11px;
+}
+
+
+
+.page_delivery_content
+{
+	width: 849px;
+	float: left;
+	padding-bottom: 3px;
+}
+.page_delivery_Left
+{
+	width: 410px;
+	float: left;
+	text-align: right;
+}
+.page_delivery_right
+{
+	width: 430px;
+	float: right;
+	text-align: left;
+}
+.fontred
+{
+	color: Red;
+	font-size: 11px;
+}

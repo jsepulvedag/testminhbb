@@ -1,0 +1,289 @@
+﻿*{margin:0px; padding:0px; font-family:Arial, Helvetica, sans-serif; font-size:13px; }
+
+.adminPage
+{
+	width:98%;
+	float:left;
+}
+.adminPage_left_header
+{
+	width:32px;
+	background-image:url(../Media/Delivery/adminleft.gif);
+	/*background-repeat:repeat-y;*/
+	height:46px;	
+	float:left;
+	text-align:left;
+}
+.adminPage_right_header
+{
+	width:32px;
+	background-image:url(../Media/Delivery/adminright.gif);
+	/*background-repeat:repeat-y;*/
+	height:46px;	
+	float:left;
+	text-align:left;
+}
+.adminPage_center_header
+{
+	width:94%;
+	background-image:url(../Media/Delivery/admincenter.gif);
+	background-repeat:repeat-x;
+	height:46px;	
+	float:left;
+	text-align:left;
+}
+.middle_left
+{
+	width:32px;
+	background-image:url(../Media/Images/middle_left.gif);
+	background-repeat:repeat-x;
+	height:13px;	
+	float:left;
+	text-align:left;
+}
+.middle_right
+{
+	width:32px;
+	background-image:url(../Media/Images/middle_right.gif);
+	background-repeat:repeat-y;
+	height:13px;	
+	float:left;
+	text-align:left;
+}
+.middle
+{
+	width:94%;
+	background-image:url(../Media/Images/admin_middle.gif);
+	background-repeat:repeat-x;
+	height:13px;	
+	float:left;
+	text-align:left;
+}
+.footer_left
+{
+	width:32px;
+	background-image:url(../Media/Images/botton_left.gif);
+	height:14px;	
+	float:left;
+	text-align:left;
+}
+.footer_right
+{
+	width:32px;
+	background-image:url(../Media/Images/botton_right.gif);
+	height:14px;	
+	float:left;
+	text-align:left;
+}
+.footer_middle
+{
+	width:94%;
+	background-image:url(../Media/Images/botton_center.gif);
+	background-repeat:repeat-x;
+	height:14px;	
+	float:left;
+	text-align:left;
+}
+.adminPage_right_headerA 
+{
+	width:98%;
+	background-image:url(../Media/Delivery/header_delivery.png);
+	background-repeat:no-repeat;
+	height:46px;
+	padding-top:20px;
+	padding-left:5px;
+	float:left;
+	padding-right:5px;
+	text-align:left;
+	font-weight:bold;
+}
+.adminPage_center
+{
+	width:1200px;
+	background-image:url(../../Media/Delivery/centerDeliveryHomeSearch.png);
+	background-repeat:repeat-y;
+	padding-left:10px;
+	padding-right:10px;
+	float:left;
+}
+.adminPage_right_footerA
+{
+	width:98%;
+	height:14px;
+	background-image:url(../../Media/Delivery/footerDeliveryHomeSearch.png);
+	background-repeat:no-repeat;
+	float:left;
+}
+
+
+
+
+/*
+
+
+
+.Button
+{
+	
+
+	background-image:url(../../../../Images/Admin/btn.jpg);
+	background-repeat:repeat-x;
+	background-position:left;
+	height:20px;
+	border:1px solid #333333;			
+	cursor:hand;
+}
+	
+
+.UserInputBox 
+{
+	margin:0 auto;
+}
+.blast
+{
+	color:White;
+	font-size:18px;
+	font-weight:bold;	
+}
+.text
+{
+	color:White;	
+}
+#page_package
+{
+	 margin:0 auto;
+	 width:600px;                                                                        
+}
+.page_pakage_content
+{
+	width:600px;
+	float:left;
+}
+.page_pakage_content_left
+{
+	width:200px;
+	float:left;
+	color:White;
+	
+}
+.page_pakage_content_right
+{
+	width:400px;
+	float:right;
+	color:White;
+	
+}
+.page_pakage_blast
+{
+	width:600px;
+	float:left;
+	text-align:center;
+	font-size:20px;
+	padding-bottom:20px;
+	color:White;
+}
+/*Restaurant Profile management
+
+.pageRestaurantRegistrationTitle
+{
+	width:859px;
+	height:30px;
+	font-size:24px;
+	float:left;
+	padding-top:10px;
+	color:#FF0000;
+	text-align:left;
+	padding-bottom:20px;
+}
+.pageRestaurantRegistrationError
+{
+	width:859px;
+	height:auto;
+	float:left;
+	padding-top:10px;
+	color:#FF0000;
+	text-align:left;
+}
+.pageRestaurantRegistrationSummary
+{
+	width:859px;
+	height:auto;
+	float:left;
+	padding-top:10px;
+	color:#FF0000;
+	font-size:18px;
+	text-align:left;
+}
+.pageRestaurantSummaryContent
+{
+	width:859px;
+	height:auto;
+	float:left;
+	color:#FFFFFF;
+	text-align:left;
+}
+ .pageRestaurantRegistrationCell
+{
+	width:859px;
+	height:auto;
+	float:left;
+	padding-top:5px;
+	color:#FFFFFF;
+}
+.pageRestaurantRegistrationLeft
+{
+	width:150px;
+	height:auto;
+	padding-top:5px;
+	float:left;
+	text-align:left;
+}
+.pageRestaurantRegistrationDescription
+{
+	width:650px;
+	height:auto;
+	padding-top:5px;
+	float:left;
+	text-align:left;
+}
+.pageRestaurantRegistrationCountry
+{
+	width:100px;
+	height:auto;
+	padding-top:5px;
+	float:left;
+	text-align:left;
+}
+ .pageRestaurantRegistrationNext
+{
+	width:130px;
+	height:auto;
+	padding-top:5px;
+	float:left;
+	text-align:left;
+	padding-left:20px;
+}
+.pageRestaurantRegistrationTextBox
+{
+	width:250px;
+	height:auto;
+	padding-top:5px;
+	float:left;
+	text-align:left;
+}
+ .pageRestaurantRegistrationImage
+{
+	width:700px;
+	height:auto;
+	padding-top:5px;
+	float:left;
+	text-align:left;
+}
+ .pageRestaurantRegistrationContent
+{
+	width:859px;
+	height:auto;
+	float:left;
+}
+
+*/

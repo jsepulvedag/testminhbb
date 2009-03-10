@@ -1,0 +1,205 @@
+﻿#page_restaurant_info
+{
+	width:451px;
+	height:auto;
+	background-color:#333333;
+	margin:0 auto;
+}
+#page_restaurant_info_header
+{
+	width:446px;
+	height:75px;
+	float:left;
+	padding-left:5px;
+	color:#FFFFFF;
+	margin-bottom:10px;
+}
+#page_restaurant_info_header .restaurant_info
+{
+	width:446px;
+	height:25px;
+}
+#page_restaurant_info_header .restaurant_info_left
+{
+	width:223px; 
+	height:25px;
+	float:left;
+}
+#page_restaurant_info_header .restaurant_info_right
+{
+	width:223px;
+	height:25px;
+	float:right;
+	text-align:right;
+}
+
+#page_restaurant_info_center
+{
+	width:451px;
+	height:auto;
+	background-image:url(~/Media/Images/restaurant_info4_r2_c2.jpg);
+	background-repeat:repeat;
+	float:left;
+	margin-bottom:20px;
+}
+#page_restaurant_info_main
+{
+	width:451px;
+	height:auto;
+	padding-top:20px;
+	float:left;
+}
+#page_restaurant_info_center .service
+{
+	width:441px;
+	height:90px;
+	padding-top:10px;
+	padding-left:5px;
+	padding-right:5px;
+}
+#page_restaurant_info_center .service_left
+{
+	width:300px;
+	height:90px;
+	float:left;
+}
+#page_restaurant_info_center .excellent
+{
+	width:300px;
+	height:auto;
+	color:#FFFFFF;
+}
+#page_restaurant_info_center .excellent_top
+{
+	width:300px;
+	height:auto;
+	font-weight:bold;
+}
+#page_restaurant_info_center .excellent_down
+{
+	width:300px;
+	height:auto;
+}
+#page_restaurant_info_center .meal_info
+{
+	width:300px;
+	height:auto;
+	color:#FFFFFF;
+}
+#page_restaurant_info_center .service_right
+{
+	width:133px;
+	height:90px;
+	float:right;
+}
+#page_restaurant_info_center .service_right_header
+{
+	width:133px;
+	height:7px;
+	background-image:url(~/Media/Images/restaurant_info4_r3_c3_r2_c1.jpg);
+	background-repeat:no-repeat;
+}
+#page_restaurant_info_center .service_right_center
+{
+	width:133px;
+	height:68px;
+	background-image:url(~/Media/Images/restaurant_info4_r8_c9.jpg);
+	background-repeat:repeat;
+}
+#page_restaurant_info_center .service_right_food
+{
+	width:133px;
+	height:22px;
+	color:#e8bcb9;
+	font-size:14px;
+	font-weight:bold;
+	
+}
+#page_restaurant_info_center .service_right_food_left
+{
+	width:50px;
+	height:22px;
+	float:left;
+	text-align:center
+}
+#page_restaurant_info_center .service_right_food_right
+{
+	width:83px;
+	height:22px;
+	float:right;
+	
+}
+
+#page_restaurant_info_center .service_right_footer
+{
+	width:133px;
+	height:10px;
+	background-image:url(~/Media/Images/restaurant_info4_r5_c3_r1_c1.jpg);
+	background-repeat:no-repeat;
+}
+#page_restaurant_info_center .order
+{
+	width:441px;
+	height:auto;
+	padding-left:5px;
+	padding-right:5px;
+}
+#page_restaurant_info_center .order_top
+{
+	width:441px;
+	height:auto;
+	color:#FFFFFF;
+}
+#page_restaurant_info_center .order_top_blast
+{
+	width:441px;
+	height:auto;
+	color:#9b9798;
+	font-weight:bold;}
+#page_restaurant_info_center .order_top_left
+{
+	width:300px;
+	height:auto;
+	float:left;
+	color:#9b9798;
+	font-weight:bold;
+}
+#page_restaurant_info_center .order_top_right
+{
+	width:133px;
+	height:auto;
+	float:right;
+}
+
+#page_restaurant_info_footer
+{
+	padding-top:10px;
+	width:451px;
+	height:118px;
+	float:left;
+}
+#page_restaurant_info_footer .dropdowlist_info
+{
+	width:446px;
+	height:39px;
+	padding-left:5px;
+	color:#FFFFFF;
+}
+#page_restaurant_info_footer .dropdowlist_info_show
+{
+	width:223px;
+	height:39px;
+	float:left;
+}
+#page_restaurant_info_footer .dropdowlist_info_page
+{
+	width:223px;
+	height:39px;
+	float:right;
+	text-align:right;
+}
+#page_restaurant_info_footer .info_ads
+{
+	width:451px;
+	height:79px;
+}

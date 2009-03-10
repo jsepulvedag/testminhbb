@@ -1,0 +1,90 @@
+﻿/* CSS Document */
+#PageAdvanceSearch
+{
+	width:869px;
+	height:auto;
+	background-color:#333333;
+	margin:0 auto;
+}
+#PageAdvanceSearch .pageAdvanceSearchHeader
+{
+	width:869px;
+	height:7px;
+	background-image:url(../../Media/Images/headerRestaurant.jpg);
+	background-repeat:no-repeat;
+}
+#PageAdvanceSearch .pageAdvanceSearchCenter
+{
+	width:859px;
+	height:auto;
+	background-image:url(../../Media/Images/bgRestaurant.jpg);
+	background-repeat:repeat-y;
+	float:left;
+	padding-left:10px;
+}
+#PageAdvanceSearch .pageRestaurantRegistrationTitle
+{
+	width:859px;
+	height:30px;
+	font-size:24px;
+	float:left;
+	padding-top:10px;
+	color:#FFFFFF;
+	text-align:center;
+}
+#PageAdvanceSearch .pageRestaurantRegistrationError
+{
+	width:859px;
+	height:auto;
+	float:left;
+	padding-top:10px;
+	color:#FF0000;
+	text-align:left;
+}
+#PageAdvanceSearch .pageRestaurantRegistrationCell
+{
+	width:859px;
+	height:auto;
+	float:left;
+	padding-top:5px;
+	color:#FFFFFF;
+}
+#PageAdvanceSearch .pageRestaurantRegistrationLeft
+{
+	width:150px;
+	height:auto;
+	padding-top:5px;
+	float:left;
+	text-align:right;
+}
+#PageAdvanceSearch .pageRestaurantRegistrationTextBox
+{
+	width:250px;
+	height:auto;
+	padding-top:5px;
+	float:left;
+	text-align:left;
+}
+#PageAdvanceSearch .pageRestaurantRegistrationImage
+{
+	width:700px;
+	height:auto;
+	padding-top:5px;
+	float:left;
+	text-align:left;
+}
+#PageAdvanceSearch .pageRestaurantRegistrationContent
+{
+	width:859px;
+	height:auto;
+	float:left;
+}
+
+#PageAdvanceSearch .pageAdvanceSearchFooter
+{
+	width:869px;
+	height:10px;
+	background-image:url(../../Media/Images/footerRestaurant.jpg);
+	background-repeat:no-repeat;
+	float:left;
+}

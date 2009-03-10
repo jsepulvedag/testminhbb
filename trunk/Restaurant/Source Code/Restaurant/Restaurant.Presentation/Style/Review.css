@@ -1,0 +1,287 @@
+﻿
+*{margin:0px; padding:0px; text-align:left;}
+/*HungNQ*/
+
+#page_template
+{
+	width:857px;
+	height:auto !important;
+	background-color:#333333;
+	margin:0 auto;
+}
+#page_template .page_template_header
+{
+	width:857px;
+	height:6px;
+	float:left;
+	background-image:url(../../Media/Images/headerRestaurant.jpg);
+	background-repeat:no-repeat;
+	background-position:bottom;
+}
+#page_template .page_template_main
+{
+	width:857px;
+	height:auto;
+	float:left;
+	background-image:url(../../Media/Images/bgRestaurant.jpg);
+	background-repeat:repeat-y;
+}
+#page_template .page_template_footer
+{
+	width:857px;
+	height:8px;
+	float:left;
+	background-image:url(../../Media/Images/footerRestaurant.jpg);
+	background-repeat:no-repeat;
+}
+#page_template .headerReview
+{
+	width:849px;
+	height:199px;
+	float:left;
+	padding-left:10px;
+}
+#page_template .right
+{
+	width:199px;
+	height:1244px;
+	float:right;
+}
+#page_template .left
+{
+	width:184px;
+	height:1500px;
+	float:left;
+	
+}
+#page_template .center
+{
+	width:474px;
+	height:auto;
+	float:left;
+	
+}
+/*Left  review - HungNQ*/
+#pageLeft
+{
+	width:184px;
+	height:auto;
+	background-image:url(../../Media/Images/leftBg.jpg);
+	background-repeat:repeat-y;
+	float:left;
+}
+#pageLeft .pageLeft_Ads1
+{
+	width:184px;
+	height:206px;
+	float:left;
+	text-align:center;
+}
+#pageLeft .left_view_photo
+{
+	width:174px;
+	height:30px;
+	float:left;
+	padding-left:10px;
+	text-align:left;
+	color:#FFFFFF;
+	
+}
+ #pageLeft .left_view_Title
+ {
+ 	width:174px;
+	height:auto;
+	float:left;
+	text-align:left;
+	padding-left:10px;
+	font-size:15px;
+	font-weight:bold;
+	padding-bottom:15px;
+ }
+  #pageLeft .left_view_Cuisine
+ {
+ 	width:174px;
+	height:20px;
+	float:left;
+	text-align:left;
+	color:#FF0000;
+	padding-left:10px;
+	padding-top:10px;
+	font-weight:bold;
+ }
+#pageLeft .left_view_asd2
+{
+	width:184px;
+	height:98px;
+	float:left;
+	text-align:center;
+	
+}
+/*Left  review - HungNQ*/
+/*center*/
+#pageView
+{
+	width:450px;
+	height:auto;
+	background-color:#333333;
+	float:left;
+	padding-left:10px;
+}
+#pageView .review_member_text
+{
+	width:450px;
+	height:auto;
+	padding-bottom:15px;
+	font-size:15px;
+}
+#pageView .review_main
+{
+	width:450px;
+	height:auto;
+	text-align:left;/*add by hong*/
+}
+#pageView .review_main_header
+{
+	width:450px;
+	height:7px;
+	float:left;
+	background-image:url(../../Media/Images/reviewimg_r2_c2.jpg);
+	background-repeat:no-repeat;
+	background-position:bottom;
+}
+#pageView .review_main_center
+{
+	width:450px;
+	height:600px;
+	background-image:url(../../Media/Images/reviewimg_r4_c3.jpg);
+	background-repeat:repeat;
+}
+#pageView .review_main_center1
+{
+	width:450px;
+	height:auto;
+	color:#FFFFFF;
+	float:left;
+}
+#pageView .review_main_center3
+{
+	width:137px;
+	height:27px;
+	color:#FFFFFF;
+	padding-left:10px;
+	float:left;
+	text-align:left;
+}
+#pageView .review_main_center_rate
+{
+	width:450px;
+	height:27px;
+	color:#FFFFFF;
+	padding-left:10px;
+	float:left;
+	font-weight:bold;
+}
+#pageView .review_main_center4
+{
+	width:303px;
+	height:27px;
+	float:right;
+	text-align:left;
+}
+#pageView .review_main_center2
+{
+	width:450px;
+	height:27px;
+	color:#FFFFFF;
+	font-weight:bold;
+}
+#pageView .review_main_footer
+{
+	width:450px;
+	height:9px;
+	background-image:url(../../Media/Images/reviewimg_r8_c2.jpg);
+	background-repeat:no-repeat;
+}
+#pageView .review_main_centerfull
+{
+	width:450px;
+	height:auto;
+	float:left;
+	padding-bottom:20px;
+	padding-left:10px;
+}
+#pageView .review_button
+{
+	width:450px;
+	height:30px;
+	float:left;
+	padding-left:10px;
+}
+/*center*/
+
+/*Event*/
+#page_Event
+{
+	width:400px;
+	background-color:#333333;
+	color:#FFFFFF;
+	float:left;
+	padding-left:10px;
+	padding-bottom:10px;
+}
+#page_Event_main
+{
+	width:400px;
+	float:left;
+}
+.page_event_content
+{
+	width:400px;
+	height:auto;
+	float:left;
+}
+.page_event_picture
+{
+	width:100px;
+	height:80px;
+	float:left;
+}
+.imageEvent
+{
+	text-align:left;
+	vertical-align:text-top;	
+	float:left;
+}
+.page_event_date
+{
+	width:400px;
+	height:auto;
+	text-align:right;
+	float:left;
+}
+/*Event*/
+
+#page_event_manage
+{
+	width:600px;
+	height:auto;
+	background-color:#333333;
+	float:left;
+}
+.page_event_content
+{
+	width:600px;
+	float:left;
+	padding-bottom:5px;
+}
+.page_event_content_left
+{
+	width:200px;
+	float:left;
+	color:#FFFFFF;
+}
+.page_event_content_right
+{
+	width:400px;
+	float:left;
+}

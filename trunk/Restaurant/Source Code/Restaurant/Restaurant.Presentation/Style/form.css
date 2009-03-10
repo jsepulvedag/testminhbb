@@ -1,0 +1,77 @@
+#formConntent
+{
+	width:869px;
+	height:auto;
+	margin:0 auto;
+}
+.formConntentHeader
+{
+	width:869px;
+	height:29px;/*37*/
+	background-image:url(../../Media/Images/formHeaderNNV.jpg);
+	background-repeat:no-repeat
+}
+.formContentCenter
+{
+	width:869px;
+	height:auto;
+	background-image:url(../../Media/Images/restaurantByCuisineBg.jpg);
+	float:left;
+}
+
+.formConntentFooter
+{
+	width:869px;
+	height:12px;
+	/*float:left;*/
+	background-image:url(../../Media/Images/restaurantByCuisinefooter.jpg);
+	background-repeat:no-repeat;
+}
+.Button
+{
+	width:130px;
+	height:auto;
+	text-align:center;	
+}
+
+
+
+#formConntentManagement
+{
+	width:662px;
+	height:auto;
+	margin:0 auto;
+}
+/*edit by hong*/
+.formConntentHeaderManagement1
+{
+	width:660px;
+	height:12px;
+	background-image:url(../../Media/Images/restaurantByCuisineheader.jpg);
+	background-repeat:no-repeat;	
+	float:left;
+	margin-left:-1px;
+}
+
+.formConntentHeaderManagement
+{
+	width:662px;
+	height:30px;
+	background-image:url(../../Media/Images/formHeaderNNV_Management.jpg);
+	background-repeat:no-repeat
+}
+.formContentCenterManagement
+{
+	width:662px;
+	height:auto;
+	background-image:url(../../Media/Images/formContentNNV_Manamement.jpg);
+	float:left;
+}
+.formConntentFooterManagement
+{
+	width:662px;
+	height:12px;
+	float:left;
+	background-image:url(../../Media/Images/formFooterNNV_Management.jpg);
+	background-repeat:no-repeat;
+}

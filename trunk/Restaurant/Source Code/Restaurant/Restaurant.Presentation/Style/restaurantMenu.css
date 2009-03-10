@@ -1,0 +1,104 @@
+﻿#menuMainRestaurant
+{
+	width:640px;
+	height:auto;
+	background-color:#333333;
+	float:left;
+}
+
+#menuMainRestaurant .menuMainRestaurantTitle
+{
+	width:640px;
+	height:98px;
+}
+#menuMainRestaurant .menuMainRestaurantTitle_left
+{
+	width:79px;
+	height:88px;
+	padding-top:10px;
+	float:left;
+}
+#menuMainRestaurant .menuMainRestaurantTitle_right
+{
+	width:79px;
+	height:73px;
+	padding-top:25px;
+	float:left;
+	font-size:24px;
+	font-weight:bold;
+	color:#FF0000;
+}
+#menuMainRestaurant .menuMainRestaurantTitle_print
+{
+	height:73px;
+	width:150px;
+	float:right;
+	padding-top:25px;
+}
+#menuMainRestaurant .menuMainRestaurantTitle_printPDF
+{
+	height:30px;
+	width:75px;
+	float:left;
+}
+.menuMainRestaurantContent
+{
+	width:600px;
+	height:auto;	
+}
+.menuLeftContent
+{
+	width:360px;
+	height:auto;
+	text-align:center;
+	color:#FFFFFF;
+	font-size:18px;
+	font-weight:bold;
+	vertical-align:bottom;	
+}
+.menuRightContent
+{
+	width:240px;
+	height:auto;
+	text-align:center;
+}
+.menuDescription
+{
+	width:355px;
+	height:auto;
+	color:#FFFFFF;
+	padding-left:5px;
+	text-align:center;
+}
+.menuItemDescription
+{
+	width:355px;
+	height:auto;
+	color:#FFFFFF;
+	padding-left:5px;
+	text-align:left;
+}
+.menuPrice
+{
+	color:#FFFFFF;
+	text-align:center;
+	width:48px;
+}
+.menuItemContent
+{
+	width:355px;
+	color:#FFFFFF;
+	font-size:14px;
+	font-weight:bold;
+	padding-left:5px;
+	text-align:left;
+	
+}
+.menuOrder a:link{text-decoration:none; color:Green;}
+.menuOrder a:visited{text-decoration:none; color:Green;}
+.menuOrder a:hover{text-decoration:none; color:Maroon;}
+.menuOrder
+{
+	text-align:center;
+	width:48px;
+}

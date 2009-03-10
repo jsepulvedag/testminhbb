@@ -1,0 +1,64 @@
+﻿/* HungNQ */
+
+#pageSearchHome
+{
+	width:869px;
+	height:258px;
+	background-image:url(../../Media/Images/1234567.gif);
+	background-repeat:no-repeat;
+	background-color:#333333;
+	margin:0 auto;
+}
+#pageSearchHome .pageSearchHome_top
+{
+	width:869px;
+	height:60px;
+	float:left;
+}
+#pageSearchHome .pageSearchHome_below
+{
+	width:824px;
+	height:25px;
+	float:left;
+	padding-right:45px;
+}
+#pageSearchHome .pageSearchHome_left
+{
+	width:490px;
+	height:25px;
+	float:left;
+}
+#pageSearchHome .pageSearchHome_textbox
+{
+	width:205px;
+	height:25px;
+	float:left;
+}
+#pageSearchHome .pageSearchHome_btnSearch
+{
+	width:205px;
+	height:25px;
+	float:left;
+	text-align:right;
+}
+#pageSearchHome .pageSearchHome_text
+{
+	width:120px;
+	height:25px;
+	float:left;
+	text-align:right;
+}
+#pageSearchHome .pageSearchHome_search
+{
+	width:80px;
+	height:25px;
+	float:right;
+	text-align:right;
+}
+#pageSearchHome .pageSearchHome_link
+{
+	width:120px;
+	height:25px;
+	float:left;
+	text-align:left;
+}
