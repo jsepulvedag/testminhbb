@@ -1,0 +1,54 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Delivery.master.cs" Inherits="Restaurant.Presentation.Delivery.Delivery" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head id="Head1" runat="server">
+    <title>212Delivery.com</title>
+    <style type="text/css">
+           #divMain 
+           {
+           	width:900px;
+            margin: auto;
+           }
+           #MasterHeader 
+           {
+           	float: left;
+           	width:100%;
+           	background-color:White;
+           }           
+           #MasterContent
+           {
+           	float:left;
+           	width:100%;
+           	background-color:White;
+           }
+           
+           #MasterFooter
+           {
+            float:left;
+           	width:100%;
+           	background-color:White;
+           }
+    </style>
+    <link href="../Style/Delivery.css" type="text/css" rel="stylesheet" />
+</head>
+<body >
+    <form id="frmDelivery" runat="server">
+        <div >
+            <div id="MasterHeader">
+                <asp:ContentPlaceHolder ID="cphHeader" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+            <div id="MasterContent" >
+                <asp:ContentPlaceHolder ID="cphContent" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+            <div id="MasterFooter">
+                <asp:ContentPlaceHolder ID="cphFooter" runat="server">      
+                </asp:ContentPlaceHolder>
+            </div>
+        </div>
+    </form>
+</body>
+</html>
