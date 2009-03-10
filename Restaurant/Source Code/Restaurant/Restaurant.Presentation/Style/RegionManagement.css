@@ -1,0 +1,52 @@
+﻿#PageAdvanceSearch .page_region_management
+{
+	width:859px;
+	height:105px;
+
+}
+#PageAdvanceSearch .page_region_management_blast
+{
+	width:859px;
+	height:30px;
+	font-size:20px;
+	font-weight:bold;
+	
+}
+#PageAdvanceSearch .page_region_management_Content
+{
+	width:859px;
+	height:75px;
+	
+}
+#PageAdvanceSearch .page_region_management_Content_left
+{
+	width:207px;
+	height:75px;
+	float:left;
+}
+#PageAdvanceSearch .page_region_management_Content_right
+{
+	width:652px;
+	height:75px;
+	float:right;
+}
+#PageAdvanceSearch .page_region_management_countryname
+{
+	width:652px;
+	height:25px;
+}
+#PageAdvanceSearch .page_region_management_countryname_title
+{
+	width:207px;
+	height:25px;
+	float:left;
+	color:#FFFFFF;
+	text-align:right;
+	
+}
+#PageAdvanceSearch .page_region_management_countryname_right
+{
+	width:445px;
+	height:25px;
+	float:right;
+}

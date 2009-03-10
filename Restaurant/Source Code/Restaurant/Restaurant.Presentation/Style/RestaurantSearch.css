@@ -1,0 +1,714 @@
+﻿/* hungNQ */
+
+#pageSearchRestaurant{
+margin:0 auto;
+width:869px;
+height:auto;
+background-color:#333333;
+padding-top:10px;
+}
+#left_content
+{
+	margin:0 auto;
+	width:497px;
+	height:1400px;
+	float:left;
+}
+#left_content .left_content_blast
+{
+	width:497px;
+	height:39px;
+	background-repeat:no-repeat;
+	background-image:url(../../Media/Images/cuisine_search_r2_c2.jpg);
+}
+#left_content .left_content_box
+{
+	width:497px;
+	height:1351px;
+	background-image:url(../../Media/Images/cuisine_search_r8_c2.jpg);
+	background-repeat:repeat-y;
+	margin:0 auto;
+}
+#left_content .left_content_bottom
+{
+	width:497px;
+	height:11px;
+	background-image:url(../../Media/Images/cuisine_search_r27_c2.jpg);
+	background-repeat:no-repeat;
+}
+#left_content .left_content_box_blast_text
+{
+	width:477px;
+	height:32px;
+	padding-left:20px;
+	padding-top:10px;
+	font-size:20px;
+	color:#FFFFFF;
+}
+#left_content .left_content_box_blast_hr
+{
+	width:490px;
+	height:14px;
+	padding-left:7px;
+	color:#FFFFFF;
+}
+#left_content .left_content_box_blast_result
+{
+	width:477px;
+	height:32px;
+	padding-left:20px;
+	padding-top:10px;
+	color:#FFFFFF;
+}
+#left_content .left_content_box_blast_pager
+{
+	text-align:center;
+}
+#left_content .left_content_result
+{
+	width:482px;
+	height:112px;
+	padding-left:15px;
+	padding-top:25px;
+	padding-bottom:10px;
+}
+#left_content .left_content_result_box
+{
+	width:482px;
+	height:112px;
+	margin:0 auto;
+	padding-bottom:10px;
+}
+#left_content .left_content_result_box_header
+{
+	width:482px;
+	height:7px;
+	background-image:url(../../Media/Images/cuisine_search_r10_c3.jpg);
+	background-repeat:no-repeat;
+	/*background-position:bottom;*/
+}
+#left_content .left_content_result_box_bg
+{
+	width:482px;
+	height:99px;
+	background-image:url(../../Media/Images/cuisine_search_r25_c3.jpg);
+	background-repeat:repeat-y;
+}
+#left_content .left_content_result_box_footer
+{
+	width:482px;
+	height:6px;
+	background-image:url(../../Media/Images/cuisine_search_r20_c3.jpg);
+	background-repeat:no-repeat;
+}
+#right_content
+{
+	margin:0 auto;
+	width:365px;
+	height:1400px;
+	float:right;
+}
+#right_content .right_content_join
+{
+	width:365px;
+	height:81px;
+}
+#right_content .right_content_invite
+{
+
+	width:365px;
+	height:81px;
+	padding-top:10px !important;
+	padding-top:5px;
+}
+#right_content .right_content_link
+{
+	width:365px;
+	height:81px;
+	padding-top:10px !important;
+	padding-top:5px;
+
+}
+#right_content .right_content_open
+{
+	width:365px;
+	height:364px;
+	padding-top:20px !important;
+	padding-top:10px;
+
+}
+#right_content .right_content_ads
+{
+	width:365px;
+	height:482px;
+	padding-top:20px !important;
+	padding-top:10px;
+
+}
+/* HungNQ*/
+/* CSS Document */
+#PageAdvanceSearch
+{
+	width:869px;
+	height:auto;
+	background-color:#333333;
+	margin:0 auto;
+}
+#PageAdvanceSearch .pageAdvanceSearchHeader
+{
+	width:869px;
+	height:auto;	
+	background-image:url(../../Media/Images/headerRestaurant.jpg);
+	background-repeat:no-repeat;
+}
+#PageAdvanceSearch .pageAdvanceSearchHeaderTitle
+{
+	width:869px;
+	height:auto;	
+	margin-top:5px;
+	font-size:larger;
+	text-align:center;
+	text-transform:uppercase;
+}
+#PageAdvanceSearch .pageAdvanceSearchCenter
+{
+	width:859px;
+	height:auto;
+	background-image:url(../../Media/Images/bgRestaurant.jpg);
+	background-repeat:repeat-y;
+	float:left;
+	padding-left:10px;
+}
+#PageAdvanceSearch .pageAdvanceSearchDrop
+{
+	width:839px;
+	height:25px;
+	padding-left:30px;
+	padding-top:10px;
+}
+#PageAdvanceSearch .pageAdvanceSearchDropLeft
+{
+	width:200px;
+	height:25px;
+	float:left;
+	text-align:right;
+	color:#FFFFFF;
+}
+#PageAdvanceSearch .pageAdvanceSearchDropTextBox
+{
+	width:520px;
+	height:25px;
+	float:left;
+	text-align:left;
+	color:#FFFFFF;
+}
+
+#PageAdvanceSearch .pageAdvanceSearchLabelRight
+{
+	width:120px;
+	height:25px;
+	float:left;
+	text-align:right;
+	color:#FFFFFF;
+}
+#PageAdvanceSearch .pageAdvanceSearchDropControl
+{
+	width:200px;
+	height:25px;
+	float:left;
+	text-align:left;
+	color:#FFFFFF;
+}
+#PageAdvanceSearch .pageAdvanceSearchRadio
+{
+	width:80px;
+	height:25px;
+	float:left;
+	text-align:right;
+	color:#FFFFFF;
+}
+#PageAdvanceSearch .pageAdvanceSearchFooter
+{
+	width:869px;
+	height:10px;
+	background-image:url(../../Media/Images/footerRestaurant.jpg);
+	background-repeat:no-repeat;
+	float:left;
+}
+/* contact*/
+ .contact_title
+{
+	width:650px;
+	height:30px;
+	color:#FFFFFF;
+	text-align:left;
+}
+ .contact_Left
+{
+	width:100px;
+	height:30px;
+	float:left;
+	color:#FFFFFF;
+	text-align:left;
+}
+ .contact_right
+{
+	width:450px;
+	color:#FFFFFF;
+	text-align:left;
+}
+.contact_comment
+{
+	width:450px;
+	height:200px;
+	float:left;
+	color:#FFFFFF;
+	text-align:left;
+}
+.contact_title_comment
+{
+	width:450px;
+	height:auto;
+	float:left;
+	padding-bottom:10px;
+}
+ .contact_title_page
+{
+	width:550px;
+	height:30px;
+	text-align:left;
+	padding-left:100px;
+	color:#FFFFFF;
+	font-size:24px;
+}
+/*Email a friend*/
+#PageAdvanceSearch .page_recommend_to_friend
+{
+	width:859px;
+	height:auto;
+	float:left;
+	
+}
+#PageAdvanceSearch .page_recommend_to_friend_left
+{
+	width:430px;
+	height:30px;
+	float:left;
+	
+	
+}
+#PageAdvanceSearch .page_recommend_to_friend_title
+{
+	width:430px;
+	height:30px;
+	float:left;
+	font-size:20px;
+	color:#FF0000;
+}
+#PageAdvanceSearch .page_recommend_to_friend_right
+{
+	width:429px;
+	height:30px;
+	float:right;
+	
+}
+#PageAdvanceSearch .page_recommend_to_friend_close_window
+{
+	width:419px;
+	height:30px;
+	float:right;
+	text-align:right;
+	padding-right:10px;
+	
+}
+
+/*registration*/
+#PageAdvanceSearch .pageRestaurantRegistrationTitle
+{
+	width:859px;
+	height:30px;
+	font-size:24px;
+	float:left;
+	padding-top:10px;
+	color:#FFFFFF;
+	text-align:center;
+}
+#PageAdvanceSearch .pageRestaurantRegistrationError
+{
+	width:859px;
+	height:auto;
+	float:left;
+	padding-top:10px;
+	color:#FF0000;
+	text-align:left;
+}
+#PageAdvanceSearch .pageRestaurantRegistrationTextBox
+{
+	width:849px;
+	
+	height:auto;
+	float:left;
+	padding-top:3px;
+	padding-right:10px;
+}
+#PageAdvanceSearch .pageRestaurantRegistrationTextBox1
+{
+	width:360px;
+	height:auto;
+	float:left;
+	text-align:right;
+	color:#FFFFFF;
+}
+#PageAdvanceSearch .pageRestaurantRegistrationTextBox2
+{
+	width:250px;
+	height:auto;
+	float:left;
+	text-align:left;
+}
+#PageAdvanceSearch .pageRestaurantRegistrationTextBox3
+{
+	width:200px;
+	height:auto;
+	float:left;
+	text-align:left;
+}
+#PageAdvanceSearch .pageRestaurantRegistrationContent
+{
+	width:859px;
+	height:auto;
+	float:left;
+}
+/*Registration*/
+#PageAdvanceSearch .pageRestaurantRegistrationTitle
+{
+	width:859px;
+	height:30px;
+	font-size:24px;
+	float:left;
+	padding-top:10px;
+	color:#FFFFFF;
+	text-align:center;
+}
+#PageAdvanceSearch .pageRestaurantRegistrationError
+{
+	width:859px;
+	height:auto;
+	float:left;
+	padding-top:10px;
+	color:#FF0000;
+	text-align:left;
+}
+#PageAdvanceSearch .pageRestaurantRegistrationPackage
+{
+	width:859px;
+	height:auto;
+	float:left;
+	padding-top:10px;
+	color:#FFFFFF;
+	text-align:left;
+}
+#PageAdvanceSearch .pageRestaurantRegistrationCell
+{
+	width:859px;
+	height:auto;
+	float:left;
+	padding-top:5px;
+	color:#FFFFFF;
+}
+#PageAdvanceSearch .pageRestaurantRegistrationLeft
+{
+	width:150px;
+	height:auto;
+	padding-top:5px;
+	float:left;
+	text-align:left;
+}
+#PageAdvanceSearch .pageRestaurantRegistrationTextBox
+{
+	width:200px;
+	height:auto;
+	padding-top:5px;
+	float:left;
+	text-align:left;
+}
+#PageAdvanceSearch .pageRestaurantRegistrationImage
+{
+	width:700px;
+	height:auto;
+	padding-top:5px;
+	float:left;
+	text-align:left;
+}
+#PageAdvanceSearch .pageRestaurantRegistrationContent
+{
+	width:859px;
+	height:auto;
+	float:left;
+}
+#PageAdvanceSearch .pageRestaurantRegistrationNext
+{
+	width:150px;
+	height:auto;
+	padding-top:5px;
+	float:left;
+	text-align:center;
+}
+/*management*/
+.pageRestaurantmanagement
+{
+	width:50px;
+	height:30px;
+	text-align:center;
+	float:left;
+}
+.pageRestaurantmanagementext
+{
+	width:200px;
+	text-align:left;
+	height:auto;
+	float:left;
+}
+/* management restaurant*/
+#PageAdvanceSearch .pageRestaurantManagement
+{
+	width:869px;
+	height:auto;
+	background-image:url(../../Media/Images/bgRestaurant.jpg);
+	background-repeat:repeat-y;
+	float:left;
+}
+#PageAdvanceSearch .pageRestaurantManagementHeader
+{
+	width:869px;
+	height:auto;
+	float:left;
+}
+#PageAdvanceSearch .pageRestaurantManagementContent
+{
+	width:839px;
+	height:auto;
+	float:left;
+	padding-top:10px;
+	padding-left:20px;
+	padding-right:10px;
+	text-align:left;
+}
+/*Add menu*/
+.AddMenuLeft
+{
+	width:100px;
+	float:left;
+	text-align:left;
+	color:#FFFFFF;
+	
+}
+.AddMenuButton
+{
+	width:100px;
+	float:left;
+	text-align:right;
+	color:#FFFFFF;
+	
+}
+.AddMenuRight
+{
+	width:400px;
+	float:left;
+	text-align:left;
+	color:#FFFFFF;
+}
+/*Restaurant Owner*/
+.page_owner_program_left
+{
+	width:420px;
+	float:left;
+	
+}
+.page_owner_program_image
+{
+	width:420px;
+	float:right;
+	padding-right:10px;
+}
+ .pageOwnerTitle
+{
+	width:849px;
+	height:auto;
+	color:#FFFFFF;
+	font-size:20px;
+	padding-bottom:10px;
+	font-weight:bold;
+	background-image:url(../../Media/Images/bgRestaurant.jpg);
+	background-repeat:repeat-y;
+	float:left;
+	padding-left:10px;
+	padding-right:10px;
+}
+.page_owner_program_blast
+{
+	width:400px;
+	float:left;
+	padding-left:20px;
+	font-size:17px;
+	color:#FF0000;
+}
+/*Restaurant package*/
+#PageAdvanceSearch .subcription
+{
+	width:849px;
+	height:auto;
+	background-image:url(../../Media/Images/bgRestaurant.jpg);
+	background-repeat:repeat-y;
+	float:left;
+	padding-left:10px;
+	padding-right:10px;
+	padding-bottom:15px;
+}
+.subcription_level
+{
+	padding-left:10px;
+	padding-bottom:5px;
+	color:#FF0000;
+	font-size:18px;
+	float:left;
+	
+}
+.subcription_text
+{
+	padding-left:10px;
+	padding-bottom:5px;
+	color:#FFFFFF;
+	width:600px;
+	float:left;
+}
+.subcription_blast
+{
+	padding-left:10px;
+	padding-bottom:5px;
+	color:#FFFFFF;
+	width:600px;
+	float:left;
+	padding-bottom:20px;
+}
+.subcription_day
+{
+	color:#FFFFFF;
+	font-weight:bold;
+	width:300px;
+	float:left;
+}
+.subcription_continue
+{
+	color:#FFFFFF;
+	font-size:16px;
+	font-weight:bold;
+	width:200px;
+	float:left;
+	padding-top:20px;
+}
+/*restaurant Profile management*/
+/*restaurant Registration*/
+#PageAdvanceSearch .pageRestaurantRegistrationTitle
+{
+	width:859px;
+	height:30px;
+	font-size:24px;
+	float:left;
+	padding-top:10px;
+	color:#c00025;
+	text-align:left;
+	padding-bottom:20px;
+}
+#PageAdvanceSearch .pageRestaurantRegistrationError
+{
+	width:859px;
+	height:auto;
+	float:left;
+	padding-top:10px;
+	color:#c10429;
+	text-align:left;
+}
+#PageAdvanceSearch .pageRestaurantRegistrationSummary
+{
+	width:859px;
+	height:auto;
+	float:left;
+	padding-top:10px;
+	color:#c00025;
+	font-size:18px;
+	text-align:left;
+}
+.pageRestaurantSummaryContent
+{
+	width:859px;
+	height:auto;
+	float:left;
+	color:#FFFFFF;
+	text-align:left;
+}
+ .pageRestaurantRegistrationCell
+{
+	width:859px;
+	height:auto;
+	float:left;
+	padding-top:5px;
+	color:#FFFFFF;
+}
+.pageRestaurantRegistrationLeft
+{
+	width:150px;
+	height:auto;
+	padding-top:5px;
+	float:left;
+	text-align:left;
+}
+.pageRestaurantRegistrationDescription
+{
+	width:650px;
+	height:auto;
+	padding-top:5px;
+	float:left;
+	text-align:left;
+}
+ .pageRestaurantRegistrationCountry
+{
+	width:100px;
+	height:auto;
+	padding-top:5px;
+	float:left;
+	text-align:left;
+}
+.pageRestaurantRegistrationNext
+{
+	width:130px;
+	height:auto;
+	padding-top:5px;
+	float:left;
+	text-align:left;
+}
+.pageRestaurantRegistrationTextBox
+{
+	width:250px;
+	height:auto;
+	padding-top:5px;
+	float:left;
+	text-align:left;
+}
+.pageRestaurantRegistrationImage
+{
+	width:700px;
+	height:auto;
+	padding-top:5px;
+	float:left;
+	text-align:left;
+}
+.pageRestaurantRegistrationContent
+{
+	width:859px;
+	height:auto;
+	float:left;
+}
+/*restaurant Registration*/
+.pageRestaurantRegistrationRow{padding:0px 25px;}
+.pageRestaurantCell{background:url(../../Media/Images/restaurantManagement/1802.png) 0 50% no-repeat; height:auto; vertical-align:middle;width:165px;float:left;padding:5px 0px;padding-left:35px;}

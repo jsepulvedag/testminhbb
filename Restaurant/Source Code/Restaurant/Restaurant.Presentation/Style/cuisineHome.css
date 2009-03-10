@@ -1,0 +1,59 @@
+﻿/* HungNQ */
+#pageCuisineHome
+{
+	width:312px;
+	height:auto;
+}
+#pageCuisineHome .pageCuisineHome_header
+{
+	width:312px;
+	height:44px;
+	background-image:url(../../Media/Images/headerCuisine.jpg);
+	background-repeat:no-repeat;
+}
+#pageCuisineHome .pageCuisineHome_center
+{
+	width:302px;
+	height:auto;
+	background-image:url(../../Media/Images/bgCuisine.jpg);
+	background-repeat:repeat-y;
+	padding-left:10px;
+	float:left;
+}
+#pageCuisineHome .pageCuisineHome_center_left
+{
+	width:141px;
+	height:20px;
+	padding-left:10px;
+	float:left;
+	text-align:left;
+}
+#pageCuisineHome .pageCuisineHome_center_right
+{
+	width:151px;
+	height:25px;
+	float:right;
+	text-align:left;
+}
+.pageCuisineHome_center_more a:link{text-decoration:none; color:#ff0000;}
+.pageCuisineHome_center_more a:visited{text-decoration:none; color:#ff0000;}
+.pageCuisineHome_center_more a:hover{text-decoration:none; color:#ffffff;}
+#pageCuisineHome .pageCuisineHome_center_more
+{
+	width:302px;
+	height:30px;
+	text-align:right;
+	padding-right:10px;
+	font-weight:bold;
+	background-image:url(../../Media/Images/bgCuisine.jpg);
+	background-repeat:repeat-y;
+	float:left;
+}
+#pageCuisineHome .pageCuisineHome_footer
+{
+	width:312px;
+	height:12px;
+	background-image:url(../../Media/Images/footerCuisine.jpg);
+	background-repeat:no-repeat;
+	float:left;
+}

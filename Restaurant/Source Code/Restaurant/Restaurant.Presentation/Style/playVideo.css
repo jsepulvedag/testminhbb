@@ -1,0 +1,147 @@
+﻿/* CSS Document */
+#pageVideo
+{
+	width:869px;
+	height:836px;
+	height:auto !important;
+	margin:0 auto;
+	padding-top:10px;
+}
+.content_main{
+width:867px;
+float:left;
+}
+	#top
+	{
+		width:869px;
+		height:457px;
+		height:auto !important;
+		margin:0 auto;
+	}
+		.video
+		{			
+			width:525px;
+			height:457px;
+			height:auto !important;
+			float:left;
+		}
+			.screen
+			{
+				width:525px;
+				height:294px;
+				height:auto !important;
+				float:left;
+				
+			}			
+			.info
+			{
+				width:525px;
+				height:154px;
+				height:auto !important;
+				padding-top:9px;    
+			}
+				.topinfo
+				{	
+					width:525px;
+					height:9px;
+					background-image:url(../../Media/Images/video2_1_3_1.jpg);
+					background-repeat:no-repeat;
+					background-position:bottom;
+					height:auto !important;
+				}
+				.bodyinfo
+				{     
+					width:525px;
+					background-image:url(../../Media/Images/video2_1_3_2.jpg);
+					background-repeat:repeat-y;
+					height:auto !important;
+				}
+					.leftbody
+					{
+						width:269px;
+						height:136px;
+						height:auto !important;
+						padding-left:11px; 
+						float:left;
+					}
+					.rightbody
+					{
+						width:220px;
+						height:136px;
+						height:auto !important;
+						padding-right:3px; 
+						float:right; 
+					}
+				.bottominfo
+				{
+					width:525px;
+					height:9px;
+					background-image:url(../../Media/Images/video2_1_3_3.jpg);
+					background-position:top;
+					background-repeat:no-repeat;
+					height:auto !important;
+				}
+		.listvideo
+		{
+			width:336px;
+			height:auto !important;
+			float:right;
+		}
+			.toplistvideo
+			{
+				background-image:url(../../Media/Images/video2_2_1.jpg);
+				background-repeat:no-repeat;
+				background-position:bottom;
+				width:336px;				
+				height:45px;
+			}
+			.bodylistvideo
+			{
+				background-image:url(../../Media/Images/video2_2_3.jpg);
+				background-repeat:repeat-y;
+				width:326px;
+				height:auto !important;
+				padding-left:10px;
+			}
+				
+			.bottomlistvideo
+			{
+				background-image:url(../../Media/Images/video2_2_2.jpg);
+				background-position:top;
+				background-repeat:no-repeat;
+				width:336px;
+				height:14px;
+			}
+	#bottom
+	{
+		width:867px;
+		height:382px;
+		
+		padding-top:7px;
+		margin:auto;
+	}
+		.title
+		{
+			background-image:url(../../Media/Images/video4_1.jpg);
+			background-position:bottom;
+			background-repeat:no-repeat;
+			width:867px;			
+			height:45px;
+		}
+		.list
+		{
+			background-image:url(../../Media/Images/video4_4.jpg);
+			background-repeat:repeat-y;
+			height:auto !important;
+			width:859px;
+			padding-left:10px;
+			
+		}
+		.down
+		{
+			background-image:url(../../Media/Images/video4_3.jpg);
+			background-position:top;
+			background-repeat:no-repeat;			
+			width:867px;			
+			height:8px;
+		}

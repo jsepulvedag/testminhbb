@@ -1,0 +1,1183 @@
+/* CSS Document */
+body{
+background-image:url(../Media/Images/home_01.gif);/*home_01.gif*/
+background-repeat:repeat-x;
+background-color:#333333;
+margin:0 auto;
+color:#FFFFFF;
+font-family:Arial, Helvetica, sans-serif;
+font-size:11px;
+}  
+#Header
+{
+background-image:url(../../Media/Images/Header_New.jpg);
+background-repeat:no-repeat;
+width:869px;
+height:155px;
+margin:0 auto;
+} 
+a {
+	color:White;
+	text-decoration:none;
+	outline:none;
+}
+
+a:hover {
+	text-decoration:underline;
+}
+
+a span.extra {
+/*	display:-moz-inline-block;
+	display:-moz-inline-box; */
+	display:inline-block;
+	width:9px;
+	height:1em;
+	vertical-align:middle;
+}
+
+#footer{
+		/*background:#2b3840;
+		background-repeat:no-repeat;
+		width:100%;		/*869px;*/
+		/*height:45px;*/
+					/*padding:6px 0 0;*/
+					/*margin: 6px 0 0;*/
+					/*width:auto;*/
+					/*padding-left:160px;*/
+		/*padding-top:10px;
+					/*margin-top:100%;*/
+		/*margin-bottom:0px;
+		text-align:center;*/
+}
+.footer
+{
+	width:100%;
+	height:50px;
+	margin:0 auto;
+	/*text-align:left;*/
+	text-align:center !important;
+	
+}
+#footer ul
+{
+	/*margin-right: 30px;*/
+	/*padding: 0;*/
+	margin:0 auto;
+	list-style:  none;
+	line-height: normal;
+	padding-left:0px;
+	text-align:center;
+}
+/* hungnq */
+
+#menu
+{
+background-image:url(../../Media/Images/menu.jpg);
+height:45px;
+width:869px;
+margin:0 auto;
+font-size:12px;
+font-weight:bold;
+background-repeat:no-repeat;
+}
+#pageMainNav {
+	float:left;
+	padding:4px 0;
+	margin: 0;
+	background-color:#fff;
+	background-image:none;
+	width:auto;
+	border:0 !important;
+}
+
+.menuLeft
+{
+	background-image:url(../../Media/Images/home_05.gif);
+	width:15px;
+	height:45px;
+	float:left;
+}
+.menuRight
+{
+	background-image:url(../../Media/Images/home_09.gif);
+	width:15px;
+	height:45px;
+	float:right;
+}
+#footer li
+{
+		font-size :11px;	
+		float:inherit;
+		display:inline;
+		border-left:1px solid #fff;
+		padding: 0 6px;
+		line-height:1em;
+		
+		
+}
+#footer li.init {
+		border-left:0;
+		padding:0 6px 0 0;
+	}
+	/*hungnq*/
+/*#menu{
+height:45px;
+width:869px;
+margin:0 auto;
+font-size:11px;
+font-weight:bold;
+}
+#menu ul {
+	margin-right: 30px;
+	padding: 0 ;
+	list-style: none;
+	line-height: normal;
+}
+
+#menu li {
+	float: left;
+	background-image:url(../../Media/Images/home_06.gif);
+	background-repeat:repeat-x;
+	height:45px;	
+	padding:0;
+	font-weight:bold;
+	padding-left:10px;
+	text-align:center !important;
+	
+}
+*/
+#banner_contact{
+background-image:url(../../Media/Images/1234567.gif);
+background-repeat:no-repeat;
+margin:0 auto;
+width:869px;
+height:254px;
+}
+.banner_contact{
+width:350px;
+padding-top:70px;
+float:right;
+margin:0 auto;
+}
+#page{
+width:869px;
+margin:0 auto
+}
+.home_right
+
+{
+	width:225px;
+	float:right;
+	text-align:center;
+}
+#content{
+width:640px; /*643*/
+float:left;
+}
+.content_box{
+width:314px;
+float:left;
+height:auto;
+}
+.blast_top_box{
+background-image:url(../../Media/Images/home_13.gif);
+background-repeat:no-repeat;
+width:314px;
+height:49px;
+color:#FFFFFF;
+}
+.blast_top_box_bg
+{
+	width:314px;
+	float:left;
+
+}
+.blast_bottom_box
+{
+	background-image:url(../../Media/Images/home_22.gif);	
+	background-repeat:no-repeat;
+	height:33px;
+	width:314px;
+}
+.list_item{
+width:100px;
+float:left;
+}
+.list_item2{
+width:100px;
+float:right;
+}
+#sidebarRight{
+width:224px;
+float:right;
+
+/* margin:0 auto; */
+}
+.textBox
+{
+	font-family:Arial;
+	border:solid 1px #cccccc;
+}
+/*Login*/
+/* CSS Document */
+#content_login{
+width:869px;
+float:left;
+}
+.content_box_signup{
+width:527px;
+float:right;
+margin:0 auto;
+}
+.content_box_login{
+width:342px;
+float:left;
+margin:0 auto;
+}
+.blast_top_box_login{
+background-image:url(../../Media/Images/login_01.jpg);
+background-repeat:no-repeat;
+width:342px;
+height:41px;
+color:#FFFFFF;
+}
+.blast_top_box_bg_login{
+background-image:url(../../Media/Images/login_05_1.jpg);
+background-repeat:repeat-y;
+width:342px;
+}
+.blast_bottom_box_login
+{
+	background-image:url(../../Media/Images/login_09.jpg);
+	background-repeat:no-repeat;
+	height:18px;
+	width:342px;
+}
+.blast_top_box_signup{
+background-image:url(../../Media/Images/login_02.jpg);
+background-repeat:no-repeat;
+width:498px;
+height:41px;
+color:#FFFFFF;
+}
+.blast_top_box_bg_signup{
+background-image:url(../../Media/Images/login_13.jpg);
+background-repeat:repeat-y;
+width:498px;
+}
+.blast_bottom_box_signup
+{
+	background-image:url(../../Media/Images/login_15.jpg);
+	background-repeat:no-repeat;
+	height:23px;
+	width:498px;
+}
+/*Login End*/
+/*Hungnq-Menu*/
+#headerMain
+{
+	width:867px;
+	height:200px;
+}
+.header
+{
+	 width:867px;
+	 height:155px;
+	 background-image:url(../../Media/Images/Header.jpg);
+}
+#headerRight
+{
+	width:400px;
+	height:130px;
+	margin-top:20px;
+	float:right;
+}
+.headerAccount
+{
+	width:230px;
+	height:25px;
+	float:right;
+	color:#FFFFFF;
+}
+.headerDeal
+{
+	width:230px;
+	height:25px;
+	float:right;
+	margin-top:52px;
+	margin-right:113px;
+	text-align:right;
+	color:#FFFFFF;
+}
+#menuMain
+{
+	width:869px;
+	height:46px;
+	float:left;
+	background-image:url(../../Media/Images/menu.jpg);
+	background-repeat:no-repeat;
+}
+#menuTextMain
+{
+	width:867px;
+	height:25px;
+	
+}
+.AddvandeSearch a:link{text-decoration:none; color:#666666;}
+.AddvandeSearch a:visited{text-decoration:none; color:#666666;}
+.AddvandeSearch a:hover{text-decoration:none; color:#333333;}
+.AddvandeSearch
+{
+	width:100px;
+	float:left;
+	font-size: 13px;
+	 font-weight: bold	
+}
+.menuHome a:link{text-decoration:none; color:#666666;}
+.menuHome a:visited{text-decoration:none; color:#666666;}
+.menuHome a:hover{text-decoration:none; color:#333333;}
+
+.menuHome
+{
+	width:61px;
+	height:25px;
+	float:left;
+	text-align:center;
+	font-weight:bold;
+	font:Tahoma;
+	padding-top:15px;
+}
+.menuRestaurantOwner a:link{text-decoration:none; color:#666666;}
+.menuRestaurantOwner a:visited{text-decoration:none; color:#666666;}
+.menuRestaurantOwner a:hover{text-decoration:none; color:#333333;}
+
+.menuRestaurantOwner
+{
+	width:232px;
+	height:25px;
+	float:left ;
+	text-align:center;
+	font-weight:bold;
+	font:Tahoma;
+	padding-top:15px;
+}
+.menuVideo a:link{text-decoration:none; color:#666666;}
+.menuVideo a:visited{text-decoration:none; color:#666666;}
+.menuVideo a:hover{text-decoration:none; color:#333333;}
+.menuVideo
+{
+	width:63px;
+	height:25px;
+	float:left;
+	text-align:center;
+	font-weight:bold;
+	font:Tahoma;
+	padding-top:15px;
+}
+.menuPodCast a:link{text-decoration:none; color:#666666;}
+.menuPodCast a:visited{text-decoration:none; color:#666666;}
+.menuPodCast a:hover{text-decoration:none; color:#333333;}
+.menuPodCast
+{
+	width:93px;
+	height:25px;
+	float:left;
+	text-align:center;
+	font-weight:bold;
+	font:Tahoma;
+	padding-top:15px;
+}
+.menuMobile a:link{text-decoration:none; color:#666666;}
+.menuMobile a:visited{text-decoration:none; color:#666666;}
+.menuMobile a:hover{text-decoration:none; color:#333333;}
+.menuMobile
+{
+	 width:72px;
+	 height:25px;
+	 float:left;
+	 text-align:center;
+	 font-weight:bold;
+	 font:Tahoma;
+	 padding-top:15px;
+}
+.menuEthnic a:link{text-decoration:none; color:#666666;}
+.menuEthnic a:visited{text-decoration:none; color:#666666;}
+.menuEthnic a:hover{text-decoration:none; color:#333333;}
+.menuEthnic
+{
+	width:130px;
+	height:25px;
+	float:left;
+	text-align:center;
+	font-weight:bold;
+	font:Tahoma;
+	padding-top:15px;
+}
+.menuContact a:link{text-decoration:none; color:#666666;}
+.menuContact a:visited{text-decoration:none; color:#666666;}
+.menuContact a:hover{text-decoration:none; color:#333333;}
+.menuContact
+{
+	width:112px;
+	height:25px;
+	float:left;
+	text-align:center;
+	font-weight:bold;
+	font:Tahoma;
+	padding-top:15px;
+}
+.menuJob a:link{text-decoration:none; color:#666666;}
+.menuJob a:visited{text-decoration:none; color:#666666;}
+.menuJob a:hover{text-decoration:none; color:#333333;}
+.menuJob
+{
+	width:100px;
+	height:25px;
+	float:left;
+	text-align:center;
+	font-weight:bold;
+	font:Tahoma;
+	padding-top:15px;
+}
+.headerTop
+{
+	 width:867px;
+	 height:20px;
+}
+#headerTopText
+{
+	width:867px;
+	height:25px;	
+}
+.headerLogin
+{
+	width:35px;height:25px;float:right ;color:White;text-align:center;
+}
+.headerCreateAccount
+{
+	width:auto;height:25px;float:right ;color:White;text-align:center;
+	 padding-right:5px;
+}
+.headerNewUser
+{
+	 width:auto;height:25px;float:right ;color:White;
+	 padding-right:5px;
+}
+.headerCuisine
+{
+	width:867px;
+	height:52px;
+}
+#headerTextBottom
+{
+	width:867px;height:25px;
+}
+.headerTextEmpty
+{
+	 width:110px;height:25px;float:right;
+}
+.headerTextFeature
+{
+	 width:40px;height:25px;float:right;text-align:right;
+}
+.headerTextBlog
+{
+	width:40px;height:25px;float:right;text-align:right;
+}
+.headerTextVideo
+{
+	width:40px;height:25px;float:right;text-align:right;
+}
+.headerTextDeal
+{
+	width:40px;height:25px;float:right;text-align:right;
+}
+/*hungnq End*/
+/*hungnq - login*/
+
+
+/*login end*/
+/* hungnq-searchbycuisine */
+
+#pageSearch{
+margin:0 auto;
+width:869px;
+height:1400px;
+background-color:#333333;
+}
+#left_content
+{
+	margin:0 auto;
+	width:497px;
+	height:1400px;
+	float:left;
+}
+#left_content .left_content_blast
+{
+	width:497px;
+	height:39px;
+	background-repeat:no-repeat;
+	background-image:url(../../Media/Images/cuisine_search_r2_c2.jpg);
+}
+#left_content .left_content_box
+{
+	width:497px;
+	height:1351px;
+	background-image:url(../../Media/Images/cuisine_search_r8_c2.jpg);
+	background-repeat:repeat-y;
+	margin:0 auto;
+}
+#left_content .left_content_bottom
+{
+	width:497px;
+	height:11px;
+	background-image:url(../../Media/Images/cuisine_search_r27_c2.jpg);
+	background-repeat:no-repeat;
+}
+#left_content .left_content_box_blast_text
+{
+	width:477px;
+	height:32px;
+	padding-left:20px;
+	padding-top:10px;
+	font-size:20px;
+	color:#FFFFFF;
+}
+#left_content .left_content_box_blast_hr
+{
+	width:490px;
+	height:14px;
+	padding-left:7px;
+	color:#FFFFFF;
+}
+#left_content .left_content_box_blast_result
+{
+	width:477px;
+	height:32px;
+	padding-left:20px;
+	padding-top:10px;
+	color:#FFFFFF;
+}
+#left_content .left_content_box_blast_pager
+{
+	text-align:center;
+}
+#left_content .left_content_result
+{
+	width:482px;
+	height:112px;
+	padding-left:15px;
+	padding-top:25px;
+	padding-bottom:10px;
+}
+#left_content .left_content_result_box
+{
+	width:482px;
+	height:112px;
+	margin:0 auto;
+	padding-bottom:10px;
+}
+#left_content .left_content_result_box_header
+{
+	width:482px;
+	height:7px;
+	background-image:url(../../Media/Images/cuisine_search_r10_c3.jpg);
+	background-repeat:no-repeat;
+	/*background-position:bottom;*/
+}
+#left_content .left_content_result_box_bg
+{
+	width:482px;
+	height:99px;
+	background-image:url(../../Media/Images/cuisine_search_r25_c3.jpg);
+	background-repeat:repeat-y;
+}
+#left_content .left_content_result_box_footer
+{
+	width:482px;
+	height:6px;
+	background-image:url(../../Media/Images/cuisine_search_r20_c3.jpg);
+	background-repeat:no-repeat;
+}
+#right_content
+{
+	margin:0 auto;
+	width:365px;
+	height:1400px;
+	float:right;
+}
+#right_content .right_content_join
+{
+	width:365px;
+	height:81px;
+}
+#right_content .right_content_invite
+{
+
+	width:365px;
+	height:81px;
+	padding-top:10px !important;
+	padding-top:5px;
+}
+#right_content .right_content_link
+{
+	width:365px;
+	height:81px;
+	padding-top:10px !important;
+	padding-top:5px;
+
+}
+#right_content .right_content_open
+{
+	width:365px;
+	height:364px;
+	padding-top:20px !important;
+	padding-top:10px;
+
+}
+#right_content .right_content_ads
+{
+	width:365px;
+	height:482px;
+	padding-top:20px !important;
+	padding-top:10px;
+
+}
+/*searchbycuisine end*/
+/*hungnq_header restaurant info*/
+#pageHeader
+{
+	width:857px;
+	height:199px;
+	background-color:#333333;
+	float:left;
+}
+#pageHeader .blast_header
+{
+	width:857px;
+	height:35px;
+}
+#pageHeader .blast_header_left
+{
+	width:8px;
+	height:35px;
+	float:left;
+	background-image:url(../../Media/Images/header_left.jpg);
+	background-repeat:no-repeat;
+}
+#pageHeader .blast_header_center
+{
+	width:834px;
+	height:30px;
+	float:left;
+	background-image:url(../../Media/Images/headerbg.jpg);
+	background-repeat:repeat-x;
+	padding-top:5px;
+	padding-left:7px;
+	font-size:16px;
+	font-weight:bold;
+}
+#pageHeader .blast_header_right
+{
+	width:8px;
+	height:35px;
+	float:right;
+	background-image:url(../../Media/Images/headerRight.jpg);
+	background-repeat:no-repeat;
+}
+#pageHeader .page_header_rate
+{
+	width:857px;
+	height:131px;
+}
+#pageHeader .page_rate
+{
+	width:677px;
+	height:61px;
+	float:left;
+}
+#pageHeader .page_rate_title
+{
+	width:677px;
+	height:132px;
+	float:left;
+}
+#pageHeader .page_rate_retaurant_name
+{
+	width:537px;
+	height:30px;
+	float:left;
+	text-align:left;
+	color:#FF0000;
+	font-size:24px;
+	padding-left:10px;
+}
+#pageHeader .page_rate_retaurant_info
+{
+	width:537px;
+	height:100px;
+	float:left;
+
+}
+#pageHeader .page_rate_retaurant_detail
+{
+	width:300px;
+	height:100px;
+	float:left;
+
+}
+#pageHeader .page_rate_retaurant_detail1
+{
+	width:290px;
+	height:25px;
+	padding-left:10px;
+	color:#FFFFFF;
+}
+#pageHeader .page_rate_retaurant_phone
+{
+	width:49px;
+	height:25px;
+	color:#FFFFFF;
+	float:left;
+}
+#pageHeader .page_rate_retaurant_phone_detail
+{
+	padding-left:10px;
+	width:231px;
+	height:25px;
+	float:right;
+	color:#FFFFFF;
+}
+#pageHeader .page_rate_retaurant_detail_right
+{
+	width:237px;
+	height:100px;
+	float:right;
+
+}
+#pageHeader .page_rate_retaurant_detail_right1
+{
+	width:237px;
+	height:25px;
+	float:right;
+
+}
+#pageHeader .page_rate_retaurant_detail_cuisine
+{
+	width:90px;
+	height:25px;
+	float:left;
+	color:#FFFFFF;
+
+}
+#pageHeader .page_rate_retaurant_detail_cuisine1
+{
+	width:145px;
+	height:25px;
+	float:right;
+	color:#FFFFFF;
+	text-align:center;
+}
+#pageHeader .page_rate_print
+{
+	width:65px;
+	height:30px;
+	float:right;
+	text-align:center;
+}
+#pageHeader .page_rate_help
+{
+	width:65px;
+	height:30px;
+	float:right;
+	text-align:left;
+}
+#pageHeader .page_rate_right
+{
+	width:180px;
+	height:61px;
+	float:right;
+}
+#pageHeader .page_rate_right_header
+{
+	width:180px;
+	height:7px;
+	background-image:url(../../Media/Images/restaurant_rate.jpg);
+	background-repeat:no-repeat;
+}
+#pageHeader .page_rate_right_center
+{
+	width:180px;
+	height:47px;
+	background-image:url(../../Media/Images/restaurant_ratebg.jpg);
+	background-repeat:repeat-y;
+}
+#pageHeader .page_rate_tip
+{
+	width:85px;
+	height:32px;
+	float:left;
+	text-align:center;
+	color:#FFFFFF;
+	padding-top:15px;
+
+}
+#pageHeader .page_rate_tip_right
+{
+	width:85px;
+	height:47px;
+	float:right;
+	color:#FFFFFF;
+	padding-left:10px;
+}
+#pageHeader .page_rate_tip_right1
+{
+	width:95px;
+	height:15px;
+	color:#FFFFFF;
+}
+#pageHeader .page_rate_tip_right2
+{
+	width:95px;
+	height:15px;
+	color:#FFFFFF;
+}
+#pageHeader .page_rate_tip_right3
+{
+	width:95px;
+	height:15px;
+	color:#FFFFFF;
+}
+
+#pageHeader .page_rate_right_footer
+{
+	width:180px;
+	height:7px;
+	background-image:url(../../Media/Images/restaurant_rate_footer.jpg);
+	background-repeat:no-repeat;
+}
+#pageHeader .page_header_button
+{
+	width:837px;
+	height:32px;
+	float:left;
+	padding-left:20px;
+}
+#pageHeader .page_header_menu_review
+{
+	width:93px;
+	height:26px;
+	float:left;
+	color:#FFFFFF;
+	background-image:url(../../Media/Images/restaurant_review.jpg);
+	background-position:bottom;
+	text-align:center;
+	padding-top:6px;
+	
+}
+/*header_restaurant info end*/
+/* right restaurant info-HungNQ */
+
+#header_memmberArea{margin-top:20px;}
+#header_memmberArea .page_header_menu_review
+{
+	width:150px;
+	height:26px;
+	float:left;
+	color:#FFFFFF;
+	background-image:url(../../Media/Images/restaurant_review_max.jpg);
+	background-position:bottom;
+	text-align:center;
+	padding-top:6px;
+}
+#header_memmberArea .page_header_button{width:99%; height:28px; background:url(../../Media/Images/line.jpg) 0 98% repeat-x;}
+#pageRight
+{
+	width:191px;
+	height:auto;
+	background-color:#333333;
+	float:right;
+}
+#pageRight .page_right_button
+{
+	width:173px;
+	height:31px;
+}
+#pageRight .page_right_main_link
+{
+	width:191px;
+	height:175px;
+	padding-top:25px;
+}
+#pageRight .page_right_link
+{
+	width:184px;
+	height:25px;
+	float:left;
+	padding-left:7px;
+}
+#pageRight .page_right_hr
+{
+	width:176px;
+	height:13px;
+	float:left;
+	padding-left:15px;
+	text-align:center;
+}
+#pageRight .page_right_ads1
+{
+	width:176px;
+	height:212px;
+	margin:auto;
+	padding-left:15px;
+	padding-top:30px;
+}
+#pageRight .page_right_ads2
+{
+	width:191px;
+	height:500px;
+	float:left;
+	text-align:center;
+}
+#pageRight .page_right_main_cb
+{
+	width:191px;
+	height:207px;
+	margin:auto;
+}
+#pageRight .page_right_main_cb_box
+{
+	width:161px;
+	height:auto;
+	margin:0 auto;
+	padding-top:27px;
+
+}
+#pageRight .page_right_main_cb_box1
+{
+	width:161px;
+	height:25px;
+	float:left;
+	text-align:center;
+	color:#FFFFFF;
+	text-transform:uppercase;
+}
+#pageRight .page_right_main_cb_box2
+{
+	width:161px;
+	height:30px;
+	float:left;
+	text-align:left;
+	color:#FFFFFF;	
+}
+
+#pageRight .page_right_main_cb_box3
+{
+	width:161px;
+	height:30px;
+	text-align:right;
+	margin-bottom:15px;
+	float:left;
+}
+/*end Right restaurant info*/
+/*Restaurant Photo - HungNQ*/
+#page_photo
+{
+	width:869px;
+	margin:0 auto;
+}
+#page_photo .page_photo_header
+{
+		width:859px;
+		height:8px;
+		background-image:url(../../Media/Images/headerRestaurant.jpg);
+		background-repeat:no-repeat; 
+}
+#page_photo .page_photo_center
+{
+		width:869px;
+		height:auto;
+		background-image:url(../../Media/Images/bgRestaurant.jpg);
+		background-repeat:repeat-y;
+		float:left;
+}
+#page_photo .page_photo_footer
+{
+		width:869px;
+		height:10px;
+		background-image:url(../../Media/Images/footerRestaurant.jpg); 
+		background-repeat:no-repeat;
+		float:left;
+}
+#page_photo .page_photo_header_info
+{
+	width:857px;
+	height:199px;
+	padding-left:5px;	
+}
+#page_photo .page_photo_center_info
+{
+	width:857px;
+	height:auto;
+	margin:0 auto;
+}
+#page_photo .page_photo_center_right
+{
+	width:199px;
+	height:auto;
+	float:right;
+	
+}
+#page_photo .page_photo_center_photo
+{
+	width:656px;
+	height:auto !important;
+	float:left;
+	padding-left:5px;
+}
+/*Photo content - HungNQ*/
+
+
+#pageSearch
+{
+	width:640px;
+	height:1000px;
+	background-color:#393738;
+	float:left;
+}
+#pageSearch .page_search_content
+{
+	width:640px;
+	height:898px;
+}
+#pageSearch .page_search_camera
+{
+	width:640px;
+	height:50px;
+}
+#pageSearch .page_search_text
+{
+	width:626px;
+	height:72px;
+	color:#FFFFFF;
+	padding-left:10px;
+}
+#pageSearch .page_search_image
+{
+	width:466px;
+	height:379px;
+	margin:0 auto;
+}
+#pageSearch .page_search_image_list
+{
+	width:552px;
+	height:97px;
+	margin:0 auto;
+	
+}
+#pageSearch .page_search_images
+{
+	width:84px;
+	height:97px;
+	padding-right:15px;
+	float:left;
+}
+#pageSearch .page_search_show_text
+{
+	width:640px;
+	height:63px;
+}
+#pageSearch .page_search_show_image
+{
+	width:640px;
+	height:94px;
+}
+#pageSearch .page_search_show_image_content
+{
+	width:466px;
+	height:94px;
+	margin:0 auto;
+}
+#pageSearch .page_search_show_image_content_text
+{
+	width:233px;
+	height:48px;
+	float:left;
+	padding-top:46px;
+	text-align:right;
+	color:#FFFFFF;
+}
+#pageSearch .page_search_show_image_content_next
+{
+	width:233px;
+	height:48px;
+	float:right;
+	padding-top:46px;
+	text-align:left;
+}
+#pageSearch .page_search_image_header
+{
+	width:466px;
+	height:5px;
+	background-image:url(../../Media/Images/restaurant_photos_r2_c3.jpg);
+	background-repeat:no-repeat;
+}
+#pageSearch .page_search_image_bg
+{
+	width:466px;
+	height:386px;
+	background-image:url(../../Media/Images/restaurant_photos_r4_c3.jpg);
+	background-repeat:repeat-y;
+}
+#pageSearch .page_search_image_footer
+{
+	width:466px;
+	height:6px;
+	background-image:url(../../Media/Images/restaurant_photos_r6_c6.jpg);
+	background-repeat:no-repeat;
+}
+#pageSearch .page_search_image_content
+{
+	width:446px;
+	height:316px;
+	margin:0 auto;
+}
+#pageSearch .page_search_image_content_text
+{
+	width:446px;
+	height:30px;
+	padding-top:10px;
+	margin:0 auto;
+	color:#FFFFFF;
+}
+#pageSearch .page_search_camera_image
+{
+	width:70px;
+	height:50px;
+	float:left;
+	text-align:center;
+}
+#pageSearch .page_search_camera_text
+{
+	width:570px;
+	height:40px;
+	float:right;
+	text-align:left;
+	padding-top:10px;
+	color:#ab1111;
+	font-size:24px;
+}
+/*photo content -HungNQ*/
+hr{height:1px; border-style:none; background-image:url(../../Media/Images/line.jpg);}
+.pageAdvanceSearchCenter .member_blast{margin-top:20px;}
+/*test*/
+#page_constant
+{
+	width:869px;
+	margin:0 auto;
+}
+.page_constant
+{
+	width:869px;
+	float:left;
+}

@@ -1,0 +1,38 @@
+*{margin:0px; padding:0px;}
+.page_left
+{
+	width:174px;
+	text-align:center;
+}
+.page_left_image_top
+{
+	width:100%;
+	height:auto;
+}
+.page_left_division
+{
+	width:100%;
+	height:100%;
+	background-image:url(../../Media/Images/headerRestaurant.jpg);
+	background-repeat:no-repeat;
+}
+.page_left_image_bottom
+{
+	width:100%;
+	height:auto;
+	background-image:url(../../Media/Images/leftAds1.jpg);
+	background-repeat:no-repeat;
+}
+
+.page_right_image_bottom
+{
+	width:100%;
+	height:auto;
+	background-image:url(../../Media/Images/writeReview.jpg);
+	background-repeat:no-repeat;
+}
+.page_right
+{
+	width:191px;
+	text-align:center;
+}

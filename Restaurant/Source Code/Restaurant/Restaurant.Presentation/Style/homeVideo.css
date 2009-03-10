@@ -1,0 +1,88 @@
+﻿/* HungNQ */
+
+#pageVideoHome
+{
+	width:326px;
+	height:auto;
+	background-color:#333333;
+}
+#pageVideoHome .pageVideoHome_header
+{
+	width:326px;
+	height:43px;
+	background-image:url(../../Media/Images/headerVideo.jpg);
+	background-repeat:no-repeat;
+	float:left;
+}
+#pageVideoHome .pageVideoHome_center
+{
+	width:316px;
+	height:auto;
+	background-image:url(../../Media/Images/home_r4_c2.jpg);
+	background-repeat:repeat-y;
+	float:left;
+	padding-left:10px;
+}
+#pageVideoHome .pageVideoHome_center_left
+{
+	width:147px;
+	height:auto;
+	float:left;
+}
+#pageVideoHome .pageVideoHome_center_left_image
+{
+	width:147px;
+	height:90px;
+	float:left;
+}
+#pageVideoHome .pageVideoHome_center_left_image_below
+{
+	width:147px;
+	height:25px;
+	float:left;
+}
+#pageVideoHome .pageVideoHome_center_left_image_below_left
+{
+	width:20px;
+	height:25px;
+	float:left;
+	padding-left:5px;
+	text-align:left;
+}
+#pageVideoHome .pageVideoHome_center_left_image_below_right
+{
+	width:75px;
+	height:25px;
+	float:left;
+	color:#FFFFFF;
+	padding-left:5px;
+}
+#pageVideoHome .pageVideoHome_center_right
+{
+	width:157px;
+	height:auto;
+	float:right;
+}
+.pageVideoHome_center_more a:link{text-decoration:none; color:#ff0000;}
+.pageVideoHome_center_more a:visited{text-decoration:none; color:#ff0000;}
+.pageVideoHome_center_more a:hover{text-decoration:none; color:#ffffff;}
+#pageVideoHome .pageVideoHome_center_more
+{
+	width:316px;
+	height:30px;
+	padding-right:10px;
+	font-weight:bold;
+	text-align:right;
+	background-image:url(../../Media/Images/home_r4_c2.jpg);
+	background-repeat:repeat-y;
+	float:left;
+}
+
+#pageVideoHome .pageVideoHome_footer
+{
+	width:326px;
+	height:12px;
+	background-image:url(../../Media/Images/videoFooter.jpg);
+	background-repeat:no-repeat;
+	float:left;
+}
