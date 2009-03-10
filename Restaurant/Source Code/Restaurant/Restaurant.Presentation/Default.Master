@@ -1,0 +1,67 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Default.master.cs" Inherits="Restaurant.Presentation.Default" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head id="Head1" runat="server">
+    <title>212cuisine.com</title>
+    <style type="text/css">
+           #divMain 
+           {
+           	width:100%;
+           }
+           #MasterHeader 
+           {
+           	float: left;
+           	width:100%;
+           }           
+           #MasterContent
+           {
+           	float:left;
+           	width:100%;
+           }
+           }
+           #MasterFooter
+           {
+            float:left;
+           	width:100%;
+           }
+    </style>
+    <link href ="Style/MemberChangePassword.css" type="text/css" rel="Stylesheet" />
+    <link href ="Style/RestaurantRegistration.css" type = "text/css" rel ="Stylesheet"/>
+    <link href ="Style/restaurantInfo.css" type = "text/css" rel ="Stylesheet"/>
+    <link href ="Style/RegionManagement.css" type = "text/css" rel ="Stylesheet"/>
+    <link href ="Style/restaurantShowReview.css" type = "text/css" rel ="Stylesheet"/>
+    <link href ="Style/restaurantByCuisine.css" type = "text/css" rel ="Stylesheet"/>
+    <link href ="Style/searchHome.css" type = "text/css" rel ="Stylesheet"/>
+    <link href ="Style/homeVideo.css" type = "text/css" rel ="Stylesheet"/>
+    <link href ="Style/cuisineHome.css" type = "text/css" rel ="Stylesheet"/>
+    <link href ="Style/login.css" type = "text/css" rel ="Stylesheet"/>
+    <link href ="Style/Review.css" type = "text/css" rel ="Stylesheet"/>
+    <link href ="Style/home.css" type = "text/css" rel ="Stylesheet"/>
+    <link href ="Style/RestaurantSearch.css" type = "text/css" rel ="Stylesheet"/>
+    <link href ="Style/restaurantMenu.css" type = "text/css" rel ="Stylesheet"/>      
+    <link href="Style/playVideo.css" type="text/css" rel="Stylesheet"/>
+    <link href="Style/gift.css" type="text/css" rel="Stylesheet" />
+    <link href="Style/form.css" type="text/css" rel="Stylesheet" />
+    <link href="Style/Left.css" type="text/css" rel="stylesheet" />
+</head>
+<body>
+    <form id="frmCuisine" runat="server">
+        <div id="divMain">
+            <div id="MasterHeader">
+                <asp:ContentPlaceHolder ID="cphHeader" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+            <div id="MasterContent" >
+                <asp:ContentPlaceHolder ID="cphContent" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+            <div id="MasterFooter">
+                <asp:ContentPlaceHolder ID="cphFooter" runat="server">      
+                </asp:ContentPlaceHolder>
+            </div>
+        </div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,1997 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{99EA5AA1-7FF1-442D-B23A-71871213C071}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Restaurant.Presentation</RootNamespace>
+    <AssemblyName>Restaurant.Presentation</AssemblyName>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ASPNetFlashVideo.NET2.AJAX, Version=1.5.2.0, Culture=neutral, PublicKeyToken=ee25ccb1c1bec95f, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Restaurant.Library.Utilities\VideoStreaming\ASPNetFlashVideo.NET2.AJAX.dll</HintPath>
+    </Reference>
+    <Reference Include="ASPNetMediaGUI.NET2, Version=1.4.1.0, Culture=neutral, PublicKeyToken=2bfb8a82b75cdf75, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Restaurant.Library.Utilities\VideoStreaming\ASPNetMediaGUI.NET2.dll</HintPath>
+    </Reference>
+    <Reference Include="CustomControls, Version=1.0.818.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Restaurant.Library.Utilities\ColorPicker\CustomControls.dll</HintPath>
+    </Reference>
+    <Reference Include="DictionaryConfiguration.NET2, Version=1.0.2545.34921, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Restaurant.Library.Utilities\RadControls\DictionaryConfiguration.NET2.dll</HintPath>
+    </Reference>
+    <Reference Include="JW-FLV-Player-Control, Version=1.0.3144.30702, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Restaurant.Library.Utilities\Video\JW-FLV-Player-Control.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net, Version=1.2.10.0, Culture=neutral, PublicKeyToken=1b44e1d426115821">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Restaurant.Library.Utilities\PayPalAPI\LibraryDLL\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Media-Player-ASP.NET-Control, Version=1.0.3141.38822, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Restaurant.Library.Utilities\Video\Media-Player-ASP.NET-Control.dll</HintPath>
+    </Reference>
+    <Reference Include="paypal_base, Version=4.4.55.0, Culture=neutral, PublicKeyToken=b37401294aaf5617">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Restaurant.Library.Utilities\PayPalAPI\LibraryDLL\paypal_base.dll</HintPath>
+    </Reference>
+    <Reference Include="PdfSharp, Version=1.2.1269.0, Culture=neutral, PublicKeyToken=f94615aa0424f9eb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Restaurant.Library.Utilities\ExportFile\DLL\PdfSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="RadAjax.Net2, Version=1.6.0.0, Culture=neutral, PublicKeyToken=3f7b438d1c762d0b, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Restaurant.Library.Utilities\RadControls\RadAjax.Net2.dll</HintPath>
+    </Reference>
+    <Reference Include="RadCalendar.Net2, Version=2.0.2.0, Culture=neutral, PublicKeyToken=a1432cd341173140, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Restaurant.Library.Utilities\RadControls\RadCalendar.Net2.dll</HintPath>
+    </Reference>
+    <Reference Include="RadComboBox.Net2, Version=2.6.0.0, Culture=neutral, PublicKeyToken=175e9829b585f1f6, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Restaurant.Library.Utilities\RadControls\RadComboBox.Net2.dll</HintPath>
+    </Reference>
+    <Reference Include="RadGrid.Net2, Version=4.5.0.0, Culture=neutral, PublicKeyToken=ec87bc2939ec45df, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Restaurant.Library.Utilities\RadControls\RadGrid.Net2.dll</HintPath>
+    </Reference>
+    <Reference Include="RadMenu.Net2, Version=4.2.0.0, Culture=neutral, PublicKeyToken=bbe59a8ad3533e68, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Restaurant.Library.Utilities\RadControls\RadMenu.Net2.dll</HintPath>
+    </Reference>
+    <Reference Include="RadPanelbar.Net2, Version=4.1.2.0, Culture=neutral, PublicKeyToken=e0d16f6f4c7e05de, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Restaurant.Library.Utilities\RadControls\RadPanelbar.Net2.dll</HintPath>
+    </Reference>
+    <Reference Include="RadUpload.Net2, Version=2.2.0.0, Culture=neutral, PublicKeyToken=b4e93c26a31a21f0, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Restaurant.Library.Utilities\RadControls\RadUpload.Net2.dll</HintPath>
+    </Reference>
+    <Reference Include="RadWindow.Net2, Version=1.7.0.0, Culture=neutral, PublicKeyToken=a3055f084732468e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Restaurant.Library.Utilities\RadControls\RadWindow.Net2.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions, Version=1.0.61025.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Restaurant.Library.Utilities\PayPalAPI\LibraryDLL\System.Web.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Extensions.Design, Version=1.0.61025.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Restaurant.Library.Utilities\PayPalAPI\LibraryDLL\System.Web.Extensions.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Administrator\Default.aspx" />
+    <Content Include="Administrator\UserControls\Footer.ascx" />
+    <Content Include="Administrator\UserControls\Header.ascx" />
+    <Content Include="Administrator\UserControls\Logout.ascx" />
+    <Content Include="Administrator\Profile\Profile.ascx" />
+    <Content Include="App_Data\AdminConfig.xml" />
+    <Content Include="App_Data\MemberConfig.xml" />
+    <Content Include="App_Data\PageConfig.xml" />
+    <Content Include="Default.aspx" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Administrator\Administrator.Master.cs">
+      <DependentUpon>Administrator.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\Administrator.Master.designer.cs">
+      <DependentUpon>Administrator.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\Delivery\DeliveryCommission.ascx.cs">
+      <DependentUpon>DeliveryCommission.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\Delivery\DeliveryCommission.ascx.designer.cs">
+      <DependentUpon>DeliveryCommission.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\GiftCertificates\DefineGiftCommision.ascx.cs">
+      <DependentUpon>DefineGiftCommision.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\GiftCertificates\DefineGiftCommision.ascx.designer.cs">
+      <DependentUpon>DefineGiftCommision.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\GiftCertificates\DefineGiftDesign.ascx.cs">
+      <DependentUpon>DefineGiftDesign.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\GiftCertificates\DefineGiftDesign.ascx.designer.cs">
+      <DependentUpon>DefineGiftDesign.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\GiftCertificates\DefineGiftType.ascx.cs">
+      <DependentUpon>DefineGiftType.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\GiftCertificates\DefineGiftType.ascx.designer.cs">
+      <DependentUpon>DefineGiftType.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\GiftCertificates\ListGiftPurchased.ascx.cs">
+      <DependentUpon>ListGiftPurchased.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\GiftCertificates\ListGiftPurchased.ascx.designer.cs">
+      <DependentUpon>ListGiftPurchased.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\MemberManagement\AddMember.ascx.cs">
+      <DependentUpon>AddMember.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\MemberManagement\AddMember.ascx.designer.cs">
+      <DependentUpon>AddMember.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\MemberManagement\ListMember.ascx.cs">
+      <DependentUpon>ListMember.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\MemberManagement\ListMember.ascx.designer.cs">
+      <DependentUpon>ListMember.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\ParamterManagement\Attire.ascx.cs">
+      <DependentUpon>Attire.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\ParamterManagement\Attire.ascx.designer.cs">
+      <DependentUpon>Attire.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\ParamterManagement\City.ascx.cs">
+      <DependentUpon>City.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\ParamterManagement\City.ascx.designer.cs">
+      <DependentUpon>City.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\ParamterManagement\Country.ascx.cs">
+      <DependentUpon>Country.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\ParamterManagement\Country.ascx.designer.cs">
+      <DependentUpon>Country.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\ParamterManagement\Cuisine.ascx.cs">
+      <DependentUpon>Cuisine.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\ParamterManagement\Cuisine.ascx.designer.cs">
+      <DependentUpon>Cuisine.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\ParamterManagement\Neighbourhood.ascx.cs">
+      <DependentUpon>Neighbourhood.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\ParamterManagement\Neighbourhood.ascx.designer.cs">
+      <DependentUpon>Neighbourhood.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\ParamterManagement\SettingAccountPaypal.ascx.cs">
+      <DependentUpon>SettingAccountPaypal.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\ParamterManagement\SettingAccountPaypal.ascx.designer.cs">
+      <DependentUpon>SettingAccountPaypal.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\ParamterManagement\SettingMailServer.ascx.cs">
+      <DependentUpon>SettingMailServer.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\ParamterManagement\SettingMailServer.ascx.designer.cs">
+      <DependentUpon>SettingMailServer.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\ParamterManagement\Special.ascx.cs">
+      <DependentUpon>Special.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\ParamterManagement\Special.ascx.designer.cs">
+      <DependentUpon>Special.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\ParamterManagement\State.ascx.cs">
+      <DependentUpon>State.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\ParamterManagement\State.ascx.designer.cs">
+      <DependentUpon>State.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\Profile\ChangePassword.ascx.cs">
+      <DependentUpon>ChangePassword.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\Profile\ChangePassword.ascx.designer.cs">
+      <DependentUpon>ChangePassword.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\Reservation\Reservation.ascx.cs">
+      <DependentUpon>Reservation.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\Reservation\Reservation.ascx.designer.cs">
+      <DependentUpon>Reservation.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\Reservation\ReservationByMonth.ascx.cs">
+      <DependentUpon>ReservationByMonth.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\Reservation\ReservationByMonth.ascx.designer.cs">
+      <DependentUpon>ReservationByMonth.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\Reservation\ReservationByWeek.ascx.cs">
+      <DependentUpon>ReservationByWeek.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\Reservation\ReservationByWeek.ascx.designer.cs">
+      <DependentUpon>ReservationByWeek.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\Reservation\ReservationByYear.ascx.cs">
+      <DependentUpon>ReservationByYear.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\Reservation\ReservationByYear.ascx.designer.cs">
+      <DependentUpon>ReservationByYear.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\Reservation\ReservationCommission.ascx.cs">
+      <DependentUpon>ReservationCommission.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\Reservation\ReservationCommission.ascx.designer.cs">
+      <DependentUpon>ReservationCommission.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\RestaurantManagement\ListRestaurant\AddRestaurant.ascx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>AddRestaurant.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\RestaurantManagement\ListRestaurant\AddRestaurant.ascx.designer.cs">
+      <DependentUpon>AddRestaurant.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\RestaurantManagement\ListRestaurant\CreateRestaurant.ascx.cs">
+      <DependentUpon>CreateRestaurant.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\RestaurantManagement\ListRestaurant\CreateRestaurant.ascx.designer.cs">
+      <DependentUpon>CreateRestaurant.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\RestaurantManagement\ListRestaurant\ListRestaurant.ascx.cs">
+      <DependentUpon>ListRestaurant.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\RestaurantManagement\ListRestaurant\ListRestaurant.ascx.designer.cs">
+      <DependentUpon>ListRestaurant.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\RestaurantPackage\ChoosePackage.ascx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>ChoosePackage.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\RestaurantPackage\ChoosePackage.ascx.designer.cs">
+      <DependentUpon>ChoosePackage.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\RestaurantPackage\CreatePackage.ascx.cs">
+      <DependentUpon>CreatePackage.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\RestaurantPackage\CreatePackage.ascx.designer.cs">
+      <DependentUpon>CreatePackage.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\RestaurantPackage\CreatePakageDetail.ascx.cs">
+      <DependentUpon>CreatePakageDetail.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\RestaurantPackage\CreatePakageDetail.ascx.designer.cs">
+      <DependentUpon>CreatePakageDetail.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\Review\ReviewManagement.ascx.cs">
+      <DependentUpon>ReviewManagement.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\Review\ReviewManagement.ascx.designer.cs">
+      <DependentUpon>ReviewManagement.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\UserControls\Footer.ascx.cs">
+      <DependentUpon>Footer.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\UserControls\Footer.ascx.designer.cs">
+      <DependentUpon>Footer.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\UserControls\Header.ascx.cs">
+      <DependentUpon>Header.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\UserControls\Header.ascx.designer.cs">
+      <DependentUpon>Header.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\UserControls\Logout.ascx.cs">
+      <DependentUpon>Logout.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\UserControls\Logout.ascx.designer.cs">
+      <DependentUpon>Logout.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\Profile\Profile.ascx.cs">
+      <DependentUpon>Profile.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\Profile\Profile.ascx.designer.cs">
+      <DependentUpon>Profile.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\UserControls\SearchRestaurant.ascx.cs">
+      <DependentUpon>SearchRestaurant.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\UserControls\SearchRestaurant.ascx.designer.cs">
+      <DependentUpon>SearchRestaurant.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.Master.cs">
+      <DependentUpon>Default.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.Master.designer.cs">
+      <DependentUpon>Default.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Delivery\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Delivery\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Delivery\Delivery.Master.cs">
+      <DependentUpon>Delivery.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Delivery\Delivery.Master.designer.cs">
+      <DependentUpon>Delivery.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Delivery\UserControls\Common\ChooseCity.ascx.cs">
+      <DependentUpon>ChooseCity.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Delivery\UserControls\Common\ChooseCity.ascx.designer.cs">
+      <DependentUpon>ChooseCity.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Delivery\UserControls\Common\Footer.ascx.cs">
+      <DependentUpon>Footer.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Delivery\UserControls\Common\Footer.ascx.designer.cs">
+      <DependentUpon>Footer.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Delivery\UserControls\Common\Header.ascx.cs">
+      <DependentUpon>Header.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Delivery\UserControls\Common\Header.ascx.designer.cs">
+      <DependentUpon>Header.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Delivery\UserControls\Common\Home.ascx.cs">
+      <DependentUpon>Home.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Delivery\UserControls\Common\Home.ascx.designer.cs">
+      <DependentUpon>Home.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Delivery\UserControls\Controls\Footer.ascx.cs">
+      <DependentUpon>Footer.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Delivery\UserControls\Controls\Footer.ascx.designer.cs">
+      <DependentUpon>Footer.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Delivery\UserControls\Controls\Header.ascx.cs">
+      <DependentUpon>Header.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Delivery\UserControls\Controls\Header.ascx.designer.cs">
+      <DependentUpon>Header.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Delivery\UserControls\Controls\Home.ascx.cs">
+      <DependentUpon>Home.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Delivery\UserControls\Controls\Home.ascx.designer.cs">
+      <DependentUpon>Home.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Delivery\UserControls\Restaurant\AddOn.ascx.cs">
+      <DependentUpon>AddOn.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Delivery\UserControls\Restaurant\AddOn.ascx.designer.cs">
+      <DependentUpon>AddOn.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Delivery\UserControls\Restaurant\CheckOutPage.ascx.cs">
+      <DependentUpon>CheckOutPage.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Delivery\UserControls\Restaurant\CheckOutPage.ascx.designer.cs">
+      <DependentUpon>CheckOutPage.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Delivery\UserControls\Restaurant\CreateAccount.ascx.cs">
+      <DependentUpon>CreateAccount.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Delivery\UserControls\Restaurant\CreateAccount.ascx.designer.cs">
+      <DependentUpon>CreateAccount.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Delivery\UserControls\Restaurant\DeliverySearch.ascx.cs">
+      <DependentUpon>DeliverySearch.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Delivery\UserControls\Restaurant\DeliverySearch.ascx.designer.cs">
+      <DependentUpon>DeliverySearch.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Delivery\UserControls\Restaurant\Filter.ascx.cs">
+      <DependentUpon>Filter.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Delivery\UserControls\Restaurant\Filter.ascx.designer.cs">
+      <DependentUpon>Filter.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Delivery\UserControls\Restaurant\Login.ascx.cs">
+      <DependentUpon>Login.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Delivery\UserControls\Restaurant\Login.ascx.designer.cs">
+      <DependentUpon>Login.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Delivery\UserControls\Restaurant\Logout.ascx.cs">
+      <DependentUpon>Logout.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Delivery\UserControls\Restaurant\Logout.ascx.designer.cs">
+      <DependentUpon>Logout.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Delivery\UserControls\Restaurant\Menu.ascx.cs">
+      <DependentUpon>Menu.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Delivery\UserControls\Restaurant\Menu.ascx.designer.cs">
+      <DependentUpon>Menu.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Delivery\UserControls\Restaurant\MenuItem.ascx.cs">
+      <DependentUpon>MenuItem.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Delivery\UserControls\Restaurant\MenuItem.ascx.designer.cs">
+      <DependentUpon>MenuItem.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Delivery\UserControls\Restaurant\MyOrder.ascx.cs">
+      <DependentUpon>MyOrder.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Delivery\UserControls\Restaurant\MyOrder.ascx.designer.cs">
+      <DependentUpon>MyOrder.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Delivery\UserControls\Restaurant\Registration\Register.ascx.cs">
+      <DependentUpon>Register.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Delivery\UserControls\Restaurant\Registration\Register.ascx.designer.cs">
+      <DependentUpon>Register.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Delivery\UserControls\Restaurant\Registration\Successfull.ascx.cs">
+      <DependentUpon>Successfull.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Delivery\UserControls\Restaurant\Registration\Successfull.ascx.designer.cs">
+      <DependentUpon>Successfull.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Delivery\UserControls\Restaurant\Restaurant.ascx.cs">
+      <DependentUpon>Restaurant.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Delivery\UserControls\Restaurant\Restaurant.ascx.designer.cs">
+      <DependentUpon>Restaurant.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Delivery\UserControls\Restaurant\RestaurantDetail .ascx.cs">
+      <DependentUpon>RestaurantDetail .ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Delivery\UserControls\Restaurant\RestaurantDetail .ascx.designer.cs">
+      <DependentUpon>RestaurantDetail .ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Delivery\UserControls\Restaurant\ThankYou.ascx.cs">
+      <DependentUpon>ThankYou.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Delivery\UserControls\Restaurant\ThankYou.ascx.designer.cs">
+      <DependentUpon>ThankYou.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Delivery\UserControls\Restaurant\WokingHour .ascx.cs">
+      <DependentUpon>WokingHour .ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Delivery\UserControls\Restaurant\WokingHour .ascx.designer.cs">
+      <DependentUpon>WokingHour .ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Home\Member\Registration\Successfull.ascx.cs">
+      <DependentUpon>Successfull.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Home\Member\Registration\Successfull.ascx.designer.cs">
+      <DependentUpon>Successfull.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Home\Member\Video\ListAllVideo.ascx.cs">
+      <DependentUpon>ListAllVideo.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Home\Member\Video\ListAllVideo.ascx.designer.cs">
+      <DependentUpon>ListAllVideo.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Home\Member\Video\ListVideo.ascx.cs">
+      <DependentUpon>ListVideo.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Home\Member\Video\ListVideo.ascx.designer.cs">
+      <DependentUpon>ListVideo.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Home\Member\Video\Video.ascx.cs">
+      <DependentUpon>Video.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Home\Member\Video\Video.ascx.designer.cs">
+      <DependentUpon>Video.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Home\Restaurant\ContactRestaurant\SendContact.ascx.cs">
+      <DependentUpon>SendContact.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Home\Restaurant\ContactRestaurant\SendContact.ascx.designer.cs">
+      <DependentUpon>SendContact.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Home\Restaurant\GiftCertificates\PreviewGift.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>PreviewGift.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Home\Restaurant\GiftCertificates\PreviewGift.aspx.designer.cs">
+      <DependentUpon>PreviewGift.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Home\Restaurant\Invite.ascx.cs">
+      <DependentUpon>Invite.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Home\Restaurant\Invite.ascx.designer.cs">
+      <DependentUpon>Invite.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Home\Restaurant\LinkToUs.ascx.cs">
+      <DependentUpon>LinkToUs.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Home\Restaurant\LinkToUs.ascx.designer.cs">
+      <DependentUpon>LinkToUs.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Home\Member\Photo\ListPhoto.ascx.cs">
+      <DependentUpon>ListPhoto.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Home\Member\Photo\ListPhoto.ascx.designer.cs">
+      <DependentUpon>ListPhoto.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Home\Member\Photo\PhotoDetail.ascx.cs">
+      <DependentUpon>PhotoDetail.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Home\Member\Photo\PhotoDetail.ascx.designer.cs">
+      <DependentUpon>PhotoDetail.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Home\Member\Registration\Register.ascx.cs">
+      <DependentUpon>Register.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Home\Member\Registration\Register.ascx.designer.cs">
+      <DependentUpon>Register.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Home\Member\Review\CreateReview.ascx.cs">
+      <DependentUpon>CreateReview.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Home\Member\Review\CreateReview.ascx.designer.cs">
+      <DependentUpon>CreateReview.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Home\Restaurant\GiftCertificates\InstanceGift.ascx.cs">
+      <DependentUpon>InstanceGift.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Home\Restaurant\GiftCertificates\InstanceGift.ascx.designer.cs">
+      <DependentUpon>InstanceGift.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Home\Restaurant\GiftCertificates\PurchaseGift.ascx.cs">
+      <DependentUpon>PurchaseGift.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Home\Restaurant\GiftCertificates\PurchaseGift.ascx.designer.cs">
+      <DependentUpon>PurchaseGift.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Home\Restaurant\GiftCertificates\ThankYouForUseMyGiftService.ascx.cs">
+      <DependentUpon>ThankYouForUseMyGiftService.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Home\Restaurant\GiftCertificates\ThankYouForUseMyGiftService.ascx.designer.cs">
+      <DependentUpon>ThankYouForUseMyGiftService.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Home\Restaurant\ListRestaurant\ListRestaurant.ascx.cs">
+      <DependentUpon>ListRestaurant.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Home\Restaurant\ListRestaurant\ListRestaurant.ascx.designer.cs">
+      <DependentUpon>ListRestaurant.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Home\Restaurant\Menu\Menu.ascx.cs">
+      <DependentUpon>Menu.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Home\Restaurant\Menu\Menu.ascx.designer.cs">
+      <DependentUpon>Menu.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Home\Restaurant\Menu\MenuItem.ascx.cs">
+      <DependentUpon>MenuItem.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Home\Restaurant\Menu\MenuItem.ascx.designer.cs">
+      <DependentUpon>MenuItem.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Home\Restaurant\OnlineReservation\InstanceReservation.ascx.cs">
+      <DependentUpon>InstanceReservation.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Home\Restaurant\OnlineReservation\InstanceReservation.ascx.designer.cs">
+      <DependentUpon>InstanceReservation.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Home\Restaurant\OnlineReservation\ProcessReservation.ascx.cs">
+      <DependentUpon>ProcessReservation.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Home\Restaurant\OnlineReservation\ProcessReservation.ascx.designer.cs">
+      <DependentUpon>ProcessReservation.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Home\Restaurant\OnlineReservation\ThankYouForReservation.ascx.cs">
+      <DependentUpon>ThankYouForReservation.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Home\Restaurant\OnlineReservation\ThankYouForReservation.ascx.designer.cs">
+      <DependentUpon>ThankYouForReservation.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Home\Restaurant\RecommendToFriend\SendRecommend.ascx.cs">
+      <DependentUpon>SendRecommend.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Home\Restaurant\RecommendToFriend\SendRecommend.ascx.designer.cs">
+      <DependentUpon>SendRecommend.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Home\Restaurant\Registration\RegistrationForRestaurant\ChoosePackage.ascx.cs">
+      <DependentUpon>ChoosePackage.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Home\Restaurant\Registration\RegistrationForRestaurant\ChoosePackage.ascx.designer.cs">
+      <DependentUpon>ChoosePackage.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Home\Restaurant\Registration\RegistrationForRestaurant\Purchase.ascx.cs">
+      <DependentUpon>Purchase.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Home\Restaurant\Registration\RegistrationForRestaurant\Purchase.ascx.designer.cs">
+      <DependentUpon>Purchase.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Home\Restaurant\Registration\RegistrationForRestaurant\RestaurantContact.ascx.cs">
+      <DependentUpon>RestaurantContact.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Home\Restaurant\Registration\RegistrationForRestaurant\RestaurantContact.ascx.designer.cs">
+      <DependentUpon>RestaurantContact.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Home\Restaurant\Registration\RegistrationForRestaurant\RestaurantInformation.ascx.cs">
+      <DependentUpon>RestaurantInformation.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Home\Restaurant\Registration\RegistrationForRestaurant\RestaurantInformation.ascx.designer.cs">
+      <DependentUpon>RestaurantInformation.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Home\Restaurant\Registration\RegistrationForRestaurant\ThankYouForRegistration.ascx.cs">
+      <DependentUpon>ThankYouForRegistration.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Home\Restaurant\Registration\RegistrationForRestaurant\ThankYouForRegistration.ascx.designer.cs">
+      <DependentUpon>ThankYouForRegistration.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Home\Restaurant\RestaurantByCuisine\RestaurantByCuisine.ascx.cs">
+      <DependentUpon>RestaurantByCuisine.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Home\Restaurant\RestaurantByCuisine\RestaurantByCuisine.ascx.designer.cs">
+      <DependentUpon>RestaurantByCuisine.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Home\Restaurant\RestaurantDetail\RestaurantDetail.ascx.cs">
+      <DependentUpon>RestaurantDetail.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Home\Restaurant\RestaurantDetail\RestaurantDetail.ascx.designer.cs">
+      <DependentUpon>RestaurantDetail.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Home\Restaurant\Review\ListReview.ascx.cs">
+      <DependentUpon>ListReview.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Home\Restaurant\Review\ListReview.ascx.designer.cs">
+      <DependentUpon>ListReview.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Home\Restaurant\UserControls\LoginForPurchase.ascx.cs">
+      <DependentUpon>LoginForPurchase.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Home\Restaurant\UserControls\LoginForPurchase.ascx.designer.cs">
+      <DependentUpon>LoginForPurchase.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Home\Restaurant\UserControls\RestaurantHeader.ascx.cs">
+      <DependentUpon>RestaurantHeader.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Home\Restaurant\UserControls\RestaurantHeader.ascx.designer.cs">
+      <DependentUpon>RestaurantHeader.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Home\Restaurant\UserControls\TabBar.ascx.cs">
+      <DependentUpon>TabBar.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Home\Restaurant\UserControls\TabBar.ascx.designer.cs">
+      <DependentUpon>TabBar.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Home\UserControls\AdvanceSearch.ascx.cs">
+      <DependentUpon>AdvanceSearch.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Home\UserControls\AdvanceSearch.ascx.designer.cs">
+      <DependentUpon>AdvanceSearch.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Home\UserControls\ListReviewLeft.ascx.cs">
+      <DependentUpon>ListReviewLeft.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Home\UserControls\ListReviewLeft.ascx.designer.cs">
+      <DependentUpon>ListReviewLeft.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Home\UserControls\ListReviewRight.ascx.cs">
+      <DependentUpon>ListReviewRight.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Home\UserControls\ListReviewRight.ascx.designer.cs">
+      <DependentUpon>ListReviewRight.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Home\Restaurant\Review\ReviewDetail.ascx.cs">
+      <DependentUpon>ReviewDetail.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Home\Restaurant\Review\ReviewDetail.ascx.designer.cs">
+      <DependentUpon>ReviewDetail.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Home\UserControls\Footer.ascx.cs">
+      <DependentUpon>Footer.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Home\UserControls\Footer.ascx.designer.cs">
+      <DependentUpon>Footer.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Home\UserControls\Header.ascx.cs">
+      <DependentUpon>Header.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Home\UserControls\Header.ascx.designer.cs">
+      <DependentUpon>Header.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Home\UserControls\Home.ascx.cs">
+      <DependentUpon>Home.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Home\UserControls\Home.ascx.designer.cs">
+      <DependentUpon>Home.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Home\UserControls\HomeSearch.ascx.cs">
+      <DependentUpon>HomeSearch.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Home\UserControls\HomeSearch.ascx.designer.cs">
+      <DependentUpon>HomeSearch.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Home\UserControls\HomeSideBar.ascx.cs">
+      <DependentUpon>HomeSideBar.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Home\UserControls\HomeSideBar.ascx.designer.cs">
+      <DependentUpon>HomeSideBar.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Home\UserControls\HomeVideo.ascx.cs">
+      <DependentUpon>HomeVideo.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Home\UserControls\HomeVideo.ascx.designer.cs">
+      <DependentUpon>HomeVideo.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Home\UserControls\JpegCaptCha.aspx.cs">
+      <DependentUpon>JpegCaptCha.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Home\UserControls\JpegCaptCha.aspx.designer.cs">
+      <DependentUpon>JpegCaptCha.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Home\UserControls\Login.ascx.cs">
+      <DependentUpon>Login.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Home\UserControls\Login.ascx.designer.cs">
+      <DependentUpon>Login.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Home\UserControls\Logout.ascx.cs">
+      <DependentUpon>Logout.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Home\UserControls\Logout.ascx.designer.cs">
+      <DependentUpon>Logout.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Home\UserControls\RestaurantByCuisine.ascx.cs">
+      <DependentUpon>RestaurantByCuisine.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Home\UserControls\RestaurantByCuisine.ascx.designer.cs">
+      <DependentUpon>RestaurantByCuisine.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Library\PageConstant.cs" />
+    <Compile Include="Library\PageEnvironment.cs" />
+    <Compile Include="Library\Sercurity\AuthenticateControl.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Library\Sercurity\AuthenticatePage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Library\Sercurity\Base\BasePage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Management\Default.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Management\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Management\Member.Master.cs">
+      <DependentUpon>Member.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Management\Member.Master.designer.cs">
+      <DependentUpon>Member.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Management\Member\FavouriteRestaurant\YourFavouriteRestaurant.ascx.cs">
+      <DependentUpon>YourFavouriteRestaurant.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Management\Member\FavouriteRestaurant\YourFavouriteRestaurant.ascx.designer.cs">
+      <DependentUpon>YourFavouriteRestaurant.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Management\Member\GiftCertificates\MyGift.ascx.cs">
+      <DependentUpon>MyGift.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Management\Member\GiftCertificates\MyGift.ascx.designer.cs">
+      <DependentUpon>MyGift.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Management\Member\GiftCertificates\PrintGift.aspx.cs">
+      <DependentUpon>PrintGift.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Management\Member\GiftCertificates\PrintGift.aspx.designer.cs">
+      <DependentUpon>PrintGift.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Management\Member\Profile\ChangePassword.ascx.cs">
+      <DependentUpon>ChangePassword.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Management\Member\Profile\ChangePassword.ascx.designer.cs">
+      <DependentUpon>ChangePassword.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Management\Member\Delivery\ViewDelivery.ascx.cs">
+      <DependentUpon>ViewDelivery.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Management\Member\Delivery\ViewDelivery.ascx.designer.cs">
+      <DependentUpon>ViewDelivery.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Management\Member\FavouriteRestaurant\ViewFavouriteRestaurant.ascx.cs">
+      <DependentUpon>ViewFavouriteRestaurant.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Management\Member\FavouriteRestaurant\ViewFavouriteRestaurant.ascx.designer.cs">
+      <DependentUpon>ViewFavouriteRestaurant.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Management\Member\Profile\ProfileManagement.ascx.cs">
+      <DependentUpon>ProfileManagement.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Management\Member\Profile\ProfileManagement.ascx.designer.cs">
+      <DependentUpon>ProfileManagement.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Management\Member\Reservation\MyReservation.ascx.cs">
+      <DependentUpon>MyReservation.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Management\Member\Reservation\MyReservation.ascx.designer.cs">
+      <DependentUpon>MyReservation.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Management\Member\Review\MemberListReview.ascx.cs">
+      <DependentUpon>MemberListReview.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Management\Member\Review\MemberListReview.ascx.designer.cs">
+      <DependentUpon>MemberListReview.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Management\Member\Transaction\HistoryTransaction.ascx.cs">
+      <DependentUpon>HistoryTransaction.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Management\Member\Transaction\HistoryTransaction.ascx.designer.cs">
+      <DependentUpon>HistoryTransaction.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Management\Member\UserControls\Menu.ascx.cs">
+      <DependentUpon>Menu.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Management\Member\UserControls\Menu.ascx.designer.cs">
+      <DependentUpon>Menu.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Management\Member\UserControls\Welcome.ascx.cs">
+      <DependentUpon>Welcome.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Management\Member\UserControls\Welcome.ascx.designer.cs">
+      <DependentUpon>Welcome.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Management\Restaurant\GiftCertificates\GiftParameter.ascx.cs">
+      <DependentUpon>GiftParameter.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Management\Restaurant\GiftCertificates\GiftParameter.ascx.designer.cs">
+      <DependentUpon>GiftParameter.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Management\Restaurant\GiftCertificates\GiftPurchaseManagement.ascx.cs">
+      <DependentUpon>GiftPurchaseManagement.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Management\Restaurant\GiftCertificates\GiftPurchaseManagement.ascx.designer.cs">
+      <DependentUpon>GiftPurchaseManagement.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Management\Restaurant\ListRestaurant\CreateRestaurant.ascx.cs">
+      <DependentUpon>CreateRestaurant.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Management\Restaurant\ListRestaurant\CreateRestaurant.ascx.designer.cs">
+      <DependentUpon>CreateRestaurant.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Management\Restaurant\ListRestaurant\ListRestaurant.ascx.cs">
+      <DependentUpon>ListRestaurant.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Management\Restaurant\ListRestaurant\ListRestaurant.ascx.designer.cs">
+      <DependentUpon>ListRestaurant.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Management\Restaurant\Menu\AddAddon.ascx.cs">
+      <DependentUpon>AddAddon.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Management\Restaurant\Menu\AddAddon.ascx.designer.cs">
+      <DependentUpon>AddAddon.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Management\Restaurant\Menu\AddAddonGroup.ascx.cs">
+      <DependentUpon>AddAddonGroup.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Management\Restaurant\Menu\AddAddonGroup.ascx.designer.cs">
+      <DependentUpon>AddAddonGroup.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Management\Restaurant\Menu\AddMenuCategory.ascx.cs">
+      <DependentUpon>AddMenuCategory.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Management\Restaurant\Menu\AddMenuCategory.ascx.designer.cs">
+      <DependentUpon>AddMenuCategory.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Management\Restaurant\Menu\AddMenuItem.ascx.cs">
+      <DependentUpon>AddMenuItem.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Management\Restaurant\Menu\AddMenuItem.ascx.designer.cs">
+      <DependentUpon>AddMenuItem.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Management\Restaurant\Menu\Addon.ascx.cs">
+      <DependentUpon>Addon.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Management\Restaurant\Menu\Addon.ascx.designer.cs">
+      <DependentUpon>Addon.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Management\Restaurant\Menu\AddonGroup.ascx.cs">
+      <DependentUpon>AddonGroup.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Management\Restaurant\Menu\AddonGroup.ascx.designer.cs">
+      <DependentUpon>AddonGroup.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Management\Restaurant\Menu\MenuCategory.ascx.cs">
+      <DependentUpon>MenuCategory.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Management\Restaurant\Menu\MenuCategory.ascx.designer.cs">
+      <DependentUpon>MenuCategory.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Management\Restaurant\Menu\MenuItem.ascx.cs">
+      <DependentUpon>MenuItem.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Management\Restaurant\Menu\MenuItem.ascx.designer.cs">
+      <DependentUpon>MenuItem.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Management\Restaurant\Menu\MenuTabbar.ascx.cs">
+      <DependentUpon>MenuTabbar.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Management\Restaurant\Menu\MenuTabbar.ascx.designer.cs">
+      <DependentUpon>MenuTabbar.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Management\Restaurant\Order\OrderParameter.ascx.cs">
+      <DependentUpon>OrderParameter.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Management\Restaurant\Order\OrderParameter.ascx.designer.cs">
+      <DependentUpon>OrderParameter.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Management\Restaurant\Photo\AddPhoto.ascx.cs">
+      <DependentUpon>AddPhoto.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Management\Restaurant\Photo\AddPhoto.ascx.designer.cs">
+      <DependentUpon>AddPhoto.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Management\Restaurant\Photo\EditPhoto.ascx.cs">
+      <DependentUpon>EditPhoto.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Management\Restaurant\Photo\EditPhoto.ascx.designer.cs">
+      <DependentUpon>EditPhoto.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Management\Restaurant\Photo\PhotoManagement.ascx.cs">
+      <DependentUpon>PhotoManagement.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Management\Restaurant\Photo\PhotoManagement.ascx.designer.cs">
+      <DependentUpon>PhotoManagement.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Management\Restaurant\Profile\BussinessAccountPaypal.ascx.cs">
+      <DependentUpon>BussinessAccountPaypal.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Management\Restaurant\Profile\BussinessAccountPaypal.ascx.designer.cs">
+      <DependentUpon>BussinessAccountPaypal.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Management\Restaurant\Profile\ProfileManagement.ascx.cs">
+      <DependentUpon>ProfileManagement.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Management\Restaurant\Profile\ProfileManagement.ascx.designer.cs">
+      <DependentUpon>ProfileManagement.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Management\Restaurant\Profile\SettingService.ascx.cs">
+      <DependentUpon>SettingService.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Management\Restaurant\Profile\SettingService.ascx.designer.cs">
+      <DependentUpon>SettingService.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Management\Restaurant\Renew\ChoosePackage.ascx.cs">
+      <DependentUpon>ChoosePackage.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Management\Restaurant\Renew\ChoosePackage.ascx.designer.cs">
+      <DependentUpon>ChoosePackage.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Management\Restaurant\Renew\PurchasePackage.ascx.cs">
+      <DependentUpon>PurchasePackage.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Management\Restaurant\Renew\PurchasePackage.ascx.designer.cs">
+      <DependentUpon>PurchasePackage.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Management\Restaurant\Renew\Renew.ascx.cs">
+      <DependentUpon>Renew.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Management\Restaurant\Renew\Renew.ascx.designer.cs">
+      <DependentUpon>Renew.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Management\Restaurant\Renew\ThankForRenew.ascx.cs">
+      <DependentUpon>ThankForRenew.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Management\Restaurant\Renew\ThankForRenew.ascx.designer.cs">
+      <DependentUpon>ThankForRenew.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Management\Restaurant\Renew\YourRestaurant.ascx.cs">
+      <DependentUpon>YourRestaurant.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Management\Restaurant\Renew\YourRestaurant.ascx.designer.cs">
+      <DependentUpon>YourRestaurant.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Management\Restaurant\Reservation\ReservationManagement.ascx.cs">
+      <DependentUpon>ReservationManagement.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Management\Restaurant\Reservation\ReservationManagement.ascx.designer.cs">
+      <DependentUpon>ReservationManagement.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Management\Restaurant\Review\CreateReview.ascx.cs">
+      <DependentUpon>CreateReview.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Management\Restaurant\Review\CreateReview.ascx.designer.cs">
+      <DependentUpon>CreateReview.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Management\Restaurant\Review\EditReview.ascx.cs">
+      <DependentUpon>EditReview.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Management\Restaurant\Review\EditReview.ascx.designer.cs">
+      <DependentUpon>EditReview.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Management\Restaurant\Review\ReviewManagement.ascx.cs">
+      <DependentUpon>ReviewManagement.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Management\Restaurant\Review\ReviewManagement.ascx.designer.cs">
+      <DependentUpon>ReviewManagement.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Management\Restaurant\UserControls\BlockRestaurant.ascx.cs">
+      <DependentUpon>BlockRestaurant.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Management\Restaurant\UserControls\BlockRestaurant.ascx.designer.cs">
+      <DependentUpon>BlockRestaurant.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Management\Restaurant\UserControls\CheckRestaurant.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Management\Restaurant\Video\VideoManagement.ascx.cs">
+      <DependentUpon>VideoManagement.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Management\Restaurant\Video\VideoManagement.ascx.designer.cs">
+      <DependentUpon>VideoManagement.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Management\UserControls\Address.ascx.cs">
+      <DependentUpon>Address.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Management\UserControls\Address.ascx.designer.cs">
+      <DependentUpon>Address.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Management\UserControls\Footer.ascx.cs">
+      <DependentUpon>Footer.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Management\UserControls\Footer.ascx.designer.cs">
+      <DependentUpon>Footer.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Management\UserControls\Header.ascx.cs">
+      <DependentUpon>Header.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Management\UserControls\Header.ascx.designer.cs">
+      <DependentUpon>Header.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Management\UserControls\UnderContruction.ascx.cs">
+      <DependentUpon>UnderContruction.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Management\UserControls\UnderContruction.ascx.designer.cs">
+      <DependentUpon>UnderContruction.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Test.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>Test.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Test.aspx.designer.cs">
+      <DependentUpon>Test.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Restaurant.Library.BLL\Restaurant.Library.BLL.csproj">
+      <Project>{3AA3F90F-FC99-4BC0-B366-E611F5179BCD}</Project>
+      <Name>Restaurant.Library.BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Restaurant.Library.Entities\Restaurant.Library.Entities.csproj">
+      <Project>{8DABA69A-6EFD-49C6-8D26-DE56AFF9C4B6}</Project>
+      <Name>Restaurant.Library.Entities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Restaurant.Library.Utilities\Restaurant.Library.Utilities.csproj">
+      <Project>{B68AA85F-3C13-4413-BE11-43225FA92F49}</Project>
+      <Name>Restaurant.Library.Utilities</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Administrator\Administrator.Master" />
+    <Content Include="Administrator\Login.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Default.Master" />
+    <Content Include="Management\Default.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Administrator\GiftCertificates\DefineGiftCommision.ascx" />
+    <Content Include="Administrator\GiftCertificates\DefineGiftDesign.ascx" />
+    <Content Include="Administrator\GiftCertificates\DefineGiftType.ascx" />
+    <Content Include="Administrator\GiftCertificates\ListGiftPurchased.ascx" />
+    <Content Include="Administrator\MemberManagement\AddMember.ascx" />
+    <Content Include="Administrator\MemberManagement\ListMember.ascx" />
+    <Content Include="Administrator\ParamterManagement\Attire.ascx" />
+    <Content Include="Administrator\ParamterManagement\City.ascx" />
+    <Content Include="Administrator\ParamterManagement\Country.ascx" />
+    <Content Include="Administrator\ParamterManagement\Cuisine.ascx" />
+    <Content Include="Administrator\ParamterManagement\Neighbourhood.ascx" />
+    <Content Include="Administrator\ParamterManagement\Special.ascx" />
+    <Content Include="Administrator\ParamterManagement\State.ascx" />
+    <Content Include="Administrator\Profile\ChangePassword.ascx" />
+    <Content Include="Administrator\Reservation\ReservationByMonth.ascx" />
+    <Content Include="Administrator\Reservation\ReservationByWeek.ascx" />
+    <Content Include="Administrator\Reservation\ReservationByYear.ascx" />
+    <Content Include="Administrator\Reservation\ReservationCommission.ascx" />
+    <Content Include="Administrator\RestaurantManagement\ListRestaurant\AddRestaurant.ascx" />
+    <Content Include="Administrator\RestaurantManagement\ListRestaurant\CreateRestaurant.ascx" />
+    <Content Include="Administrator\RestaurantManagement\ListRestaurant\ListRestaurant.ascx" />
+    <Content Include="Administrator\RestaurantPackage\ChoosePackage.ascx" />
+    <Content Include="Administrator\RestaurantPackage\CreatePackage.ascx" />
+    <Content Include="Administrator\RestaurantPackage\CreatePakageDetail.ascx" />
+    <Content Include="Administrator\Review\ReviewManagement.ascx" />
+    <Content Include="Administrator\UserControls\SearchRestaurant.ascx" />
+    <Content Include="App_Data\RestaurantConfig.xml" />
+    <Content Include="Home\Restaurant\Invite.ascx" />
+    <Content Include="Home\Restaurant\LinkToUs.ascx" />
+    <Content Include="Home\Member\Photo\ListPhoto.ascx" />
+    <Content Include="Home\Member\Photo\PhotoDetail.ascx" />
+    <Content Include="Home\Member\Registration\Register.ascx" />
+    <Content Include="Home\Member\Review\CreateReview.ascx" />
+    <Content Include="Home\Restaurant\GiftCertificates\InstanceGift.ascx" />
+    <Content Include="Home\Restaurant\GiftCertificates\PurchaseGift.ascx" />
+    <Content Include="Home\Restaurant\GiftCertificates\ThankYouForUseMyGiftService.ascx" />
+    <Content Include="Home\Restaurant\ListRestaurant\ListRestaurant.ascx" />
+    <Content Include="Home\Restaurant\Menu\Menu.ascx" />
+    <Content Include="Home\Restaurant\Menu\MenuItem.ascx" />
+    <Content Include="Home\Restaurant\OnlineReservation\InstanceReservation.ascx" />
+    <Content Include="Home\Restaurant\OnlineReservation\ThankYouForReservation.ascx" />
+    <Content Include="Home\Restaurant\Registration\RegistrationForRestaurant\ChoosePackage.ascx" />
+    <Content Include="Home\Restaurant\Registration\RegistrationForRestaurant\Purchase.ascx" />
+    <Content Include="Home\Restaurant\Registration\RegistrationForRestaurant\RestaurantInformation.ascx" />
+    <Content Include="Home\Restaurant\Registration\RegistrationForRestaurant\ThankYouForRegistration.ascx" />
+    <Content Include="Home\Restaurant\RestaurantByCuisine\RestaurantByCuisine.ascx" />
+    <Content Include="Home\Restaurant\RestaurantDetail\RestaurantDetail.ascx" />
+    <Content Include="Home\Restaurant\Review\ListReview.ascx" />
+    <Content Include="Home\Restaurant\UserControls\LoginForPurchase.ascx" />
+    <Content Include="Home\Restaurant\UserControls\RestaurantHeader.ascx" />
+    <Content Include="Home\Restaurant\UserControls\TabBar.ascx" />
+    <Content Include="Home\UserControls\AdvanceSearch.ascx" />
+    <Content Include="Home\UserControls\ListReviewLeft.ascx" />
+    <Content Include="Home\UserControls\ListReviewRight.ascx" />
+    <Content Include="Home\Restaurant\Review\ReviewDetail.ascx" />
+    <Content Include="Home\UserControls\Footer.ascx" />
+    <Content Include="Home\UserControls\Header.ascx" />
+    <Content Include="Home\UserControls\Home.ascx" />
+    <Content Include="Home\UserControls\HomeSearch.ascx" />
+    <Content Include="Home\UserControls\HomeSideBar.ascx" />
+    <Content Include="Home\UserControls\HomeVideo.ascx" />
+    <Content Include="Home\UserControls\JpegCaptCha.aspx" />
+    <Content Include="Home\UserControls\Login.ascx" />
+    <Content Include="Home\UserControls\Logout.ascx" />
+    <Content Include="Home\UserControls\RestaurantByCuisine.ascx" />
+    <Content Include="Management\Member.Master" />
+    <Content Include="Management\Member\GiftCertificates\MyGift.ascx" />
+    <Content Include="Management\Member\GiftCertificates\PrintGift.aspx" />
+    <Content Include="Management\Member\Profile\ChangePassword.ascx" />
+    <Content Include="Management\Member\Delivery\ViewDelivery.ascx" />
+    <Content Include="Management\Member\FavouriteRestaurant\ViewFavouriteRestaurant.ascx" />
+    <Content Include="Management\Member\Profile\ProfileManagement.ascx" />
+    <Content Include="Management\Member\Reservation\MyReservation.ascx" />
+    <Content Include="Management\Member\Review\MemberListReview.ascx" />
+    <Content Include="Management\Member\UserControls\Menu.ascx" />
+    <Content Include="Management\Member\UserControls\Welcome.ascx" />
+    <Content Include="Management\Restaurant\GiftCertificates\GiftParameter.ascx" />
+    <Content Include="Management\Restaurant\GiftCertificates\GiftPurchaseManagement.ascx" />
+    <Content Include="Management\Restaurant\ListRestaurant\CreateRestaurant.ascx" />
+    <Content Include="Management\Restaurant\ListRestaurant\ListRestaurant.ascx" />
+    <Content Include="Management\Restaurant\Menu\AddAddon.ascx" />
+    <Content Include="Management\Restaurant\Menu\AddAddonGroup.ascx" />
+    <Content Include="Management\Restaurant\Menu\AddMenuCategory.ascx" />
+    <Content Include="Management\Restaurant\Menu\AddMenuItem.ascx" />
+    <Content Include="Management\Restaurant\Menu\Addon.ascx" />
+    <Content Include="Management\Restaurant\Menu\AddonGroup.ascx" />
+    <Content Include="Management\Restaurant\Menu\MenuCategory.ascx" />
+    <Content Include="Management\Restaurant\Menu\MenuItem.ascx" />
+    <Content Include="Management\Restaurant\Menu\MenuTabbar.ascx" />
+    <Content Include="Management\Restaurant\Photo\AddPhoto.ascx" />
+    <Content Include="Management\Restaurant\Photo\EditPhoto.ascx" />
+    <Content Include="Management\Restaurant\Photo\PhotoManagement.ascx" />
+    <Content Include="Management\Restaurant\Profile\ProfileManagement.ascx" />
+    <Content Include="Management\Restaurant\Renew\ChoosePackage.ascx" />
+    <Content Include="Management\Restaurant\Renew\PurchasePackage.ascx" />
+    <Content Include="Management\Restaurant\Renew\Renew.ascx" />
+    <Content Include="Management\Restaurant\Renew\ThankForRenew.ascx" />
+    <Content Include="Management\Restaurant\Renew\YourRestaurant.ascx" />
+    <Content Include="Management\Restaurant\Reservation\ReservationManagement.ascx" />
+    <Content Include="Management\Restaurant\Review\CreateReview.ascx" />
+    <Content Include="Management\Restaurant\Review\EditReview.ascx" />
+    <Content Include="Management\Restaurant\Review\ReviewManagement.ascx" />
+    <Content Include="Management\Restaurant\UserControls\BlockRestaurant.ascx" />
+    <Content Include="Management\UserControls\Footer.ascx" />
+    <Content Include="Management\UserControls\Header.ascx" />
+    <Content Include="Management\UserControls\UnderContruction.ascx" />
+    <Content Include="Media\Gift\Thumbnail\All Occasions\1.jpg" />
+    <Content Include="Media\Gift\Thumbnail\All Occasions\10.jpg" />
+    <Content Include="Media\Gift\Thumbnail\All Occasions\11.jpg" />
+    <Content Include="Media\Gift\Thumbnail\All Occasions\12.jpg" />
+    <Content Include="Media\Gift\Thumbnail\All Occasions\13.jpg" />
+    <Content Include="Media\Gift\Thumbnail\All Occasions\14.jpg" />
+    <Content Include="Media\Gift\Thumbnail\All Occasions\2.jpg" />
+    <Content Include="Media\Gift\Thumbnail\All Occasions\3.jpg" />
+    <Content Include="Media\Gift\Thumbnail\All Occasions\4.jpg" />
+    <Content Include="Media\Gift\Thumbnail\All Occasions\5.jpg" />
+    <Content Include="Media\Gift\Thumbnail\All Occasions\6.jpg" />
+    <Content Include="Media\Gift\Thumbnail\All Occasions\7.jpg" />
+    <Content Include="Media\Gift\Thumbnail\All Occasions\8.jpg" />
+    <Content Include="Media\Gift\Thumbnail\All Occasions\9.jpg" />
+    <Content Include="Media\Gift\Thumbnail\Anniversary\1.jpg" />
+    <Content Include="Media\Gift\Thumbnail\Anniversary\2.jpg" />
+    <Content Include="Media\Gift\Thumbnail\Anniversary\3.jpg" />
+    <Content Include="Media\Gift\Thumbnail\Birthdays\1.jpg" />
+    <Content Include="Media\Gift\Thumbnail\Birthdays\2.jpg" />
+    <Content Include="Media\Gift\Thumbnail\Birthdays\3.jpg" />
+    <Content Include="Media\Gift\Thumbnail\Birthdays\4.jpg" />
+    <Content Include="Media\Gift\Thumbnail\Birthdays\5.jpg" />
+    <Content Include="Media\Gift\Thumbnail\Father%27s Day\1.jpg" />
+    <Content Include="Media\Gift\Thumbnail\Father%27s Day\2.jpg" />
+    <Content Include="Media\Gift\Thumbnail\Holidays\1.jpg" />
+    <Content Include="Media\Gift\Thumbnail\Holidays\2.jpg" />
+    <Content Include="Media\Gift\Thumbnail\Holidays\3.jpg" />
+    <Content Include="Media\Gift\Thumbnail\Holidays\4.jpg" />
+    <Content Include="Media\Gift\Thumbnail\Most Popular\1.jpg" />
+    <Content Include="Media\Gift\Thumbnail\Most Popular\2.jpg" />
+    <Content Include="Media\Gift\Thumbnail\Most Popular\3.jpg" />
+    <Content Include="Media\Gift\Thumbnail\Most Popular\4.jpg" />
+    <Content Include="Media\Gift\Thumbnail\Most Popular\5.jpg" />
+    <Content Include="Media\Gift\Thumbnail\Most Popular\6.jpg" />
+    <Content Include="Media\Gift\Thumbnail\Most Popular\7.jpg" />
+    <Content Include="Media\Gift\Thumbnail\Most Popular\8.jpg" />
+    <Content Include="Media\Gift\Thumbnail\Mother%27s Day\1.jpg" />
+    <Content Include="Media\Gift\Thumbnail\Mother%27s Day\2.jpg" />
+    <Content Include="Media\Gift\Thumbnail\Mother%27s Day\3.jpg" />
+    <Content Include="Media\Gift\Thumbnail\Mother%27s Day\4.jpg" />
+    <Content Include="Media\Gift\Thumbnail\Mother%27s Day\5.jpg" />
+    <Content Include="Media\Gift\Thumbnail\Mother%27s Day\6.jpg" />
+    <Content Include="Media\Gift\Thumbnail\New Year%27s\1.jpg" />
+    <Content Include="Media\Gift\Thumbnail\New Year%27s\2.jpg" />
+    <Content Include="Media\Gift\Thumbnail\New Year%27s\3.jpg" />
+    <Content Include="Media\Gift\Thumbnail\New Year%27s\4.jpg" />
+    <Content Include="Media\Gift\Thumbnail\Thank You\1.jpg" />
+    <Content Include="Media\Gift\Thumbnail\Thank You\2.jpg" />
+    <Content Include="Media\Gift\Thumbnail\Thank You\3.jpg" />
+    <Content Include="Media\Gift\Thumbnail\Wedding\1.jpg" />
+    <Content Include="Media\Gift\Thumbnail\Wedding\2.jpg" />
+    <Content Include="Media\Images\1.png" />
+    <Content Include="Media\Images\1234567.gif" />
+    <Content Include="Media\Images\aa.jpg" />
+    <Content Include="Media\Images\AdminFooter.jpg" />
+    <Content Include="Media\Images\AdminHeader.jpg" />
+    <Content Include="Media\Images\AdminHeaderBottomLeft.jpg" />
+    <Content Include="Media\Images\AdminMenu.jpg" />
+    <Content Include="Media\Images\AdminMenuBackground.jpg" />
+    <Content Include="Media\Images\ads_learnMore.jpg" />
+    <Content Include="Media\Images\adv123.jpg" />
+    <Content Include="Media\Images\adv_09.jpg" />
+    <Content Include="Media\Images\adv_10.jpg" />
+    <Content Include="Media\Images\adv_11.jpg" />
+    <Content Include="Media\Images\arrow.jpg" />
+    <Content Include="Media\Images\arrow1.jpg" />
+    <Content Include="Media\Images\bb.jpg" />
+    <Content Include="Media\Images\bgCuisine.jpg" />
+    <Content Include="Media\Images\bgMenu.jpg" />
+    <Content Include="Media\Images\bgRestaurant.jpg" />
+    <Content Include="Media\Images\btnNext.png" />
+    <Content Include="Media\Images\btnPrevious.png" />
+    <Content Include="Media\Images\btnRegister.gif" />
+    <Content Include="Media\Images\btn_continue.gif" />
+    <Content Include="Media\Images\button.jpg" />
+    <Content Include="Media\Images\Copy of inf_07.jpg" />
+    <Content Include="Media\Images\Copy of inf_08.jpg" />
+    <Content Include="Media\Images\cuisine_search_r10_c2.jpg" />
+    <Content Include="Media\Images\cuisine_search_r10_c3.jpg" />
+    <Content Include="Media\Images\cuisine_search_r10_c6.jpg" />
+    <Content Include="Media\Images\cuisine_search_r10_c8.jpg" />
+    <Content Include="Media\Images\cuisine_search_r11_c8.jpg" />
+    <Content Include="Media\Images\cuisine_search_r12_c8.jpg" />
+    <Content Include="Media\Images\cuisine_search_r13_c8.jpg" />
+    <Content Include="Media\Images\cuisine_search_r14_c4.jpg" />
+    <Content Include="Media\Images\cuisine_search_r14_c5.jpg" />
+    <Content Include="Media\Images\cuisine_search_r15_c4.jpg" />
+    <Content Include="Media\Images\cuisine_search_r16_c4.jpg" />
+    <Content Include="Media\Images\cuisine_search_r18_c4.jpg" />
+    <Content Include="Media\Images\cuisine_search_r19_c4.jpg" />
+    <Content Include="Media\Images\cuisine_search_r20_c3.jpg" />
+    <Content Include="Media\Images\cuisine_search_r21_c4.jpg" />
+    <Content Include="Media\Images\cuisine_search_r22_c8.jpg" />
+    <Content Include="Media\Images\cuisine_search_r23_c8.jpg" />
+    <Content Include="Media\Images\cuisine_search_r25_c3.jpg" />
+    <Content Include="Media\Images\cuisine_search_r27_c2.jpg" />
+    <Content Include="Media\Images\cuisine_search_r2_c1.jpg" />
+    <Content Include="Media\Images\cuisine_search_r2_c2.jpg" />
+    <Content Include="Media\Images\cuisine_search_r2_c7.jpg" />
+    <Content Include="Media\Images\cuisine_search_r2_c8.jpg" />
+    <Content Include="Media\Images\cuisine_search_r2_c9.jpg" />
+    <Content Include="Media\Images\cuisine_search_r4_c3.jpg" />
+    <Content Include="Media\Images\cuisine_search_r4_c8.jpg" />
+    <Content Include="Media\Images\cuisine_search_r5_c8.jpg" />
+    <Content Include="Media\Images\cuisine_search_r6_c3.jpg" />
+    <Content Include="Media\Images\cuisine_search_r7_c3.jpg" />
+    <Content Include="Media\Images\cuisine_search_r8_c2.jpg" />
+    <Content Include="Media\Images\cuisine_search_r9_c2.jpg" />
+    <Content Include="Media\Images\deliveryIcon.jpg" />
+    <Content Include="Media\Images\deliveryIconDisable.jpg" />
+    <Content Include="Media\Images\find.jpg" />
+    <Content Include="Media\Images\footerCuisine.jpg" />
+    <Content Include="Media\Images\footerRestaurant.jpg" />
+    <Content Include="Media\Images\formContentNNV_Manamement.jpg" />
+    <Content Include="Media\Images\formFooterNNV_Management.jpg" />
+    <Content Include="Media\Images\formHeaderNNV.jpg" />
+    <Content Include="Media\Images\formHeaderNNV_Management.jpg" />
+    <Content Include="Media\Images\giftIcon.jpg" />
+    <Content Include="Media\Images\giftIconDisable.jpg" />
+    <Content Include="Media\Images\gift_r10_c2.jpg" />
+    <Content Include="Media\Images\gift_r2_c2.jpg" />
+    <Content Include="Media\Images\gift_r3_c2.jpg" />
+    <Content Include="Media\Images\gift_r4_c3.jpg" />
+    <Content Include="Media\Images\gift_r6_c4.jpg" />
+    <Content Include="Media\Images\gift_r7_c8.jpg" />
+    <Content Include="Media\Images\gift_r8_c2.jpg" />
+    <Content Include="Media\Images\gift_r8_c4.jpg" />
+    <Content Include="Media\Images\Header.jpg" />
+    <Content Include="Media\Images\header1.jpg" />
+    <Content Include="Media\Images\headerbg.jpg" />
+    <Content Include="Media\Images\headerCuisine.jpg" />
+    <Content Include="Media\Images\headerRestaurant.jpg" />
+    <Content Include="Media\Images\headerRight.jpg" />
+    <Content Include="Media\Images\headerVideo.jpg" />
+    <Content Include="Media\Images\header_left.jpg" />
+    <Content Include="Media\Images\help.jpg" />
+    <Content Include="Media\Images\helpIcon.jpg" />
+    <Content Include="Media\Images\homeIcon.jpg" />
+    <Content Include="Media\Images\home_01.gif" />
+    <Content Include="Media\Images\home_02.gif" />
+    <Content Include="Media\Images\home_03.gif" />
+    <Content Include="Media\Images\home_04.gif" />
+    <Content Include="Media\Images\home_05.gif" />
+    <Content Include="Media\Images\home_05_r1_c2.gif" />
+    <Content Include="Media\Images\home_06.gif" />
+    <Content Include="Media\Images\home_07.gif" />
+    <Content Include="Media\Images\home_08.gif" />
+    <Content Include="Media\Images\home_09.gif" />
+    <Content Include="Media\Images\home_09_r1_c1.gif" />
+    <Content Include="Media\Images\home_10.gif" />
+    <Content Include="Media\Images\home_11.gif" />
+    <Content Include="Media\Images\home_12.gif" />
+    <Content Include="Media\Images\home_13.gif" />
+    <Content Include="Media\Images\home_14.gif" />
+    <Content Include="Media\Images\home_15.gif" />
+    <Content Include="Media\Images\home_16.gif" />
+    <Content Include="Media\Images\home_17.gif" />
+    <Content Include="Media\Images\home_17_03.gif" />
+    <Content Include="Media\Images\home_17_04.gif" />
+    <Content Include="Media\Images\home_17_07.gif" />
+    <Content Include="Media\Images\home_17_08.gif" />
+    <Content Include="Media\Images\home_18.gif" />
+    <Content Include="Media\Images\home_19.gif" />
+    <Content Include="Media\Images\home_20.gif" />
+    <Content Include="Media\Images\home_21.gif" />
+    <Content Include="Media\Images\home_22.gif" />
+    <Content Include="Media\Images\home_23.gif" />
+    <Content Include="Media\Images\home_24.gif" />
+    <Content Include="Media\Images\home_25.gif" />
+    <Content Include="Media\Images\home_26.gif" />
+    <Content Include="Media\Images\home_27.gif" />
+    <Content Include="Media\Images\home_r4_c2.jpg" />
+    <Content Include="Media\Images\hr.jpg" />
+    <Content Include="Media\Images\iconMenu.jpg" />
+    <Content Include="Media\Images\icon_01.jpg" />
+    <Content Include="Media\Images\icon_02.jpg" />
+    <Content Include="Media\Images\icon_03.jpg" />
+    <Content Include="Media\Images\icon_04.jpg" />
+    <Content Include="Media\Images\icon_05.jpg" />
+    <Content Include="Media\Images\icon_06.jpg" />
+    <Content Include="Media\Images\icon_07.jpg" />
+    <Content Include="Media\Images\icon_08.jpg" />
+    <Content Include="Media\Images\icon_10.jpg" />
+    <Content Include="Media\Images\image3_3.jpg" />
+    <Content Include="Media\Images\image5_1.jpg" />
+    <Content Include="Media\Images\inf_01.jpg" />
+    <Content Include="Media\Images\inf_02.jpg" />
+    <Content Include="Media\Images\inf_03.jpg" />
+    <Content Include="Media\Images\inf_03_1.jpg" />
+    <Content Include="Media\Images\inf_03_2.jpg" />
+    <Content Include="Media\Images\inf_03_3.jpg" />
+    <Content Include="Media\Images\inf_04.jpg" />
+    <Content Include="Media\Images\inf_05.jpg" />
+    <Content Include="Media\Images\inf_06.jpg" />
+    <Content Include="Media\Images\inf_07.jpg" />
+    <Content Include="Media\Images\inf_08.jpg" />
+    <Content Include="Media\Images\inf_09.jpg" />
+    <Content Include="Media\Images\inf_10.jpg" />
+    <Content Include="Media\Images\inf_11.jpg" />
+    <Content Include="Media\Images\inf_12.jpg" />
+    <Content Include="Media\Images\inf_13.jpg" />
+    <Content Include="Media\Images\inf_14.jpg" />
+    <Content Include="Media\Images\inf_15.jpg" />
+    <Content Include="Media\Images\inf_16.jpg" />
+    <Content Include="Media\Images\inf_17.jpg" />
+    <Content Include="Media\Images\inf_18.jpg" />
+    <Content Include="Media\Images\inf_19.jpg" />
+    <Content Include="Media\Images\learnMore.jpg" />
+    <Content Include="Media\Images\leftAds1.jpg" />
+    <Content Include="Media\Images\leftAds2.jpg" />
+    <Content Include="Media\Images\leftBg.jpg" />
+    <Content Include="Media\Images\line.jpg" />
+    <Content Include="Media\Images\Login.jpg" />
+    <Content Include="Media\Images\login_01.jpg" />
+    <Content Include="Media\Images\login_02.jpg" />
+    <Content Include="Media\Images\login_03.jpg" />
+    <Content Include="Media\Images\login_04.jpg" />
+    <Content Include="Media\Images\login_05.jpg" />
+    <Content Include="Media\Images\login_05_1.jpg" />
+    <Content Include="Media\Images\login_06.jpg" />
+    <Content Include="Media\Images\login_07.jpg" />
+    <Content Include="Media\Images\login_08.jpg" />
+    <Content Include="Media\Images\login_09.jpg" />
+    <Content Include="Media\Images\login_10.jpg" />
+    <Content Include="Media\Images\login_11.jpg" />
+    <Content Include="Media\Images\login_12.jpg" />
+    <Content Include="Media\Images\login_13.jpg" />
+    <Content Include="Media\Images\login_14.jpg" />
+    <Content Include="Media\Images\login_15.jpg" />
+    <Content Include="Media\Images\Login_r10_c11.jpg" />
+    <Content Include="Media\Images\Login_r10_c8.jpg" />
+    <Content Include="Media\Images\Login_r10_c9.jpg" />
+    <Content Include="Media\Images\Login_r15_c4.jpg" />
+    <Content Include="Media\Images\Login_r16_c10.jpg" />
+    <Content Include="Media\Images\Login_r16_c14.jpg" />
+    <Content Include="Media\Images\Login_r16_c8.jpg" />
+    <Content Include="Media\Images\Login_r1_c2.jpg" />
+    <Content Include="Media\Images\Login_r2_c1.jpg" />
+    <Content Include="Media\Images\Login_r2_c2.jpg" />
+    <Content Include="Media\Images\Login_r2_c2_r1.jpg" />
+    <Content Include="Media\Images\Login_r2_c4.jpg" />
+    <Content Include="Media\Images\Login_r2_c5.jpg" />
+    <Content Include="Media\Images\Login_r4_c4.jpg" />
+    <Content Include="Media\Images\Login_r4_c8.jpg" />
+    <Content Include="Media\Images\Login_r6_c4.jpg" />
+    <Content Include="Media\Images\Login_r7_c8.jpg" />
+    <Content Include="Media\Images\Login_r8_c4.jpg" />
+    <Content Include="Media\Images\Login_r8_c5.jpg" />
+    <Content Include="Media\Images\map.jpg" />
+    <Content Include="Media\Images\MemberActive.jpg" />
+    <Content Include="Media\Images\MemberDefault.jpg" />
+    <Content Include="Media\Images\menu.jpg" />
+    <Content Include="Media\Images\menuBlast.jpg" />
+    <Content Include="Media\Images\menuContent.jpg" />
+    <Content Include="Media\Images\menuHeader.jpg" />
+    <Content Include="Media\Images\menuIcon.jpg" />
+    <Content Include="Media\Images\menuIconDisable.jpg" />
+    <Content Include="Media\Images\MenuLeft.jpg" />
+    <Content Include="Media\Images\MenuRight.jpg" />
+    <Content Include="Media\Images\menuTouchmore.jpg" />
+    <Content Include="Media\Images\mobileIcon.jpg" />
+    <Content Include="Media\Images\mobileIconDisable.jpg" />
+    <Content Include="Media\Images\NextIcon.jpg" />
+    <Content Include="Media\Images\photoIcon.jpg" />
+    <Content Include="Media\Images\photoIconDisable.jpg" />
+    <Content Include="Media\Images\playvideo1.gif" />
+    <Content Include="Media\Images\playvideo10.jpg" />
+    <Content Include="Media\Images\playvideo11.jpg" />
+    <Content Include="Media\Images\playvideo12.jpg" />
+    <Content Include="Media\Images\playvideo13.jpg" />
+    <Content Include="Media\Images\playvideo14.jpg" />
+    <Content Include="Media\Images\playvideo15.jpg" />
+    <Content Include="Media\Images\playvideo15_2.jpg" />
+    <Content Include="Media\Images\playvideo16.jpg" />
+    <Content Include="Media\Images\playvideo17.jpg" />
+    <Content Include="Media\Images\playvideo18.jpg" />
+    <Content Include="Media\Images\playvideo19.jpg" />
+    <Content Include="Media\Images\playvideo2.gif" />
+    <Content Include="Media\Images\playvideo3.gif" />
+    <Content Include="Media\Images\playvideo4.jpg" />
+    <Content Include="Media\Images\playvideo5.jpg" />
+    <Content Include="Media\Images\playvideo6.jpg" />
+    <Content Include="Media\Images\playvideo7.jpg" />
+    <Content Include="Media\Images\playvideo8.jpg" />
+    <Content Include="Media\Images\playvideo9.jpg" />
+    <Content Include="Media\Images\previousIcon.jpg" />
+    <Content Include="Media\Images\printer.jpg" />
+    <Content Include="Media\Images\Printer.png" />
+    <Content Include="Media\Images\printIcon.jpg" />
+    <Content Include="Media\Images\rate.jpg" />
+    <Content Include="Media\Images\ratebg.jpg" />
+    <Content Include="Media\Images\ratefooter.jpg" />
+    <Content Include="Media\Images\rateHeader.jpg" />
+    <Content Include="Media\Images\reservationIconDisable.jpg" />
+    <Content Include="Media\Images\reservationInvisibleIcon.jpg" />
+    <Content Include="Media\Images\RestauraanByCuisine.jpg" />
+    <Content Include="Media\Images\RestauranByCuisineBg.jpg" />
+    <Content Include="Media\Images\restaurantByCuisine.jpg" />
+    <Content Include="Media\Images\restaurantByCuisineAds.jpg" />
+    <Content Include="Media\Images\restaurantByCuisineAds2.jpg" />
+    <Content Include="Media\Images\restaurantByCuisineBg.jpg" />
+    <Content Include="Media\Images\restaurantByCuisinefooter.jpg" />
+    <Content Include="Media\Images\restaurantByCuisineJoin.jpg" />
+    <Content Include="Media\Images\RestaurantInCuisineBottom.jpg" />
+    <Content Include="Media\Images\restaurantInCuisineInvite.jpg" />
+    <Content Include="Media\Images\restaurantInfoBg.jpg" />
+    <Content Include="Media\Images\restaurantinfoFooter.jpg" />
+    <Content Include="Media\Images\restaurantInfoHeader.jpg" />
+    <Content Include="Media\Images\restaurantInfoLink.jpg" />
+    <Content Include="Media\Images\restaurant_ad_header_r1_c1.jpg" />
+    <Content Include="Media\Images\restaurant_gift1.jpg" />
+    <Content Include="Media\Images\restaurant_gift26.jpg" />
+    <Content Include="Media\Images\restaurant_gift27.jpg" />
+    <Content Include="Media\Images\restaurant_gift28.jpg" />
+    <Content Include="Media\Images\restaurant_gift29.jpg" />
+    <Content Include="Media\Images\restaurant_gift3.jpg" />
+    <Content Include="Media\Images\restaurant_gift32.jpg" />
+    <Content Include="Media\Images\restaurant_gift37.jpg" />
+    <Content Include="Media\Images\restaurant_gift38.jpg" />
+    <Content Include="Media\Images\restaurant_gift4.jpg" />
+    <Content Include="Media\Images\restaurant_help.jpg" />
+    <Content Include="Media\Images\restaurant_info4_r2_c2.jpg" />
+    <Content Include="Media\Images\restaurant_info4_r3_c3.jpg" />
+    <Content Include="Media\Images\restaurant_info4_r3_c3_r2_c1.jpg" />
+    <Content Include="Media\Images\restaurant_info4_r3_c5.jpg" />
+    <Content Include="Media\Images\restaurant_info4_r3_c6.jpg" />
+    <Content Include="Media\Images\restaurant_info4_r4_c2.jpg" />
+    <Content Include="Media\Images\restaurant_info4_r5_c2.jpg" />
+    <Content Include="Media\Images\restaurant_info4_r5_c3.jpg" />
+    <Content Include="Media\Images\restaurant_info4_r5_c3_r1_c1.jpg" />
+    <Content Include="Media\Images\restaurant_info4_r5_c4.jpg" />
+    <Content Include="Media\Images\restaurant_info4_r6_c7.jpg" />
+    <Content Include="Media\Images\restaurant_info4_r6_c9.jpg" />
+    <Content Include="Media\Images\restaurant_info4_r8_c9.jpg" />
+    <Content Include="Media\Images\restaurant_photos_r2_c2.jpg" />
+    <Content Include="Media\Images\restaurant_photos_r2_c3.jpg" />
+    <Content Include="Media\Images\restaurant_photos_r2_c4.jpg" />
+    <Content Include="Media\Images\restaurant_photos_r2_c5.jpg" />
+    <Content Include="Media\Images\restaurant_photos_r3_c3.jpg" />
+    <Content Include="Media\Images\restaurant_photos_r4_c2.jpg" />
+    <Content Include="Media\Images\restaurant_photos_r4_c3.jpg" />
+    <Content Include="Media\Images\restaurant_photos_r6_c2.jpg" />
+    <Content Include="Media\Images\restaurant_photos_r6_c3.jpg" />
+    <Content Include="Media\Images\restaurant_photos_r6_c4.jpg" />
+    <Content Include="Media\Images\restaurant_photos_r6_c5.jpg" />
+    <Content Include="Media\Images\restaurant_photos_r6_c6.jpg" />
+    <Content Include="Media\Images\restaurant_photos_r8_c2.jpg" />
+    <Content Include="Media\Images\restaurant_print.jpg" />
+    <Content Include="Media\Images\restaurant_rate.jpg" />
+    <Content Include="Media\Images\restaurant_ratebg.jpg" />
+    <Content Include="Media\Images\restaurant_rate_footer.jpg" />
+    <Content Include="Media\Images\restaurant_review.jpg" />
+    <Content Include="Media\Images\restaurant_review_max.jpg" />
+    <Content Include="Media\Images\restaurant_review_r1_c2.jpg" />
+    <Content Include="Media\Images\restaurant_review_r2_c2.jpg" />
+    <Content Include="Media\Images\restaurant_review_r2_c3.jpg" />
+    <Content Include="Media\Images\reviewimg_r2_c2.jpg" />
+    <Content Include="Media\Images\reviewimg_r4_c3.jpg" />
+    <Content Include="Media\Images\reviewimg_r6_c3.jpg" />
+    <Content Include="Media\Images\reviewimg_r6_c5.jpg" />
+    <Content Include="Media\Images\reviewimg_r8_c2.jpg" />
+    <Content Include="Media\Images\rev_04.jpg" />
+    <Content Include="Media\Images\rev_06.jpg" />
+    <Content Include="Media\Images\rev_07.jpg" />
+    <Content Include="Media\Images\rev_08.jpg" />
+    <Content Include="Media\Images\rev_10.jpg" />
+    <Content Include="Media\Images\rev_13.jpg" />
+    <Content Include="Media\Images\rev_14.jpg" />
+    <Content Include="Media\Images\search.gif" />
+    <Content Include="Media\Images\Search.jpg" />
+    <Content Include="Media\Images\searchHome.jpg" />
+    <Content Include="Media\Images\spacer.gif" />
+    <Content Include="Media\Images\submit.gif" />
+    <Content Include="Media\Images\trang_video.jpg" />
+    <Content Include="Media\Images\video1.jpg" />
+    <Content Include="Media\Images\video2.jpg" />
+    <Content Include="Media\Images\video2_1.jpg" />
+    <Content Include="Media\Images\video2_1_1.jpg" />
+    <Content Include="Media\Images\video2_1_2.jpg" />
+    <Content Include="Media\Images\video2_1_3.jpg" />
+    <Content Include="Media\Images\video2_1_3_1.jpg" />
+    <Content Include="Media\Images\video2_1_3_2.jpg" />
+    <Content Include="Media\Images\video2_1_3_2_1.jpg" />
+    <Content Include="Media\Images\video2_1_3_2_2.jpg" />
+    <Content Include="Media\Images\video2_1_3_3.jpg" />
+    <Content Include="Media\Images\video2_1_3_4.jpg" />
+    <Content Include="Media\Images\video2_1_5.jpg" />
+    <Content Include="Media\Images\video2_2.jpg" />
+    <Content Include="Media\Images\video2_2_1.jpg" />
+    <Content Include="Media\Images\video2_2_2.jpg" />
+    <Content Include="Media\Images\video2_2_3.jpg" />
+    <Content Include="Media\Images\video2_2_4.jpg" />
+    <Content Include="Media\Images\video3.jpg" />
+    <Content Include="Media\Images\video4.jpg" />
+    <Content Include="Media\Images\video4_1.jpg" />
+    <Content Include="Media\Images\video4_2.jpg" />
+    <Content Include="Media\Images\video4_3.jpg" />
+    <Content Include="Media\Images\video4_4.jpg" />
+    <Content Include="Media\Images\videoFooter.jpg" />
+    <Content Include="Media\Images\VideoIcon.jpg" />
+    <Content Include="Media\Images\videoIconDisable.jpg" />
+    <Content Include="Media\Images\videoImage.jpg" />
+    <Content Include="Media\Images\video_10.jpg" />
+    <Content Include="Media\Images\viewVideo.jpg" />
+    <Content Include="Media\Images\writeReview.jpg" />
+    <Content Include="Media\SkinVideoTool\FlashVideo\BluePlasticSkin.swf" />
+    <Content Include="Media\SkinVideoTool\FlashVideo\GlowSkin.swf" />
+    <Content Include="Media\SkinVideoTool\FlashVideo\iTunesSkin_1.swf" />
+    <Content Include="Media\SkinVideoTool\FlashVideo\iTunesSkin_2.swf" />
+    <Content Include="Media\SkinVideoTool\FlashVideo\ThinSkin.swf" />
+    <Content Include="Media\SkinVideoTool\FlashVideo\WindowsMediaPlayerSkin.swf" />
+    <Content Include="Style\admin.css" />
+    <Content Include="Style\cuisineHome.css" />
+    <Content Include="Style\Delivery1.css" />
+    <Content Include="Style\form.css" />
+    <Content Include="Style\gift.css" />
+    <Content Include="Style\home.css" />
+    <Content Include="Style\homeVideo.css" />
+    <Content Include="Style\Left.css" />
+    <Content Include="Style\login.css" />
+    <Content Include="Style\MemberChangePassword.css" />
+    <Content Include="Style\playVideo.css" />
+    <Content Include="Style\RegionManagement.css" />
+    <Content Include="Style\restaurantByCuisine.css" />
+    <Content Include="Style\restaurantInfo.css" />
+    <Content Include="Style\restaurantMenu.css" />
+    <Content Include="Style\RestaurantRegistration.css" />
+    <Content Include="Style\RestaurantSearch.css" />
+    <Content Include="Style\RestaurantShowReview.css" />
+    <Content Include="Style\Review.css" />
+    <Content Include="Style\searchHome.css" />
+    <Content Include="Test.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Administrator\Delivery\DeliveryCommission.ascx" />
+    <Content Include="Administrator\ParamterManagement\SettingAccountPaypal.ascx" />
+    <Content Include="Administrator\ParamterManagement\SettingMailServer.ascx" />
+    <Content Include="Administrator\Reservation\Reservation.ascx" />
+    <Content Include="App_Data\DeliveryConfig.xml" />
+    <Content Include="Delivery\Default.aspx" />
+    <Content Include="Delivery\Delivery.Master" />
+    <Content Include="Delivery\UserControls\Common\ChooseCity.ascx" />
+    <Content Include="Delivery\UserControls\Common\Footer.ascx" />
+    <Content Include="Delivery\UserControls\Common\Header.ascx" />
+    <Content Include="Delivery\UserControls\Common\Home.ascx" />
+    <Content Include="Delivery\UserControls\Controls\Footer.ascx" />
+    <Content Include="Delivery\UserControls\Controls\Header.ascx" />
+    <Content Include="Delivery\UserControls\Controls\Home.ascx" />
+    <Content Include="Delivery\UserControls\Restaurant\AddOn.ascx" />
+    <Content Include="Delivery\UserControls\Restaurant\CheckOutPage.ascx" />
+    <Content Include="Delivery\UserControls\Restaurant\CreateAccount.ascx" />
+    <Content Include="Delivery\UserControls\Restaurant\DeliverySearch.ascx" />
+    <Content Include="Delivery\UserControls\Restaurant\Filter.ascx" />
+    <Content Include="Delivery\UserControls\Restaurant\Login.ascx" />
+    <Content Include="Delivery\UserControls\Restaurant\Logout.ascx" />
+    <Content Include="Delivery\UserControls\Restaurant\Menu.ascx" />
+    <Content Include="Delivery\UserControls\Restaurant\MenuItem.ascx" />
+    <Content Include="Delivery\UserControls\Restaurant\MyOrder.ascx" />
+    <Content Include="Delivery\UserControls\Restaurant\Registration\Register.ascx" />
+    <Content Include="Delivery\UserControls\Restaurant\Registration\Successfull.ascx" />
+    <Content Include="Delivery\UserControls\Restaurant\Restaurant.ascx" />
+    <Content Include="Delivery\UserControls\Restaurant\RestaurantDetail .ascx" />
+    <Content Include="Delivery\UserControls\Restaurant\ThankYou.ascx" />
+    <Content Include="Delivery\UserControls\Restaurant\WokingHour .ascx" />
+    <Content Include="Home\Member\Registration\Successfull.ascx" />
+    <Content Include="Home\Member\Video\ListAllVideo.ascx" />
+    <Content Include="Home\Member\Video\ListVideo.ascx" />
+    <Content Include="Home\Member\Video\Video.ascx" />
+    <Content Include="Home\Restaurant\ContactRestaurant\SendContact.ascx" />
+    <Content Include="Home\Restaurant\GiftCertificates\PreviewGift.aspx" />
+    <Content Include="Home\Restaurant\OnlineReservation\ProcessReservation.ascx" />
+    <Content Include="Home\Restaurant\RecommendToFriend\SendRecommend.ascx" />
+    <Content Include="Home\Restaurant\Registration\RegistrationForRestaurant\RestaurantContact.ascx" />
+    <Content Include="Management\Member\FavouriteRestaurant\YourFavouriteRestaurant.ascx" />
+    <Content Include="Management\Member\Transaction\HistoryTransaction.ascx" />
+    <Content Include="Management\Restaurant\Order\OrderParameter.ascx" />
+    <Content Include="Management\Restaurant\Profile\BussinessAccountPaypal.ascx" />
+    <Content Include="Management\Restaurant\Profile\SettingService.ascx" />
+    <Content Include="Management\Restaurant\Video\VideoManagement.ascx" />
+    <Content Include="Management\UserControls\Address.ascx" />
+    <Content Include="Media\Delivery\2Star.jpg" />
+    <Content Include="Media\Delivery\3Star.jpg" />
+    <Content Include="Media\Delivery\4Star.jpg" />
+    <Content Include="Media\Delivery\5Star.jpg" />
+    <Content Include="Media\Delivery\btnNext.gif" />
+    <Content Include="Media\Delivery\btnPrevious.gif" />
+    <Content Include="Media\Delivery\centerBilling.png" />
+    <Content Include="Media\Delivery\centerDelivery.jpg" />
+    <Content Include="Media\Delivery\centerDelivery.png" />
+    <Content Include="Media\Delivery\centerDeliveryHomeSearch.png" />
+    <Content Include="Media\Delivery\centerDeliveryHomeSearch_sponsor.png" />
+    <Content Include="Media\Delivery\centerMenu.jpg" />
+    <Content Include="Media\Delivery\centerRestaurantInfo.png" />
+    <Content Include="Media\Delivery\DeliveryRegistration.png" />
+    <Content Include="Media\Delivery\DeliveryRegistrationFooter.png" />
+    <Content Include="Media\Delivery\DelyveriRegistrationCenter.png" />
+    <Content Include="Media\Delivery\footerBilling.png" />
+    <Content Include="Media\Delivery\footerDelivery.jpg" />
+    <Content Include="Media\Delivery\footerDelivery.png" />
+    <Content Include="Media\Delivery\footerDeliveryHomeSearch.png" />
+    <Content Include="Media\Delivery\footerLeftMenu.jpg" />
+    <Content Include="Media\Delivery\footerMenu.jpg" />
+    <Content Include="Media\Delivery\footerRestaurantInfo.png" />
+    <Content Include="Media\Delivery\go_btn-out.gif" />
+    <Content Include="Media\Delivery\grey_star.gif" />
+    <Content Include="Media\Delivery\headerBilling.jpg" />
+    <Content Include="Media\Delivery\headerCenter.jpg" />
+    <Content Include="Media\Delivery\headerimg.jpg" />
+    <Content Include="Media\Delivery\headerMenu.jpg" />
+    <Content Include="Media\Delivery\headerRestaurantInfo.jpg" />
+    <Content Include="Media\Delivery\header_delivery.png" />
+    <Content Include="Media\Delivery\header_delivery_sponsor.png" />
+    <Content Include="Media\Delivery\hedaer_delivery.gif" />
+    <Content Include="Media\Delivery\item_add_to_cart-out.gif" />
+    <Content Include="Media\Delivery\logo.gif" />
+    <Content Include="Media\Delivery\Logo212Delivery-.gif" />
+    <Content Include="Media\Delivery\Logo212Delivery.gif" />
+    <Content Include="Media\Delivery\menucenter.jpg" />
+    <Content Include="Media\Delivery\menuCenter.png" />
+    <Content Include="Media\Delivery\menucenter1.jpg" />
+    <Content Include="Media\Delivery\menucenter1.png" />
+    <Content Include="Media\Delivery\menuCenterFooter.png" />
+    <Content Include="Media\Delivery\menuCenterHeader.png" />
+    <Content Include="Media\Delivery\menuFooter.jpg" />
+    <Content Include="Media\Delivery\menuFooter.png" />
+    <Content Include="Media\Delivery\menuHeader.jpg" />
+    <Content Include="Media\Delivery\menuHeader.png" />
+    <Content Include="Media\Delivery\menuLeftFooter.png" />
+    <Content Include="Media\Delivery\menuLeftHeader.png" />
+    <Content Include="Media\Delivery\navbarbg.gif" />
+    <Content Include="Media\Delivery\Order_center.jpg" />
+    <Content Include="Media\Delivery\Order_footer.jpg" />
+    <Content Include="Media\Delivery\Order_header.jpg" />
+    <Content Include="Media\Delivery\Order_place.jpg" />
+    <Content Include="Media\Delivery\saveBy.jpg" />
+    <Content Include="Media\Delivery\searchCenter.png" />
+    <Content Include="Media\Delivery\searchFooter.png" />
+    <Content Include="Media\Delivery\searchHeader.png" />
+    <Content Include="Media\Delivery\search_r1_c2.jpg" />
+    <Content Include="Media\Delivery\search_r1_c3.jpg" />
+    <Content Include="Media\Delivery\search_r1_c5.jpg" />
+    <Content Include="Media\Delivery\sidemenuheadingbg.gif" />
+    <Content Include="Media\Delivery\star.gif" />
+    <Content Include="Media\Delivery\subnavbarbg.gif" />
+    <Content Include="Media\Delivery\vocation.jpg" />
+    <Content Include="Media\Images\212.png" />
+    <Content Include="Media\Images\Header_New.jpg" />
+    <Content Include="Media\Images\home_linktous.gif" />
+    <Content Include="Media\Images\home_linktous1.gif" />
+    <Content Include="Media\Images\restaurantByCuisineheader.jpg" />
+    <Content Include="Media\Images\restaurantSearch.jpg" />
+    <Content Include="Media\Delivery\trans-white2.png" />
+    <Content Include="Media\Template\RejectReservation.htm" />
+    <Content Include="Media\Template\ConfirmReservation.htm" />
+    <Content Include="Media\Template\YouHavePlaceReservation.htm" />
+    <Content Include="Media\Template\YourGotReservation.htm" />
+    <Content Include="Style\Delivery.css" />
+    <None Include="Media\Videos\Highway to hell.flv" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Media\TempImage\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v8.0\WebApplications\Microsoft.WebApplication.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>4199</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:8008</IISUrl>
+          <OverrideIISAppRootUrl>True</OverrideIISAppRootUrl>
+          <IISAppRootUrl>http://localhost:8008/Default.aspx</IISAppRootUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
